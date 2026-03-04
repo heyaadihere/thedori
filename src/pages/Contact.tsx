@@ -16,7 +16,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success('Message sent', {
-      description: 'We'll get back to you within 24 hours.',
+      description: "We'll get back to you within 24 hours.",
       position: 'top-center',
     });
     setFormData({ name: '', email: '', subject: '', message: '' });

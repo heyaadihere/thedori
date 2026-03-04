@@ -11,7 +11,7 @@ const Newsletter = () => {
     e.preventDefault();
     if (email) {
       toast.success('Welcome to the DORI world', {
-        description: 'You'll be the first to know about new collections.',
+        description: "You'll be the first to know about new collections.",
         position: 'top-center',
       });
       setEmail('');

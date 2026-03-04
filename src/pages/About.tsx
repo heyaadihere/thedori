@@ -12,7 +12,7 @@ const values = [
   {
     number: '01',
     title: 'Intentional Design',
-    description: 'Every detail serves a purpose. No excess, no filler — just design that works harder so you don't have to think about it.',
+    description: "Every detail serves a purpose. No excess, no filler — just design that works harder so you don't have to think about it.",
   },
   {
     number: '02',
