@@ -1,0 +1,61 @@
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { toast } from 'sonner';
+
+const Newsletter = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      toast.success('Welcome to the DORI world', {
+        description: 'You'll be the first to know about new collections.',
+        position: 'top-center',
+      });
+      setEmail('');
+    }
+  };
+
+  return (
+    <section className="py-20 lg:py-28 px-6 bg-primary text-primary-foreground">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="max-w-xl mx-auto text-center"
+      >
+        <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/60 mb-6">
+          Stay Connected
+        </p>
+        <h2 className="text-3xl md:text-4xl font-normal mb-4">
+          Join the DORI world
+        </h2>
+        <p className="text-sm text-primary-foreground/60 font-light mb-10 leading-relaxed">
+          Be the first to know about new collections, exclusive access, and stories from our atelier.
+        </p>
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <Input
+            type="email"
+            placeholder="Your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="flex-1 rounded-none bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus-visible:ring-primary-foreground/30 h-12"
+          />
+          <Button
+            type="submit"
+            variant="outline"
+            className="rounded-none tracking-[0.15em] uppercase text-xs px-8 h-12 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+          >
+            Subscribe
+          </Button>
+        </form>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Newsletter;
