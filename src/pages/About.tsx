@@ -4,9 +4,15 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
+import TimelineSection from '@/components/TimelineSection';
+import SustainabilitySection from '@/components/SustainabilitySection';
+import StatsSection from '@/components/StatsSection';
 import aboutHeroImage from '@/assets/about-hero.jpg';
 import atelierImage from '@/assets/atelier.jpg';
 import brandDetailImage from '@/assets/brand-detail.jpg';
+import process1 from '@/assets/process-1.jpg';
+import process2 from '@/assets/process-2.jpg';
+import process3 from '@/assets/process-3.jpg';
 
 const values = [
   {
@@ -39,7 +45,14 @@ const About = () => {
       <main>
         {/* Hero */}
         <section className="relative h-[60vh] lg:h-[70vh] overflow-hidden">
-          <img src={aboutHeroImage} alt="DORI brand story" className="w-full h-full object-cover" />
+          <motion.div
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5, ease: 'easeOut' }}
+            className="absolute inset-0"
+          >
+            <img src={aboutHeroImage} alt="DORI brand story" className="w-full h-full object-cover" />
+          </motion.div>
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent" />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -105,6 +118,8 @@ const About = () => {
           </div>
         </section>
 
+        <StatsSection />
+
         {/* Atelier */}
         <section className="py-20 lg:py-28 px-6">
           <div className="container mx-auto max-w-6xl">
@@ -146,6 +161,43 @@ const About = () => {
           </div>
         </section>
 
+        {/* Process Gallery */}
+        <section className="py-20 lg:py-28 px-6 bg-secondary/30">
+          <div className="container mx-auto max-w-6xl">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-14"
+            >
+              <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">Behind the Seams</p>
+              <h2 className="text-3xl md:text-4xl font-normal">The making of DORI</h2>
+            </motion.div>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[process1, process2, process3].map((img, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: i * 0.15 }}
+                  className="aspect-[4/5] overflow-hidden group"
+                >
+                  <img
+                    src={img}
+                    alt={`DORI process ${i + 1}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <TimelineSection />
+        <SustainabilitySection />
         <Newsletter />
       </main>
       <Footer />
