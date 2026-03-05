@@ -7,12 +7,13 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 import CartDrawer from '@/components/CartDrawer';
 
 const navLinks = [
-  { label: 'Shop', href: '/' },
-  { label: 'Jackets', href: '/' },
-  { label: 'Waistcoats', href: '/' },
-  { label: 'Blazers', href: '/' },
+  { label: 'Shop', href: '/collections' },
+  { label: 'Jackets', href: '/collections' },
+  { label: 'Waistcoats', href: '/collections' },
+  { label: 'Blazers', href: '/collections' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
+  { label: 'Size Guide', href: '/size-guide' },
 ];
 
 const Header = () => {

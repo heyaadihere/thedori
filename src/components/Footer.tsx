@@ -25,10 +25,10 @@ const Footer = () => {
           <div>
             <p className="text-[10px] tracking-[0.3em] uppercase text-primary-foreground/40 mb-5">Shop</p>
             <nav className="space-y-3">
-              <Link to="/" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">All Collections</Link>
-              <Link to="/" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Blazers</Link>
-              <Link to="/" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Waistcoats</Link>
-              <Link to="/" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Jackets</Link>
+              <Link to="/collections" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">All Collections</Link>
+              <Link to="/collections" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Blazers</Link>
+              <Link to="/collections" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Waistcoats</Link>
+              <Link to="/collections" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Jackets</Link>
             </nav>
           </div>
 
@@ -38,8 +38,7 @@ const Footer = () => {
             <nav className="space-y-3">
               <Link to="/about" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">About DORI</Link>
               <Link to="/contact" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Contact</Link>
-              <a href="#" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Careers</a>
-              <a href="#" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Press</a>
+              <Link to="/size-guide" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Size Guide</Link>
             </nav>
           </div>
 
@@ -47,18 +46,17 @@ const Footer = () => {
           <div>
             <p className="text-[10px] tracking-[0.3em] uppercase text-primary-foreground/40 mb-5">Help</p>
             <nav className="space-y-3">
-              <a href="#" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Shipping & Returns</a>
-              <a href="#" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Size Guide</a>
-              <a href="#" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Care Instructions</a>
-              <a href="#" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Privacy Policy</a>
+              <Link to="/shipping-returns" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Shipping & Returns</Link>
+              <Link to="/size-guide" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Size Guide</Link>
+              <Link to="/care-instructions" className="block text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Care Instructions</Link>
             </nav>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="py-6 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[10px] text-primary-foreground/40 tracking-wider">© 2026 DORI. All rights reserved.</p>
-          <p className="text-[10px] text-primary-foreground/40 tracking-wider">Designed with intention. Defined by presence.</p>
+          <p className="text-[10px] text-primary-foreground/40 tracking-wider">&copy; 2026 DORI. All rights reserved.</p>
+          <p className="text-[10px] text-primary-foreground/40 tracking-wider">Style it, own it, DORI it.</p>
         </div>
       </div>
     </footer>
