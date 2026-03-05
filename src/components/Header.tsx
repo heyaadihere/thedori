@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-24 lg:h-28">
           {/* Mobile menu */}
           <div className="md:hidden">
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
@@ -34,7 +34,7 @@ const Header = () => {
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between px-6 h-16 border-b border-border">
-                    <img src={doriLogo} alt="DORI" className="h-10 w-auto" />
+                    <img src={doriLogo} alt="DORI" className="h-16 w-auto" />
                   </div>
                   <nav className="flex flex-col py-8 px-6">
                     {navLinks.map((link) => (
@@ -68,7 +68,7 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="absolute left-1/2 -translate-x-1/2">
-            <img src={doriLogo} alt="DORI" className="h-12 lg:h-14 w-auto" />
+            <img src={doriLogo} alt="DORI" className="h-20 lg:h-24 w-auto" />
           </Link>
 
           {/* Right actions */}
