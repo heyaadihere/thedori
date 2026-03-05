@@ -56,7 +56,12 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="py-6 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[10px] text-primary-foreground/40 tracking-wider">&copy; 2026 DORI. All rights reserved.</p>
-          <p className="text-[10px] text-primary-foreground/40 tracking-wider">Style it, own it, DORI it.</p>
+          <p className="text-[10px] text-primary-foreground/40 tracking-wider">
+            Website powered by{' '}
+            <a href="https://techbook.co.in/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors underline underline-offset-2">
+              Techbook Technologies
+            </a>
+          </p>
         </div>
       </div>
     </footer>
