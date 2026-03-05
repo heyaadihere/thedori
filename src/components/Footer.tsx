@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Instagram } from 'lucide-react';
+import doriLogo from '@/assets/dori-logo.png';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="py-16 lg:py-20 grid md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="text-2xl tracking-[0.3em] uppercase mb-4 font-serif">DORI</h3>
+            <img src={doriLogo} alt="DORI" className="h-16 w-auto mb-4 brightness-0 invert" />
             <p className="text-xs text-primary-foreground/60 leading-relaxed font-light max-w-xs">
               Structured outerwear designed with intention. Clean lines, quiet confidence, built to move with you.
             </p>

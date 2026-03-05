@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Menu, X } from 'lucide-react';
+import doriLogo from '@/assets/dori-logo.png';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import CartDrawer from '@/components/CartDrawer';
@@ -33,7 +34,7 @@ const Header = () => {
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between px-6 h-16 border-b border-border">
-                    <span className="text-lg tracking-[0.3em] uppercase font-medium">DORI</span>
+                    <img src={doriLogo} alt="DORI" className="h-10 w-auto" />
                   </div>
                   <nav className="flex flex-col py-8 px-6">
                     {navLinks.map((link) => (
@@ -67,9 +68,7 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="absolute left-1/2 -translate-x-1/2">
-            <span className="text-2xl lg:text-3xl tracking-[0.3em] uppercase font-medium font-serif">
-              DORI
-            </span>
+            <img src={doriLogo} alt="DORI" className="h-12 lg:h-14 w-auto" />
           </Link>
 
           {/* Right actions */}
