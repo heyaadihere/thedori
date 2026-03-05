@@ -1,26 +1,27 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import categoryImage from '@/assets/category-flatlay.jpg';
-import brandDetailImage from '@/assets/brand-detail.jpg';
+import bannerWaistcoat from '@/assets/banner-waistcoat.jpg';
+import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
+import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
 
 const categories = [
   {
     title: 'Blazers',
     description: 'Structured elegance for every occasion',
-    image: categoryImage,
-    href: '/',
+    image: productBlueBlazer,
+    href: '/collections',
   },
   {
     title: 'Waistcoats',
     description: 'Layered intention, effortless form',
-    image: brandDetailImage,
-    href: '/',
+    image: bannerWaistcoat,
+    href: '/collections',
   },
   {
     title: 'Jackets',
     description: 'Outerwear that moves with confidence',
-    image: categoryImage,
-    href: '/',
+    image: productBrownBlazer,
+    href: '/collections',
   },
 ];
 
@@ -51,11 +52,11 @@ const CategoryShowcase = () => {
               transition={{ duration: 0.6, delay: i * 0.15 }}
             >
               <Link to={cat.href} className="group block">
-                <div className="aspect-[3/4] overflow-hidden rounded mb-4 relative">
+                <div className="aspect-[3/4] overflow-hidden rounded mb-4 relative bg-secondary">
                   <img
                     src={cat.image}
                     alt={cat.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

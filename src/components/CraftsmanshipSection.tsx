@@ -1,14 +1,13 @@
 import { motion } from 'framer-motion';
-import atelierImage from '@/assets/atelier.jpg';
+import bannerCollection from '@/assets/banner-collection.jpg';
 
 const CraftsmanshipSection = () => {
   return (
     <section className="relative overflow-hidden">
-      {/* Full-width image with parallax feel */}
       <div className="relative h-[60vh] lg:h-[70vh]">
         <img
-          src={atelierImage}
-          alt="DORI atelier craftsmanship"
+          src={bannerCollection}
+          alt="DORI collection flatlay — blazer, waistcoat, jacket with gold accessories"
           className="w-full h-full object-cover"
           loading="lazy"
         />

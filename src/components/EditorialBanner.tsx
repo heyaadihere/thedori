@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import galleryImage from '@/assets/gallery-1.jpg';
+import bannerEditorial from '@/assets/banner-editorial.jpg';
 
 const EditorialBanner = () => {
   return (
@@ -13,7 +13,7 @@ const EditorialBanner = () => {
         transition={{ duration: 1.5, ease: 'easeOut' }}
         className="absolute inset-0"
       >
-        <img src={galleryImage} alt="DORI collection" className="w-full h-full object-cover" loading="lazy" />
+        <img src={bannerEditorial} alt="DORI brown blazer on velvet with gold accessories" className="w-full h-full object-cover" loading="lazy" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-transparent" />
 
@@ -30,7 +30,7 @@ const EditorialBanner = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-primary-foreground leading-[1.2] mb-6">
               Pieces that<br />outlast trends
             </h2>
-            <Link to="/">
+            <Link to="/collections">
               <Button
                 variant="outline"
                 size="lg"
