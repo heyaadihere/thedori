@@ -1,19 +1,18 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import heroImage from '@/assets/hero-main.jpg';
+import bannerHero from '@/assets/banner-hero.jpg';
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img 
-          src={heroImage} 
-          alt="DORI structured blazer editorial" 
+          src={bannerHero} 
+          alt="DORI structured blazer on marble with pampas grass" 
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/20" />
       </div>
 
@@ -49,7 +48,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex gap-4"
           >
-            <Link to="/">
+            <Link to="/collections">
               <Button
                 variant="default"
                 size="lg"
@@ -71,7 +70,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

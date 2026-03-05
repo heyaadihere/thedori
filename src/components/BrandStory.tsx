@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import brandDetailImage from '@/assets/brand-detail.jpg';
+import bannerFounder from '@/assets/banner-founder.jpg';
 
 const BrandStory = () => {
   return (
@@ -14,9 +14,9 @@ const BrandStory = () => {
             className="aspect-[4/5] overflow-hidden rounded"
           >
             <img
-              src={brandDetailImage}
-              alt="DORI tailoring detail"
-              className="w-full h-full object-cover"
+              src={bannerFounder}
+              alt="DORI founder in colorful jacket — editorial portrait"
+              className="w-full h-full object-cover object-top"
               loading="lazy"
             />
           </motion.div>
@@ -46,7 +46,6 @@ const BrandStory = () => {
               </p>
             </div>
 
-            {/* Feature list */}
             <div className="grid grid-cols-2 gap-6 mt-10 pt-10 border-t border-border">
               {[
                 { number: '01', label: 'Reversible Construction' },
