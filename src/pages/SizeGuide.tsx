@@ -41,7 +41,7 @@ const sizeData = {
 const tips = [
   { title: 'Measure Flat', description: 'Lay your best-fitting garment flat and compare measurements to our chart.' },
   { title: 'Between Sizes?', description: 'We recommend sizing up for a relaxed fit, or sizing down for a more structured look.' },
-  { title: 'Still Unsure?', description: 'Reach out to us at hello@dori.com — we're happy to help you find your fit.' },
+  { title: 'Still Unsure?', description: "Reach out to us at hello@dori.com \u2014 we\u2019re happy to help you find your fit." },
 ];
 
 type Category = keyof typeof sizeData;
