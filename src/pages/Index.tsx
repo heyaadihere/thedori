@@ -6,9 +6,11 @@ import BrandStatement from '@/components/BrandStatement';
 import PhilosophyMarquee from '@/components/PhilosophyMarquee';
 import CategoryShowcase from '@/components/CategoryShowcase';
 import ProductGrid from '@/components/ProductGrid';
+import LuxuryShowcase from '@/components/LuxuryShowcase';
 import ProcessSection from '@/components/ProcessSection';
 import StatsSection from '@/components/StatsSection';
 import CraftsmanshipSection from '@/components/CraftsmanshipSection';
+import CollectionBanner from '@/components/CollectionBanner';
 import EditorialBanner from '@/components/EditorialBanner';
 import Testimonials from '@/components/Testimonials';
 import BrandStory from '@/components/BrandStory';
@@ -29,8 +31,10 @@ const Index = () => {
         <PhilosophyMarquee />
         <CategoryShowcase />
         <ProductGrid />
+        <LuxuryShowcase />
         <StatsSection />
         <CraftsmanshipSection />
+        <CollectionBanner />
         <ProcessSection />
         <EditorialBanner />
         <Testimonials />
