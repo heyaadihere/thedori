@@ -11,7 +11,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "I've never owned a piece that receives so many compliments without trying. The reversible construction is genius — two looks, zero compromise.",
+    quote: "I've never owned a piece that receives so many compliments without trying. The reversible construction is genius - two looks, zero compromise.",
     author: "Ananya R.",
     location: "Delhi",
     rating: 5,
@@ -71,7 +71,7 @@ const Testimonials = () => {
                 "{testimonials[current].quote}"
               </blockquote>
               <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-white/50">
-                {testimonials[current].author} — {testimonials[current].location}
+                {testimonials[current].author} - {testimonials[current].location}
               </p>
             </motion.div>
           </AnimatePresence>

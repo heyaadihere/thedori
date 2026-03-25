@@ -39,7 +39,7 @@ const Contact = () => {
             <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">Get In Touch</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6">We'd love to<br />hear from you</h1>
             <p className="text-sm text-muted-foreground font-light max-w-md mx-auto leading-relaxed">
-              Whether it's a question about sizing, a custom order, or just to say hello — we're here.
+              Whether it's a question about sizing, a custom order, or just to say hello - we're here.
             </p>
           </motion.div>
         </section>
@@ -52,7 +52,7 @@ const Contact = () => {
                 { icon: MapPin, label: 'Visit Us', value: 'DORI Studio, Mumbai', detail: '123 Fashion District, 400001' },
                 { icon: Mail, label: 'Email', value: 'hello@dori.com', detail: 'We reply within 24hrs' },
                 { icon: Phone, label: 'Call', value: '+91 22 4000 5000', detail: 'Mon-Fri, 10am-6pm IST' },
-                { icon: Clock, label: 'Hours', value: 'Mon — Fri: 10am — 6pm', detail: 'Sat: 11am — 5pm' },
+                { icon: Clock, label: 'Hours', value: 'Mon - Fri: 10am - 6pm', detail: 'Sat: 11am - 5pm' },
               ].map((item, i) => (
                 <motion.div
                   key={item.label}

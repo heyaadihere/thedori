@@ -19,7 +19,7 @@ const LuxuryShowcase = () => {
               Where craft<br />meets character
             </h2>
             <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-6 md:mb-8 max-w-md">
-              Each garment tells a story of heritage craftsmanship meeting contemporary silhouettes. From our signature reversible blazers to precision-tailored waistcoats — every piece is an investment in enduring style.
+              Each garment tells a story of heritage craftsmanship meeting contemporary silhouettes. From our signature reversible blazers to precision-tailored waistcoats - every piece is an investment in enduring style.
             </p>
             <div className="flex gap-8 md:gap-12">
               <div>

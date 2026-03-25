@@ -7,7 +7,7 @@ const steps = [
   {
     number: '01',
     title: 'Design & Pattern',
-    description: 'Every piece begins with a hand-drawn sketch and precision pattern — balancing structure with fluidity.',
+    description: 'Every piece begins with a hand-drawn sketch and precision pattern - balancing structure with fluidity.',
     image: process1,
   },
   {
@@ -19,7 +19,7 @@ const steps = [
   {
     number: '03',
     title: 'Finish & Press',
-    description: 'The final press gives every DORI piece its signature crispness — sharp lines that hold their shape.',
+    description: 'The final press gives every DORI piece its signature crispness - sharp lines that hold their shape.',
     image: process3,
   },
 ];

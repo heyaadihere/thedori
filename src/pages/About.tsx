@@ -25,7 +25,7 @@ const About = () => {
         <section className="py-24 lg:py-32 px-6">
           <div className="container mx-auto max-w-3xl text-center">
             <p className="text-lg md:text-xl leading-relaxed text-foreground font-light font-serif">
-              DORI was born from a belief that the best design disappears into the wearer. We create structured outerwear for people who understand that real presence doesn't require volume — just intention.
+              DORI was born from a belief that the best design disappears into the wearer. We create structured outerwear for people who understand that real presence doesn't require volume - just intention.
             </p>
             <div className="luxury-divider w-16 mx-auto mt-12" />
           </div>

@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: 'How do your reversible pieces work?',
-    answer: 'Our reversible construction uses a fully finished interior — no raw seams, no linings to hide. Simply turn the garment inside out for a completely different colorway and texture.',
+    answer: 'Our reversible construction uses a fully finished interior - no raw seams, no linings to hide. Simply turn the garment inside out for a completely different colorway and texture.',
   },
   {
     question: 'What is your return policy?',

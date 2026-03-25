@@ -18,7 +18,7 @@ const spotlights = [
     image: productBrownBlazer,
     name: 'The Heritage Blazer',
     tagline: 'Timeless',
-    description: 'Warm-toned wool blend with hand-finished lapels. This is the blazer your grandfather would have owned — if his tailor had better fabric sources.',
+    description: 'Warm-toned wool blend with hand-finished lapels. This is the blazer your grandfather would have owned - if his tailor had better fabric sources.',
     price: '₹9,400',
   },
   {
