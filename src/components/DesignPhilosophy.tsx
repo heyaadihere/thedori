@@ -1,0 +1,86 @@
+import { motion } from 'framer-motion';
+import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
+import productWaistcoat from '@/assets/product-waistcoat.jpg';
+
+const principles = [
+  {
+    title: 'Less, but better',
+    body: "We'd rather make four exceptional pieces a season than forty forgettable ones. Every collection is edited down until only the essential remains.",
+  },
+  {
+    title: 'Reversible by default',
+    body: 'Most of our outerwear is reversible — not as a gimmick, but as a design principle. Two considered looks from one garment. Less waste, more versatility.',
+  },
+  {
+    title: 'Structure that moves',
+    body: "Our tailoring walks a line between sharp and comfortable. We build structure into the shoulder and chest, but leave enough give for you to actually live in it.",
+  },
+  {
+    title: 'Details for the wearer',
+    body: "Contrast stitching on the inside. Hidden pockets. Fabric that feels different depending on which side you wear. These aren't marketing points — they're personal discoveries.",
+  },
+];
+
+const DesignPhilosophy = () => {
+  return (
+    <section className="py-24 lg:py-36 px-6 bg-primary text-primary-foreground">
+      <div className="container mx-auto max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <p className="text-xs tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Design Language</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-serif">How we think about clothes</h2>
+          <div className="luxury-divider w-20 mx-auto mt-8" />
+        </motion.div>
+
+        <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
+          {/* Left - principles */}
+          <div className="lg:col-span-2 space-y-10">
+            {principles.map((p, i) => (
+              <motion.div
+                key={p.title}
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="grid md:grid-cols-[120px_1fr] gap-4 items-start border-b border-primary-foreground/10 pb-8"
+              >
+                <span className="text-5xl font-serif text-gold/25">{String(i + 1).padStart(2, '0')}</span>
+                <div>
+                  <h3 className="text-lg font-serif font-medium mb-3">{p.title}</h3>
+                  <p className="text-sm text-primary-foreground/50 font-light leading-relaxed">{p.body}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Right - stacked product images */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="space-y-4"
+          >
+            <div className="luxury-frame">
+              <div className="aspect-[3/4] overflow-hidden">
+                <img src={productColorfulJacket} alt="DORI reversible jacket" className="w-full h-full object-cover" loading="lazy" />
+              </div>
+            </div>
+            <div className="luxury-frame">
+              <div className="aspect-[3/4] overflow-hidden">
+                <img src={productWaistcoat} alt="DORI tailored waistcoat" className="w-full h-full object-cover" loading="lazy" />
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default DesignPhilosophy;

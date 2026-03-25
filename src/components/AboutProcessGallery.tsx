@@ -1,0 +1,47 @@
+import { motion } from 'framer-motion';
+import process1 from '@/assets/process-1.jpg';
+import process2 from '@/assets/process-2.jpg';
+import process3 from '@/assets/process-3.jpg';
+
+const AboutProcessGallery = () => {
+  return (
+    <section className="py-20 lg:py-28 px-6 bg-secondary/30">
+      <div className="container mx-auto max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-14"
+        >
+          <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">Behind the Seams</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-serif">The making of DORI</h2>
+          <div className="luxury-divider w-20 mx-auto mt-6" />
+        </motion.div>
+        <div className="grid md:grid-cols-3 gap-4">
+          {[process1, process2, process3].map((img, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.15 }}
+              className="luxury-frame group"
+            >
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src={img}
+                  alt={`DORI process ${i + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutProcessGallery;

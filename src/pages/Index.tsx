@@ -18,6 +18,8 @@ import FAQSection from '@/components/FAQSection';
 import InstagramFeed from '@/components/InstagramFeed';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
+import ProductSpotlight from '@/components/ProductSpotlight';
+import WardrobeGuide from '@/components/WardrobeGuide';
 
 const Index = () => {
   return (
@@ -35,8 +37,10 @@ const Index = () => {
         <StatsSection />
         <CraftsmanshipSection />
         <CollectionBanner />
+        <ProductSpotlight />
         <ProcessSection />
         <EditorialBanner />
+        <WardrobeGuide />
         <Testimonials />
         <BrandStory />
         <FAQSection />
