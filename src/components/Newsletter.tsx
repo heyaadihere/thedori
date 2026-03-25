@@ -19,7 +19,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-24 lg:py-32 px-6 bg-primary text-primary-foreground">
+    <section className="py-16 md:py-24 lg:py-32 px-4 md:px-6 bg-primary text-primary-foreground">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -27,14 +27,14 @@ const Newsletter = () => {
         transition={{ duration: 0.6 }}
         className="max-w-xl mx-auto text-center"
       >
-        <div className="luxury-divider w-16 mx-auto mb-8" />
-        <p className="text-xs tracking-[0.5em] uppercase text-primary-foreground/40 mb-6">
+        <div className="luxury-divider w-16 mx-auto mb-6 md:mb-8" />
+        <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4 md:mb-6">
           Stay Connected
         </p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 font-serif">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">
           Join the DORI world
         </h2>
-        <p className="text-sm text-primary-foreground/50 font-light mb-10 leading-relaxed">
+        <p className="text-sm md:text-base text-primary-foreground/50 font-light mb-8 md:mb-10 leading-relaxed">
           Be the first to know about new collections, exclusive access, and stories from our atelier.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -44,12 +44,12 @@ const Newsletter = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="flex-1 rounded-none bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus-visible:ring-gold/30 h-12"
+            className="flex-1 rounded-none bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus-visible:ring-gold/30 h-12 text-sm md:text-base"
           />
           <Button
             type="submit"
             variant="outline"
-            className="rounded-none tracking-[0.15em] uppercase text-xs px-8 h-12 border-gold/40 text-primary-foreground hover:bg-gold/10"
+            className="rounded-none tracking-[0.15em] uppercase text-xs md:text-sm px-8 h-12 border-gold/40 text-primary-foreground hover:bg-gold/10"
           >
             Subscribe
           </Button>

@@ -39,21 +39,21 @@ const spotlights = [
 
 const ProductSpotlight = () => {
   return (
-    <section className="py-24 lg:py-36 px-6 bg-background">
+    <section className="py-16 md:py-24 lg:py-36 px-4 md:px-6 bg-background">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
-          <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">The Edit</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-serif">Pieces worth knowing</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">The Edit</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Pieces worth knowing</h2>
           <div className="luxury-divider w-20 mx-auto mt-6" />
         </motion.div>
 
-        <div className="space-y-20 lg:space-y-28">
+        <div className="space-y-14 md:space-y-20 lg:space-y-28">
           {spotlights.map((product, i) => (
             <motion.div
               key={product.name}
@@ -61,7 +61,7 @@ const ProductSpotlight = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.8 }}
-              className={`grid md:grid-cols-2 gap-10 lg:gap-16 items-center ${i % 2 === 1 ? '' : ''}`}
+              className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center"
             >
               <div className={i % 2 === 1 ? 'md:order-2' : ''}>
                 <motion.div
@@ -80,16 +80,16 @@ const ProductSpotlight = () => {
                 </motion.div>
               </div>
               <div className={i % 2 === 1 ? 'md:order-1' : ''}>
-                <p className="text-[10px] tracking-[0.4em] uppercase text-gold/60 mb-3">{product.tagline}</p>
-                <h3 className="text-2xl md:text-3xl font-serif font-medium mb-2">{product.name}</h3>
-                <p className="text-lg font-serif text-gold/80 mb-6">{product.price}</p>
-                <p className="text-sm text-muted-foreground font-light leading-relaxed mb-8 max-w-md">
+                <p className="text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em] uppercase text-gold/60 mb-3">{product.tagline}</p>
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-serif font-medium mb-2">{product.name}</h3>
+                <p className="text-base md:text-lg font-serif text-gold/80 mb-4 md:mb-6">{product.price}</p>
+                <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-6 md:mb-8 max-w-md">
                   {product.description}
                 </p>
                 <Link to="/collections">
                   <Button
                     variant="outline"
-                    className="rounded-none tracking-[0.15em] uppercase text-xs px-8 py-5 border-foreground/30 hover:bg-foreground hover:text-background transition-all duration-300"
+                    className="rounded-none tracking-[0.15em] uppercase text-xs md:text-sm px-6 md:px-8 py-4 md:py-5 border-foreground/30 hover:bg-foreground hover:text-background transition-all duration-300"
                   >
                     View Details
                   </Button>

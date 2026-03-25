@@ -26,21 +26,21 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-24 lg:py-32 px-6 bg-background">
+    <section className="py-16 md:py-24 lg:py-32 px-4 md:px-6 bg-background">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
-          <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">The Process</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">From thread to finish</h2>
-          <div className="luxury-divider w-20 mx-auto mt-6" />
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">The Process</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">From thread to finish</h2>
+          <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 
-        <div className="space-y-24 lg:space-y-32">
+        <div className="space-y-16 md:space-y-24 lg:space-y-32">
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
@@ -48,7 +48,7 @@ const ProcessSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.8 }}
-              className={`grid md:grid-cols-2 gap-12 lg:gap-20 items-center ${
+              className={`grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center ${
                 i % 2 === 1 ? 'md:direction-rtl' : ''
               }`}
             >
@@ -71,12 +71,12 @@ const ProcessSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="text-6xl lg:text-7xl font-serif text-gold/25 block mb-4"
+                  className="text-4xl md:text-6xl lg:text-7xl font-serif text-gold/25 block mb-3 md:mb-4"
                 >
                   {step.number}
                 </motion.span>
-                <h3 className="text-2xl md:text-3xl font-medium mb-4 font-serif">{step.title}</h3>
-                <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-sm">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-medium mb-3 md:mb-4 font-serif">{step.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-sm">
                   {step.description}
                 </p>
               </div>

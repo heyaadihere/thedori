@@ -25,21 +25,21 @@ const values = [
 
 const AboutValues = () => {
   return (
-    <section className="py-20 lg:py-28 px-6 bg-secondary/50">
+    <section className="py-14 md:py-20 lg:py-28 px-4 md:px-6 bg-secondary/50">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">Our Principles</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-serif">What guides us</h2>
-          <div className="luxury-divider w-20 mx-auto mt-6" />
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Our Principles</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">What guides us</h2>
+          <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
+        <div className="grid sm:grid-cols-2 gap-x-10 md:gap-x-16 gap-y-8 md:gap-y-12">
           {values.map((value, i) => (
             <motion.div
               key={value.number}
@@ -47,11 +47,11 @@ const AboutValues = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="border-t border-gold/20 pt-6"
+              className="border-t border-gold/20 pt-5 md:pt-6"
             >
-              <span className="text-[10px] tracking-[0.3em] text-gold/60">{value.number}</span>
-              <h3 className="text-lg font-serif font-medium mt-2 mb-3">{value.title}</h3>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed">{value.description}</p>
+              <span className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] text-gold/60">{value.number}</span>
+              <h3 className="text-base md:text-lg font-serif font-medium mt-2 mb-2 md:mb-3">{value.title}</h3>
+              <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed">{value.description}</p>
             </motion.div>
           ))}
         </div>

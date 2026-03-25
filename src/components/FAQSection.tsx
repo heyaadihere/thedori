@@ -35,18 +35,18 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-24 lg:py-32 px-6 bg-secondary/30">
+    <section className="py-16 md:py-24 lg:py-32 px-4 md:px-6 bg-secondary/30">
       <div className="container mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-10 md:mb-14"
         >
-          <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">Common Questions</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">Frequently Asked</h2>
-          <div className="luxury-divider w-20 mx-auto mt-6" />
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Common Questions</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Frequently Asked</h2>
+          <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 
         <motion.div
@@ -58,10 +58,10 @@ const FAQSection = () => {
           <Accordion type="single" collapsible className="space-y-0">
             {faqs.map((faq, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-b border-gold/15">
-                <AccordionTrigger className="py-6 text-sm font-medium tracking-wide text-left hover:no-underline font-serif text-base">
+                <AccordionTrigger className="py-5 md:py-6 text-sm md:text-base font-medium tracking-wide text-left hover:no-underline font-serif">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="pb-6 text-sm text-muted-foreground font-light leading-relaxed">
+                <AccordionContent className="pb-5 md:pb-6 text-sm md:text-base text-muted-foreground font-light leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
