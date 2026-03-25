@@ -11,7 +11,7 @@ const careCategories = [
     tips: [
       'Dry clean recommended for all structured pieces.',
       'For spot cleaning, use a damp cloth with mild detergent.',
-      'Avoid machine washing — it can break down the internal structure.',
+      'Avoid machine washing - it can break down the internal structure.',
     ],
   },
   {
@@ -27,8 +27,8 @@ const careCategories = [
     icon: Wind,
     title: 'Drying',
     tips: [
-      'Air dry only — hang on a padded hanger to maintain shoulder shape.',
-      'Never tumble dry — heat damages the structured lining.',
+      'Air dry only - hang on a padded hanger to maintain shoulder shape.',
+      'Never tumble dry - heat damages the structured lining.',
       'Avoid direct sunlight to prevent color fading.',
     ],
   },
@@ -36,7 +36,7 @@ const careCategories = [
     icon: Shirt,
     title: 'Storage',
     tips: [
-      'Store on broad, padded hangers — never fold structured pieces.',
+      'Store on broad, padded hangers - never fold structured pieces.',
       'Keep in a breathable garment bag, not plastic.',
       'Allow space between garments for air circulation.',
     ],

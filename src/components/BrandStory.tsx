@@ -16,7 +16,7 @@ const BrandStory = () => {
             <div className="aspect-[4/5] overflow-hidden">
               <img
                 src={bannerFounder}
-                alt="DORI founder in colorful jacket — editorial portrait"
+                alt="DORI founder in colorful jacket - editorial portrait"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
@@ -42,7 +42,7 @@ const BrandStory = () => {
                 DORI is built on a simple belief: clothing should serve you, not compete with you. Our structured outerwear is designed for people who understand that real presence doesn't require volume.
               </p>
               <p>
-                Every piece features reversible construction, contrast panels, and finishes that reward a closer look — details that speak to those who notice them.
+                Every piece features reversible construction, contrast panels, and finishes that reward a closer look - details that speak to those who notice them.
               </p>
               <p>
                 Intentional design. Quiet confidence. Built to move with you.

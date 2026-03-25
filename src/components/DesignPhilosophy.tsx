@@ -9,7 +9,7 @@ const principles = [
   },
   {
     title: 'Reversible by default',
-    body: 'Most of our outerwear is reversible — not as a gimmick, but as a design principle. Two considered looks from one garment. Less waste, more versatility.',
+    body: 'Most of our outerwear is reversible - not as a gimmick, but as a design principle. Two considered looks from one garment. Less waste, more versatility.',
   },
   {
     title: 'Structure that moves',
@@ -17,7 +17,7 @@ const principles = [
   },
   {
     title: 'Details for the wearer',
-    body: "Contrast stitching on the inside. Hidden pockets. Fabric that feels different depending on which side you wear. These aren't marketing points — they're personal discoveries.",
+    body: "Contrast stitching on the inside. Hidden pockets. Fabric that feels different depending on which side you wear. These aren't marketing points - they're personal discoveries.",
   },
 ];
 

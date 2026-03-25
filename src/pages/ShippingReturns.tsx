@@ -33,7 +33,7 @@ const ShippingReturns = () => {
           >
             <h1 className="text-4xl md:text-5xl font-normal mb-4">Shipping & Returns</h1>
             <p className="text-sm text-muted-foreground font-light max-w-md mx-auto leading-relaxed">
-              We want every DORI experience to feel effortless — from order to unboxing.
+              We want every DORI experience to feel effortless - from order to unboxing.
             </p>
           </motion.div>
         </section>
@@ -121,7 +121,7 @@ const ShippingReturns = () => {
               <Shield className="h-8 w-8 mx-auto mb-5 text-muted-foreground" strokeWidth={1} />
               <h3 className="text-xl font-normal mb-3">Quality Guarantee</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-md mx-auto">
-                Every DORI piece is inspected for quality before shipping. If you receive a defective item, we'll replace it at no cost — no questions asked.
+                Every DORI piece is inspected for quality before shipping. If you receive a defective item, we'll replace it at no cost - no questions asked.
               </p>
             </motion.div>
           </div>

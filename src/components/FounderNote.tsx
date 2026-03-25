@@ -37,17 +37,17 @@ const FounderNote = () => {
             </h2>
             <div className="space-y-4 md:space-y-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                Growing up, I watched my father get dressed every morning with the same quiet ritual — a pressed shirt, a well-cut blazer, shoes polished the night before. He never followed trends. He wore what worked. And somehow, he always looked right.
+                Growing up, I watched my father get dressed every morning with the same quiet ritual - a pressed shirt, a well-cut blazer, shoes polished the night before. He never followed trends. He wore what worked. And somehow, he always looked right.
               </p>
               <p>
-                That stayed with me. When I started designing, I wasn't trying to reinvent anything. I just wanted to make pieces that earned their place in someone's wardrobe the way my father's blazer earned its place in his — through use, through wear, through becoming part of who you are.
+                That stayed with me. When I started designing, I wasn't trying to reinvent anything. I just wanted to make pieces that earned their place in someone's wardrobe the way my father's blazer earned its place in his - through use, through wear, through becoming part of who you are.
               </p>
               <p>
                 DORI isn't about making a statement. It's about making clothes that let you make yours.
               </p>
             </div>
             <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-gold/20">
-              <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-gold/60">— The Founder, DORI</p>
+              <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-gold/60">- The Founder, DORI</p>
             </div>
           </motion.div>
         </div>

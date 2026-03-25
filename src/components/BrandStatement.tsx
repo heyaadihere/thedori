@@ -18,7 +18,7 @@ const BrandStatement = () => {
           "Good design doesn't shout.<br />It works."
         </blockquote>
         <p className="mt-8 md:mt-10 text-sm md:text-base text-muted-foreground max-w-lg mx-auto leading-relaxed font-light">
-          Every DORI piece is built on restraint — intentional cuts, reversible construction, and finishes that feel as good on the inside as they look on the outside.
+          Every DORI piece is built on restraint - intentional cuts, reversible construction, and finishes that feel as good on the inside as they look on the outside.
         </p>
         <div className="luxury-divider w-16 mx-auto mt-8 md:mt-12" />
       </motion.div>

@@ -12,7 +12,7 @@ const AboutProductBanner = () => {
       >
         <img
           src={bannerEditorial}
-          alt="DORI brown blazer styled on velvet with gold accessories — editorial product shot"
+          alt="DORI brown blazer styled on velvet with gold accessories - editorial product shot"
           className="w-full h-full object-cover object-center"
         />
       </motion.div>

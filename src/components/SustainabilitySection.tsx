@@ -12,7 +12,7 @@ const pillars = [
     icon: Recycle,
     title: 'Zero Waste',
     stat: '0kg',
-    description: 'of fabric waste — all off-cuts are repurposed or donated',
+    description: 'of fabric waste - all off-cuts are repurposed or donated',
   },
   {
     icon: Droplets,
@@ -42,7 +42,7 @@ const SustainabilitySection = () => {
           <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Our Commitment</p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">Fashion with conscience</h2>
           <p className="text-sm md:text-base text-primary-foreground/50 font-light max-w-lg mx-auto leading-relaxed">
-            We believe beautiful design and environmental responsibility aren't opposites — they're inseparable.
+            We believe beautiful design and environmental responsibility aren't opposites - they're inseparable.
           </p>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>

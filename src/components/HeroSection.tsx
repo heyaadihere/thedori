@@ -30,7 +30,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/60 mb-4 md:mb-6"
           >
-            New Collection — SS26
+            New Collection - SS26
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -46,7 +46,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-sm md:text-base text-white/70 mb-8 md:mb-10 max-w-sm font-light leading-relaxed"
           >
-            Structured outerwear designed with intention — clean lines, contrast panels, and a silhouette that holds presence.
+            Structured outerwear designed with intention - clean lines, contrast panels, and a silhouette that holds presence.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -7,7 +7,7 @@ const CraftsmanshipSection = () => {
       <div className="relative h-[50vh] md:h-[60vh] lg:h-[70vh]">
         <img
           src={bannerCollection}
-          alt="DORI collection flatlay — blazer, waistcoat, jacket with gold accessories"
+          alt="DORI collection flatlay - blazer, waistcoat, jacket with gold accessories"
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -30,7 +30,7 @@ const CraftsmanshipSection = () => {
                 Made by hand.<br />Worn with purpose.
               </h2>
               <p className="text-sm md:text-base text-white/60 font-light leading-relaxed max-w-md">
-                Every stitch, every panel, every finish — considered. Our atelier works with the finest fabrics to create pieces that last beyond seasons.
+                Every stitch, every panel, every finish - considered. Our atelier works with the finest fabrics to create pieces that last beyond seasons.
               </p>
             </div>
           </div>

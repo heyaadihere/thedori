@@ -4,7 +4,7 @@ const values = [
   {
     number: '01',
     title: 'Intentional Design',
-    description: "Every detail serves a purpose. No excess, no filler — just design that works harder so you don't have to think about it.",
+    description: "Every detail serves a purpose. No excess, no filler - just design that works harder so you don't have to think about it.",
   },
   {
     number: '02',
@@ -14,7 +14,7 @@ const values = [
   {
     number: '03',
     title: 'Premium Materials',
-    description: 'We source fabrics that age with grace — getting softer, richer, and more personal with every wear.',
+    description: 'We source fabrics that age with grace - getting softer, richer, and more personal with every wear.',
   },
   {
     number: '04',
