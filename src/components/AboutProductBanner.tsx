@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bannerFounder from '@/assets/banner-founder.jpg';
+import bannerEditorial from '@/assets/banner-editorial.jpg';
 
 const AboutProductBanner = () => {
   return (
@@ -11,9 +11,9 @@ const AboutProductBanner = () => {
         className="absolute inset-0"
       >
         <img
-          src={bannerFounder}
-          alt="DORI founder wearing the signature colorful jacket in an editorial setting"
-          className="w-full h-full object-cover object-top"
+          src={bannerEditorial}
+          alt="DORI brown blazer styled on velvet with gold accessories — editorial product shot"
+          className="w-full h-full object-cover object-center"
         />
       </motion.div>
 
