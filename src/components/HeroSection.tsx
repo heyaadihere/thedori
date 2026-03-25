@@ -67,7 +67,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border-foreground text-foreground hover:bg-foreground hover:text-background"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border-black text-black hover:bg-black hover:text-white"
               >
                 Our Story
               </Button>
