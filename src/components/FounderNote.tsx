@@ -5,7 +5,7 @@ const FounderNote = () => {
   return (
     <section className="py-24 lg:py-36 px-6 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-5 gap-12 lg:gap-20 items-center">
+        <div className="grid md:grid-cols-5 gap-12 lg:gap-20 items-start">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
