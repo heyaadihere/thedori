@@ -1,60 +1,120 @@
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
+import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
+import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
+import productWaistcoat from '@/assets/product-waistcoat.jpg';
+import atelierImage from '@/assets/atelier.jpg';
+import bannerCollection from '@/assets/banner-collection.jpg';
 
 const milestones = [
-  { year: '2021', title: 'The Idea', description: 'DORI was conceived in a small Mumbai studio — a response to fast fashion\'s noise.' },
-  { year: '2022', title: 'First Collection', description: 'Our debut collection of 8 reversible blazers sold out within 3 weeks.' },
-  { year: '2023', title: 'The Atelier', description: 'We opened our dedicated atelier, bringing together 12 skilled artisans under one roof.' },
-  { year: '2024', title: 'Going Global', description: 'DORI expanded to international markets, shipping to 15 countries across Asia and Europe.' },
-  { year: '2025', title: 'Sustainable Pledge', description: 'We achieved carbon-neutral production and committed to zero-waste pattern cutting.' },
-  { year: '2026', title: 'SS26 Collection', description: 'Our most ambitious collection yet — 24 pieces that redefine structured outerwear.' },
+  { year: '2021', title: 'The Idea', description: 'DORI was conceived in a small Mumbai studio — a response to fast fashion\'s noise.', image: atelierImage },
+  { year: '2022', title: 'First Collection', description: 'Our debut collection of 8 reversible blazers sold out within 3 weeks.', image: productBlueBlazer },
+  { year: '2023', title: 'The Atelier', description: 'We opened our dedicated atelier, bringing together 12 skilled artisans under one roof.', image: productBrownBlazer },
+  { year: '2024', title: 'Going Global', description: 'DORI expanded to international markets, shipping to 15 countries across Asia and Europe.', image: productColorfulJacket },
+  { year: '2025', title: 'Sustainable Pledge', description: 'We achieved carbon-neutral production and committed to zero-waste pattern cutting.', image: productWaistcoat },
+  { year: '2026', title: 'SS26 Collection', description: 'Our most ambitious collection yet — 24 pieces that redefine structured outerwear.', image: bannerCollection },
 ];
 
-const TimelineSection = () => {
+const TimelineItem = ({ m, i }: { m: typeof milestones[0]; i: number }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'center center'],
+  });
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.2, 1, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.92, 1, 1]);
+  const imageX = useTransform(scrollYProgress, [0, 1], [i % 2 === 0 ? -30 : 30, 0]);
+
   return (
-    <section className="py-24 lg:py-32 px-6 bg-background">
-      <div className="container mx-auto max-w-4xl">
+    <motion.div
+      ref={ref}
+      style={{ opacity, scale }}
+      className="relative grid md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-10 items-center py-8 md:py-0"
+    >
+      {/* Left side */}
+      <div className={`${i % 2 === 0 ? 'md:text-right' : 'md:order-3'}`}>
+        {i % 2 === 0 ? (
+          <div>
+            <span className="text-6xl md:text-7xl font-serif text-gold/30 block mb-2 leading-none">{m.year}</span>
+            <h3 className="text-xl font-serif font-medium mb-2">{m.title}</h3>
+            <p className="text-sm text-muted-foreground font-light leading-relaxed">{m.description}</p>
+          </div>
+        ) : (
+          <motion.div style={{ x: imageX }} className="luxury-frame">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src={m.image} alt={m.title} className="w-full h-full object-cover" loading="lazy" />
+            </div>
+          </motion.div>
+        )}
+      </div>
+
+      {/* Center dot + line */}
+      <div className="hidden md:flex flex-col items-center relative">
+        <motion.div
+          initial={{ scale: 0, rotate: 45 }}
+          whileInView={{ scale: 1, rotate: 45 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2, type: 'spring' }}
+          className="w-4 h-4 border-2 border-gold bg-background relative z-10"
+        />
+      </div>
+
+      {/* Right side */}
+      <div className={`${i % 2 === 0 ? 'md:order-3' : ''}`}>
+        {i % 2 === 0 ? (
+          <motion.div style={{ x: imageX }} className="luxury-frame">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img src={m.image} alt={m.title} className="w-full h-full object-cover" loading="lazy" />
+            </div>
+          </motion.div>
+        ) : (
+          <div>
+            <span className="text-6xl md:text-7xl font-serif text-gold/30 block mb-2 leading-none">{m.year}</span>
+            <h3 className="text-xl font-serif font-medium mb-2">{m.title}</h3>
+            <p className="text-sm text-muted-foreground font-light leading-relaxed">{m.description}</p>
+          </div>
+        )}
+      </div>
+    </motion.div>
+  );
+};
+
+const TimelineSection = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start end', 'end start'],
+  });
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
+
+  return (
+    <section ref={containerRef} className="py-28 lg:py-40 px-6 bg-primary text-primary-foreground overflow-hidden">
+      <div className="container mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-24"
         >
-          <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">Our Journey</p>
-          <h2 className="text-3xl md:text-4xl font-normal">Built over time</h2>
+          <p className="text-xs tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Our Journey</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium">Built Over Time</h2>
+          <div className="luxury-divider w-24 mx-auto mt-8" />
         </motion.div>
 
         <div className="relative">
-          {/* Center line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border -translate-x-1/2 hidden md:block" />
+          {/* Animated center line */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-primary-foreground/10 -translate-x-1/2 hidden md:block">
+            <motion.div
+              style={{ height: lineHeight }}
+              className="w-full bg-gradient-to-b from-gold/60 via-gold/40 to-transparent"
+            />
+          </div>
 
-          <div className="space-y-12 md:space-y-0">
+          <div className="space-y-10 md:space-y-0">
             {milestones.map((m, i) => (
-              <motion.div
-                key={m.year}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.6, delay: i * 0.05 }}
-                className={`md:flex items-center md:py-10 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
-              >
-                <div className={`md:w-1/2 ${i % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                  <span className="text-4xl font-serif text-border block mb-2">{m.year}</span>
-                  <h3 className="text-lg font-medium mb-2">{m.title}</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">{m.description}</p>
-                </div>
-                {/* Dot */}
-                <div className="hidden md:flex items-center justify-center">
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.2 }}
-                    className="w-3 h-3 rounded-full bg-foreground border-4 border-background relative z-10"
-                  />
-                </div>
-                <div className="md:w-1/2" />
-              </motion.div>
+              <TimelineItem key={m.year} m={m} i={i} />
             ))}
           </div>
         </div>

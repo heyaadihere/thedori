@@ -7,6 +7,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
 import ProductGrid from '@/components/ProductGrid';
+import bannerCollection from '@/assets/banner-collection.jpg';
 
 const categories = ['All', 'Blazers', 'Jackets', 'Waistcoats'];
 const sortOptions = ['Newest', 'Price: Low to High', 'Price: High to Low', 'Best Sellers'];
@@ -22,18 +23,24 @@ const Collections = () => {
       <AnnouncementBar />
       <Header />
       <main>
-        {/* Hero */}
-        <section className="py-16 lg:py-24 px-6 text-center border-b border-border">
+        {/* Hero with product banner */}
+        <section className="relative h-[40vh] lg:h-[50vh] overflow-hidden">
+          <img src={bannerCollection} alt="DORI collection" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="absolute inset-0 flex items-end pb-12 lg:pb-16"
           >
-            <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">The Collection</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-4">Shop all</h1>
-            <p className="text-sm text-muted-foreground font-light max-w-md mx-auto leading-relaxed">
-              Structured outerwear designed with intention. Every piece, built to last.
-            </p>
+            <div className="container mx-auto max-w-7xl px-6 text-center">
+              <div className="luxury-divider w-16 mx-auto mb-6" />
+              <p className="text-xs tracking-[0.5em] uppercase text-white/50 mb-4">The Collection</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 font-serif">Shop All</h1>
+              <p className="text-sm text-white/60 font-light max-w-md mx-auto leading-relaxed">
+                Structured outerwear designed with intention. Every piece, built to last.
+              </p>
+            </div>
           </motion.div>
         </section>
 
@@ -41,7 +48,6 @@ const Collections = () => {
         <section className="sticky top-[96px] lg:top-[112px] z-30 bg-background/95 backdrop-blur-sm border-b border-border">
           <div className="container mx-auto max-w-7xl px-6">
             <div className="flex items-center justify-between h-14">
-              {/* Categories */}
               <div className="hidden md:flex items-center gap-6">
                 {categories.map((cat) => (
                   <button
@@ -56,7 +62,6 @@ const Collections = () => {
                 ))}
               </div>
 
-              {/* Mobile filter toggle */}
               <Button
                 variant="ghost"
                 size="sm"
@@ -67,7 +72,6 @@ const Collections = () => {
                 Filter
               </Button>
 
-              {/* Sort & View */}
               <div className="flex items-center gap-4">
                 <select
                   value={activeSort}
@@ -100,7 +104,6 @@ const Collections = () => {
             </div>
           </div>
 
-          {/* Mobile filter panel */}
           <AnimatePresence>
             {showFilters && (
               <motion.div

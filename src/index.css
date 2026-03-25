@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -48,6 +48,8 @@
     --stone: 35 12% 78%;
     --warm-beige: 38 30% 92%;
     --cream: 40 33% 97%;
+    --gold: 38 65% 50%;
+    --gold-light: 40 55% 70%;
   }
 
   .dark {
@@ -91,6 +93,8 @@
     --stone: 30 8% 30%;
     --warm-beige: 35 12% 16%;
     --cream: 30 10% 12%;
+    --gold: 38 65% 50%;
+    --gold-light: 40 55% 40%;
   }
 }
 
@@ -105,6 +109,40 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
   }
+}
+
+/* Luxury gold accent line */
+.luxury-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
+}
+
+/* Luxury image frame */
+.luxury-frame {
+  position: relative;
+  border: 1px solid hsl(var(--gold-light) / 0.4);
+  padding: 6px;
+}
+
+.luxury-frame::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid hsl(var(--gold-light) / 0.2);
+  pointer-events: none;
+}
+
+/* Subtle shimmer for gold accents */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, hsl(var(--gold-light) / 0.3), hsl(var(--gold) / 0.6), hsl(var(--gold-light) / 0.3));
+  background-size: 200% auto;
+  animation: shimmer 8s linear infinite;
 }

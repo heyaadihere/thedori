@@ -35,8 +35,9 @@ const ProcessSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">The Process</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal">From thread to finish</h2>
+          <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">The Process</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">From thread to finish</h2>
+          <div className="luxury-divider w-20 mx-auto mt-6" />
         </motion.div>
 
         <div className="space-y-24 lg:space-y-32">
@@ -57,9 +58,11 @@ const ProcessSection = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1.2 }}
-                  className="aspect-square overflow-hidden"
+                  className="luxury-frame"
                 >
-                  <img src={step.image} alt={step.title} className="w-full h-full object-cover" loading="lazy" />
+                  <div className="aspect-square overflow-hidden">
+                    <img src={step.image} alt={step.title} className="w-full h-full object-cover" loading="lazy" />
+                  </div>
                 </motion.div>
               </div>
               <div className={i % 2 === 1 ? 'md:order-1' : ''}>
@@ -68,11 +71,11 @@ const ProcessSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="text-6xl lg:text-7xl font-serif text-border/80 block mb-4"
+                  className="text-6xl lg:text-7xl font-serif text-gold/25 block mb-4"
                 >
                   {step.number}
                 </motion.span>
-                <h3 className="text-2xl md:text-3xl font-normal mb-4">{step.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-medium mb-4 font-serif">{step.title}</h3>
                 <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-sm">
                   {step.description}
                 </p>

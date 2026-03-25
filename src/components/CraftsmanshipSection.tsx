@@ -11,7 +11,7 @@ const CraftsmanshipSection = () => {
           className="w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -22,13 +22,14 @@ const CraftsmanshipSection = () => {
         >
           <div className="container mx-auto max-w-6xl">
             <div className="max-w-lg">
-              <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/70 mb-4">
+              <div className="luxury-divider w-12 mb-6" />
+              <p className="text-xs tracking-[0.5em] uppercase text-white/50 mb-4">
                 Craftsmanship
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal leading-[1.2] text-primary-foreground mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] text-white mb-4">
                 Made by hand.<br />Worn with purpose.
               </h2>
-              <p className="text-sm text-primary-foreground/70 font-light leading-relaxed max-w-md">
+              <p className="text-sm text-white/60 font-light leading-relaxed max-w-md">
                 Every stitch, every panel, every finish — considered. Our atelier works with the finest fabrics to create pieces that last beyond seasons.
               </p>
             </div>

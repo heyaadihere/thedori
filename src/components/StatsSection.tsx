@@ -33,11 +33,11 @@ function AnimatedNumber({ value, suffix, displayValue }: { value: number; suffix
   }, [inView, value, displayValue]);
 
   if (displayValue) {
-    return <span ref={ref} className="text-4xl md:text-5xl lg:text-6xl font-serif font-normal">{displayValue}</span>;
+    return <span ref={ref} className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium">{displayValue}</span>;
   }
 
   return (
-    <span ref={ref} className="text-4xl md:text-5xl lg:text-6xl font-serif font-normal">
+    <span ref={ref} className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium">
       {display}{suffix}
     </span>
   );
@@ -45,7 +45,7 @@ function AnimatedNumber({ value, suffix, displayValue }: { value: number; suffix
 
 const StatsSection = () => {
   return (
-    <section className="py-20 lg:py-28 px-6 border-y border-border bg-secondary/30">
+    <section className="py-24 lg:py-32 px-6 border-y border-gold/20 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-8">
           {stats.map((stat, i) => (
@@ -58,6 +58,7 @@ const StatsSection = () => {
               className="text-center"
             >
               <AnimatedNumber value={stat.value} suffix={stat.suffix} displayValue={stat.displayValue} />
+              <div className="luxury-divider w-8 mx-auto mt-4 mb-3" />
               <p className="text-xs text-muted-foreground font-light mt-3 leading-relaxed max-w-[180px] mx-auto">
                 {stat.label}
               </p>
