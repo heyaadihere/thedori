@@ -47,7 +47,7 @@ const FounderNote = () => {
               </p>
             </div>
             <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-gold/20">
-              <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-gold/60">— The Founder, DORI</p>
+              <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-gold/60">- The Founder, DORI</p>
             </div>
           </motion.div>
         </div>
