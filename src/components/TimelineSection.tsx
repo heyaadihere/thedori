@@ -30,15 +30,15 @@ const TimelineItem = ({ m, i }: { m: typeof milestones[0]; i: number }) => {
     <motion.div
       ref={ref}
       style={{ opacity, scale }}
-      className="relative grid md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-10 items-center py-8 md:py-0"
+      className="relative grid md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 lg:gap-10 items-center py-6 md:py-8 lg:py-0"
     >
       {/* Left side */}
       <div className={`${i % 2 === 0 ? 'md:text-right' : 'md:order-3'}`}>
         {i % 2 === 0 ? (
           <div>
-            <span className="text-6xl md:text-7xl font-serif text-gold/30 block mb-2 leading-none">{m.year}</span>
-            <h3 className="text-xl font-serif font-medium mb-2">{m.title}</h3>
-            <p className="text-sm text-muted-foreground font-light leading-relaxed">{m.description}</p>
+            <span className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gold/30 block mb-2 leading-none">{m.year}</span>
+            <h3 className="text-lg md:text-xl font-serif font-medium mb-2">{m.title}</h3>
+            <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed">{m.description}</p>
           </div>
         ) : (
           <motion.div style={{ x: imageX }} className="luxury-frame">
@@ -70,9 +70,9 @@ const TimelineItem = ({ m, i }: { m: typeof milestones[0]; i: number }) => {
           </motion.div>
         ) : (
           <div>
-            <span className="text-6xl md:text-7xl font-serif text-gold/30 block mb-2 leading-none">{m.year}</span>
-            <h3 className="text-xl font-serif font-medium mb-2">{m.title}</h3>
-            <p className="text-sm text-muted-foreground font-light leading-relaxed">{m.description}</p>
+            <span className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gold/30 block mb-2 leading-none">{m.year}</span>
+            <h3 className="text-lg md:text-xl font-serif font-medium mb-2">{m.title}</h3>
+            <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed">{m.description}</p>
           </div>
         )}
       </div>
@@ -89,18 +89,18 @@ const TimelineSection = () => {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
   return (
-    <section ref={containerRef} className="py-28 lg:py-40 px-6 bg-primary text-primary-foreground overflow-hidden">
+    <section ref={containerRef} className="py-20 md:py-28 lg:py-40 px-4 md:px-6 bg-primary text-primary-foreground overflow-hidden">
       <div className="container mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-24"
+          className="text-center mb-14 md:mb-24"
         >
-          <p className="text-xs tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Our Journey</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium">Built Over Time</h2>
-          <div className="luxury-divider w-24 mx-auto mt-8" />
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Our Journey</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-serif">Built Over Time</h2>
+          <div className="luxury-divider w-20 md:w-24 mx-auto mt-6 md:mt-8" />
         </motion.div>
 
         <div className="relative">
@@ -112,7 +112,7 @@ const TimelineSection = () => {
             />
           </div>
 
-          <div className="space-y-10 md:space-y-0">
+          <div className="space-y-6 md:space-y-0">
             {milestones.map((m, i) => (
               <TimelineItem key={m.year} m={m} i={i} />
             ))}

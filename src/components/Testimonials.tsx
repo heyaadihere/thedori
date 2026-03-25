@@ -35,24 +35,24 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="relative py-28 lg:py-36 overflow-hidden">
+    <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <img src={bannerWaistcoat} alt="" className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-black/85" />
       </div>
 
-      <div className="relative z-10 container mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-10 container mx-auto max-w-4xl px-4 md:px-6 text-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-xs tracking-[0.5em] uppercase text-white/40 mb-4">What They Say</p>
-          <div className="luxury-divider w-16 mx-auto mb-12" />
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/40 mb-4">What They Say</p>
+          <div className="luxury-divider w-16 mx-auto mb-8 md:mb-12" />
         </motion.div>
 
-        <div className="min-h-[200px] flex items-center justify-center">
+        <div className="min-h-[180px] md:min-h-[200px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={current}
@@ -62,15 +62,15 @@ const Testimonials = () => {
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <div className="flex justify-center gap-1.5 mb-8">
+              <div className="flex justify-center gap-1.5 mb-6 md:mb-8">
                 {Array.from({ length: testimonials[current].rating }).map((_, i) => (
-                  <Star key={i} className="h-3.5 w-3.5 fill-gold text-gold" />
+                  <Star key={i} className="h-3.5 w-3.5 md:h-4 md:w-4 fill-gold text-gold" />
                 ))}
               </div>
-              <blockquote className="text-lg md:text-xl lg:text-2xl font-light text-white leading-relaxed mb-8 max-w-2xl mx-auto italic font-serif">
+              <blockquote className="text-base md:text-lg lg:text-xl xl:text-2xl font-light text-white leading-relaxed mb-6 md:mb-8 max-w-2xl mx-auto italic font-serif">
                 "{testimonials[current].quote}"
               </blockquote>
-              <p className="text-xs tracking-[0.3em] uppercase text-white/50">
+              <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-white/50">
                 {testimonials[current].author} — {testimonials[current].location}
               </p>
             </motion.div>
@@ -78,7 +78,7 @@ const Testimonials = () => {
         </div>
 
         {/* Dots */}
-        <div className="flex justify-center gap-3 mt-12">
+        <div className="flex justify-center gap-3 mt-8 md:mt-12">
           {testimonials.map((_, i) => (
             <button
               key={i}

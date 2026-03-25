@@ -5,20 +5,20 @@ import process3 from '@/assets/process-3.jpg';
 
 const AboutProcessGallery = () => {
   return (
-    <section className="py-20 lg:py-28 px-6 bg-secondary/30">
+    <section className="py-14 md:py-20 lg:py-28 px-4 md:px-6 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-10 md:mb-14"
         >
-          <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">Behind the Seams</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium font-serif">The making of DORI</h2>
-          <div className="luxury-divider w-20 mx-auto mt-6" />
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Behind the Seams</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">The making of DORI</h2>
+          <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[process1, process2, process3].map((img, i) => (
             <motion.div
               key={i}

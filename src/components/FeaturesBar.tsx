@@ -26,9 +26,9 @@ const features = [
 
 const FeaturesBar = () => {
   return (
-    <section className="py-14 px-6 border-y border-gold/15 bg-background">
+    <section className="py-10 md:py-14 px-4 md:px-6 border-y border-gold/15 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
@@ -39,8 +39,8 @@ const FeaturesBar = () => {
               className="text-center"
             >
               <feature.icon className="h-5 w-5 mx-auto mb-3 text-gold/60" strokeWidth={1.5} />
-              <h3 className="text-xs font-medium tracking-wider uppercase mb-1">{feature.title}</h3>
-              <p className="text-[11px] text-muted-foreground font-light">{feature.description}</p>
+              <h3 className="text-xs md:text-sm font-medium tracking-wider uppercase mb-1">{feature.title}</h3>
+              <p className="text-xs md:text-sm text-muted-foreground font-light">{feature.description}</p>
             </motion.div>
           ))}
         </div>
