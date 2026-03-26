@@ -6,20 +6,20 @@ import process3 from '@/assets/process-3.jpg';
 const steps = [
   {
     number: '01',
-    title: 'Design & Pattern',
-    description: 'Every piece begins with a hand-drawn sketch and precision pattern - balancing structure with fluidity.',
+    title: 'Pattern',
+    description: 'Each piece starts as a sketch. We draft patterns that balance structure with natural movement.',
     image: process1,
   },
   {
     number: '02',
-    title: 'Cut & Construct',
-    description: 'Our artisans cut each panel by hand, ensuring the grain of the fabric aligns perfectly with the silhouette.',
+    title: 'Cut',
+    description: 'Fabric is cut by hand, one panel at a time. The grain, the drape, the weight - all considered.',
     image: process2,
   },
   {
     number: '03',
-    title: 'Finish & Press',
-    description: 'The final press gives every DORI piece its signature crispness - sharp lines that hold their shape.',
+    title: 'Finish',
+    description: 'The final press. Clean seams, crisp edges, a silhouette that holds its own.',
     image: process3,
   },
 ];
@@ -35,8 +35,8 @@ const ProcessSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-20"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">The Process</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">From thread to finish</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">How It's Made</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">From sketch to shoulder</h2>
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 

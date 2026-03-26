@@ -32,20 +32,20 @@ const BrandStory = () => {
           >
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">
-              The DORI Approach
+              The DORI Way
             </p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] mb-6 md:mb-8 font-serif">
-              Designed for<br />the composed
+              Clothing that<br />serves you
             </h2>
             <div className="space-y-4 md:space-y-5 text-sm md:text-base text-muted-foreground leading-relaxed font-light">
               <p>
-                DORI is built on a simple belief: clothing should serve you, not compete with you. Our structured outerwear is designed for people who understand that real presence doesn't require volume.
+                DORI exists for a simple reason: your clothes should work as hard as you do. Not louder. Not flashier. Just better.
               </p>
               <p>
-                Every piece features reversible construction, contrast panels, and finishes that reward a closer look - details that speak to those who notice them.
+                Reversible construction, contrast panels, interiors that reward a closer look. These are choices, not gimmicks.
               </p>
               <p>
-                Intentional design. Quiet confidence. Built to move with you.
+                Designed with clarity. Built to last.
               </p>
             </div>
 

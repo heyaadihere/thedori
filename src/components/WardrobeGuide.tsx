@@ -5,22 +5,22 @@ import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
 
 const occasions = [
   {
-    title: 'The Boardroom',
+    title: 'The Meeting',
     image: productBlueBlazer,
-    description: 'Pair the Structured Blazer with tailored trousers and minimal accessories. Let the silhouette do the talking.',
-    tip: 'Pro tip: wear the contrast lining side on Fridays for a subtle shift.',
+    description: 'The Structured Blazer with tailored trousers. Let the cut speak.',
+    tip: 'Flip to the contrast side on Fridays for a subtle shift.',
   },
   {
     title: 'The Weekend',
     image: productColorfulJacket,
-    description: 'The Reversible Jacket over a plain tee and well-fitted denim. Effortless without looking like you tried.',
-    tip: 'Flip to the bold side for brunch. Flip back for evening drinks.',
+    description: 'The Reversible Jacket over a plain tee and good denim. Done.',
+    tip: 'Bold side for brunch, muted side for evening.',
   },
   {
     title: 'The Evening',
     image: productBrownBlazer,
-    description: 'The Heritage Blazer with a dark roll-neck and polished shoes. Classic enough for any room, distinctive enough to remember.',
-    tip: 'The hand-finished lapels catch candlelight beautifully.',
+    description: 'The Heritage Blazer with a dark roll-neck. Classic enough, distinctive enough.',
+    tip: 'Hand-finished lapels catch candlelight well.',
   },
 ];
 
@@ -35,10 +35,10 @@ const WardrobeGuide = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-20"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">Style Notes</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">How to wear DORI</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">Styling Notes</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Three settings, one wardrobe</h2>
           <p className="text-sm md:text-base text-muted-foreground font-light mt-4 max-w-lg mx-auto leading-relaxed">
-            Three occasions. Three approaches. One wardrobe that adapts.
+            The same pieces, styled differently. That's the point.
           </p>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>

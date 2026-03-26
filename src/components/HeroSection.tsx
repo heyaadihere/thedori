@@ -30,7 +30,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/60 mb-4 md:mb-6"
           >
-            New Collection - SS26
+            SS26 Collection
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -38,7 +38,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-5 md:mb-6 font-medium text-white font-serif"
           >
-            Made to<br />move with<br />you
+            Quiet pieces,<br />strong presence
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-sm md:text-base text-white/70 mb-8 md:mb-10 max-w-sm font-light leading-relaxed"
           >
-            Structured outerwear designed with intention - clean lines, contrast panels, and a silhouette that holds presence.
+            Structured outerwear for women who lead with intention, not volume.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -27,9 +27,9 @@ const EditorialBanner = () => {
         <div className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-12">
           <div className="max-w-md">
             <div className="luxury-divider w-10 mb-4 md:mb-6" />
-            <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/50 mb-3 md:mb-4">The Collection</p>
+            <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/50 mb-3 md:mb-4">The Edit</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-white leading-[1.2] mb-5 md:mb-6 font-serif">
-              Pieces that<br />outlast trends
+              Pieces that<br />stay relevant
             </h2>
             <Link to="/collections">
               <Button

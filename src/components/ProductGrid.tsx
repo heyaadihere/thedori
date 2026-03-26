@@ -62,9 +62,9 @@ const ProductGrid = () => {
           className="text-center mb-16"
         >
           <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-4">
-            The Collection
+            Current Edit
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">Our Pieces</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">The Collection</h2>
           <div className="luxury-divider w-20 mx-auto mt-6" />
         </motion.div>
 

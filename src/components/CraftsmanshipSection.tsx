@@ -24,13 +24,13 @@ const CraftsmanshipSection = () => {
             <div className="max-w-lg">
               <div className="luxury-divider w-12 mb-4 md:mb-6" />
               <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/50 mb-3 md:mb-4">
-                Craftsmanship
+                The Making
               </p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] text-white mb-3 md:mb-4 font-serif">
-                Made by hand.<br />Worn with purpose.
+                Built by hand,<br />worn with ease
               </h2>
               <p className="text-sm md:text-base text-white/60 font-light leading-relaxed max-w-md">
-                Every stitch, every panel, every finish - considered. Our atelier works with the finest fabrics to create pieces that last beyond seasons.
+                Every cut, every seam, every finish is deliberate. Our atelier works slowly so the final piece feels effortless.
               </p>
             </div>
           </div>

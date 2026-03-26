@@ -29,13 +29,13 @@ const Newsletter = () => {
       >
         <div className="luxury-divider w-16 mx-auto mb-6 md:mb-8" />
         <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4 md:mb-6">
-          Stay Connected
+          Stay in the loop
         </p>
         <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">
-          Join the DORI world
+          First to know
         </h2>
         <p className="text-sm md:text-base text-primary-foreground/50 font-light mb-8 md:mb-10 leading-relaxed">
-          Be the first to know about new collections, exclusive access, and stories from our atelier.
+          New drops, restocks, and stories from the atelier. No noise, just updates that matter.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <Input
