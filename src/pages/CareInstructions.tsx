@@ -59,7 +59,7 @@ const CareInstructions = () => {
             <Sparkles className="h-8 w-8 mx-auto mb-6 text-muted-foreground" strokeWidth={1} />
             <h1 className="text-4xl md:text-5xl font-normal mb-4">Care Instructions</h1>
             <p className="text-sm text-muted-foreground font-light max-w-lg mx-auto leading-relaxed">
-              Your DORI piece is designed to age beautifully. A little care goes a long way in preserving its structure and character.
+              A little care keeps your DORI piece looking and feeling its best for years.
             </p>
           </motion.div>
         </section>
@@ -101,9 +101,9 @@ const CareInstructions = () => {
             viewport={{ once: true }}
             className="container mx-auto max-w-3xl text-center p-12 bg-secondary/50 border border-border"
           >
-            <h3 className="text-xl font-normal mb-3">Need more help?</h3>
+            <h3 className="text-xl font-normal mb-3">Questions about care?</h3>
             <p className="text-sm text-muted-foreground font-light mb-6">
-              Our team is here to answer any care questions you might have.
+              Our team is happy to help with any specifics.
             </p>
             <a
               href="/contact"

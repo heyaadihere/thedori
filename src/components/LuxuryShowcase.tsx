@@ -16,19 +16,19 @@ const LuxuryShowcase = () => {
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">Signature Pieces</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif leading-[1.2] mb-5 md:mb-6">
-              Where craft<br />meets character
+              Craft you can<br />feel, not just see
             </h2>
             <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-6 md:mb-8 max-w-md">
-              Each garment tells a story of heritage craftsmanship meeting contemporary silhouettes. From our signature reversible blazers to precision-tailored waistcoats - every piece is an investment in enduring style.
+              From reversible blazers to precision-cut waistcoats, each piece is built to age well and wear better.
             </p>
             <div className="flex gap-8 md:gap-12">
               <div>
                 <span className="text-2xl md:text-3xl font-serif text-gold/60">24</span>
-                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Pieces per collection</p>
+                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Pieces this season</p>
               </div>
               <div>
                 <span className="text-2xl md:text-3xl font-serif text-gold/60">48hrs</span>
-                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Crafting time each</p>
+                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Per garment</p>
               </div>
             </div>
           </motion.div>

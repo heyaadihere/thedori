@@ -31,12 +31,12 @@ const AboutProductBanner = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="max-w-xl">
             <div className="luxury-divider w-14 mb-6" />
-            <p className="text-[10px] tracking-[0.6em] uppercase text-white/40 mb-4 font-light">The Story Behind the Stitch</p>
+            <p className="text-[10px] tracking-[0.6em] uppercase text-white/40 mb-4 font-light">Behind the Label</p>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white leading-[1.05] font-serif">
-              Worn, not<br />displayed
+              Made to be<br />lived in
             </h1>
             <p className="text-sm md:text-base text-white/45 font-light mt-6 max-w-md leading-relaxed">
-              Real clothes for real days. Designed in the studio, proven on the street.
+              Real clothes for real days. Designed in the studio, tested on the move.
             </p>
           </div>
         </div>

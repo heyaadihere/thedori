@@ -5,19 +5,19 @@ import bannerWaistcoat from '@/assets/banner-waistcoat.jpg';
 
 const testimonials = [
   {
-    quote: "The structured blazer became the anchor of my wardrobe overnight. Nothing else comes close to this level of quiet confidence.",
+    quote: "I put it on and stopped reaching for anything else. That's the whole review.",
     author: "Priya M.",
     location: "Mumbai",
     rating: 5,
   },
   {
-    quote: "I've never owned a piece that receives so many compliments without trying. The reversible construction is genius - two looks, zero compromise.",
+    quote: "Two sides, zero compromise. I travel lighter now because of this jacket.",
     author: "Ananya R.",
     location: "Delhi",
     rating: 5,
   },
   {
-    quote: "DORI understands that luxury isn't about logos. It's about how a piece makes you feel when you put it on. Impeccable craftsmanship.",
+    quote: "The kind of piece you notice because it fits, not because it's loud.",
     author: "Meera K.",
     location: "Bangalore",
     rating: 5,
@@ -48,7 +48,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/40 mb-4">What They Say</p>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/40 mb-4">In Their Words</p>
           <div className="luxury-divider w-16 mx-auto mb-8 md:mb-12" />
         </motion.div>
 

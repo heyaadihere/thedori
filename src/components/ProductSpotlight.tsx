@@ -11,28 +11,28 @@ const spotlights = [
     image: productBlueBlazer,
     name: 'The Structured Blazer',
     tagline: 'Signature',
-    description: 'Our most requested piece. A sharp, structured blazer that holds its shape from morning meetings to evening dinners. Fully reversible with contrast lining.',
+    description: 'Clean shoulders, defined waist, fully reversible. The piece that started it all.',
     price: '₹8,900',
   },
   {
     image: productBrownBlazer,
     name: 'The Heritage Blazer',
     tagline: 'Timeless',
-    description: 'Warm-toned wool blend with hand-finished lapels. This is the blazer your grandfather would have owned - if his tailor had better fabric sources.',
+    description: 'Warm-toned wool blend with hand-finished lapels. A quiet authority.',
     price: '₹9,400',
   },
   {
     image: productColorfulJacket,
     name: 'The Reversible Jacket',
     tagline: 'Versatile',
-    description: 'Bold on one side, neutral on the other. Our reversible jacket gives you two distinct looks in one garment. Designed for people who pack light and dress well.',
+    description: 'Two distinct looks in one garment. Bold on one side, understated on the other.',
     price: '₹7,800',
   },
   {
     image: productWaistcoat,
     name: 'The Tailored Waistcoat',
     tagline: 'Essential',
-    description: 'A modern waistcoat cut slightly longer than tradition dictates. Layers effortlessly under a blazer or stands alone over a crisp shirt.',
+    description: 'Cut slightly longer than tradition. Layers under a blazer or stands alone.',
     price: '₹5,600',
   },
 ];
@@ -48,7 +48,7 @@ const ProductSpotlight = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-20"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">The Edit</p>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">Closer Look</p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Pieces worth knowing</h2>
           <div className="luxury-divider w-20 mx-auto mt-6" />
         </motion.div>

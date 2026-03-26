@@ -4,22 +4,22 @@ const values = [
   {
     number: '01',
     title: 'Intentional Design',
-    description: "Every detail serves a purpose. No excess, no filler - just design that works harder so you don't have to think about it.",
+    description: 'Every detail has a reason. We edit until only the essential remains.',
   },
   {
     number: '02',
     title: 'Reversible Construction',
-    description: 'Two looks in one piece. Our reversible construction means your wardrobe doubles without the footprint.',
+    description: 'Two looks from one piece. Your wardrobe doubles without the excess.',
   },
   {
     number: '03',
-    title: 'Premium Materials',
-    description: 'We source fabrics that age with grace - getting softer, richer, and more personal with every wear.',
+    title: 'Considered Materials',
+    description: 'We source fabrics that improve with wear, getting softer and more personal over time.',
   },
   {
     number: '04',
     title: 'Structured Silhouettes',
-    description: 'Our tailoring holds its shape so you can hold yours. Clean lines that command attention without demanding it.',
+    description: 'Tailoring that holds its shape so you can hold yours. Clean, commanding, comfortable.',
   },
 ];
 

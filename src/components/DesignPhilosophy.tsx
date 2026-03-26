@@ -5,19 +5,19 @@ import productWaistcoat from '@/assets/product-waistcoat.jpg';
 const principles = [
   {
     title: 'Less, but better',
-    body: "We'd rather make four exceptional pieces a season than forty forgettable ones. Every collection is edited down until only the essential remains.",
+    body: 'We make fewer pieces per season and edit until only the essential remains. Quality over quantity, always.',
   },
   {
-    title: 'Reversible by default',
-    body: 'Most of our outerwear is reversible - not as a gimmick, but as a design principle. Two considered looks from one garment. Less waste, more versatility.',
+    title: 'Reversible by design',
+    body: 'Not a gimmick. A design principle. Two considered looks from one garment. Less waste, more versatility.',
   },
   {
     title: 'Structure that moves',
-    body: "Our tailoring walks a line between sharp and comfortable. We build structure into the shoulder and chest, but leave enough give for you to actually live in it.",
+    body: 'We build structure into the shoulder and chest, but leave enough give for you to actually live in it.',
   },
   {
     title: 'Details for the wearer',
-    body: "Contrast stitching on the inside. Hidden pockets. Fabric that feels different depending on which side you wear. These aren't marketing points - they're personal discoveries.",
+    body: 'Contrast stitching on the inside. Hidden pockets. Fabric that feels different depending on which side you wear. Personal discoveries, not marketing points.',
   },
 ];
 
@@ -32,8 +32,8 @@ const DesignPhilosophy = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-20"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Design Language</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">How we think about clothes</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Our Approach</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">How we design</h2>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>
 

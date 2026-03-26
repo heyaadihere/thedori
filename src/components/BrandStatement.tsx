@@ -12,13 +12,13 @@ const BrandStatement = () => {
       >
         <div className="luxury-divider w-16 mx-auto mb-8 md:mb-12" />
         <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-8 md:mb-10">
-          Our Philosophy
+          The DORI Ethos
         </p>
         <blockquote className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[1.3] font-light italic text-foreground font-serif">
-          "Good design doesn't shout.<br />It works."
+          "The right piece doesn't<br />ask for attention.<br />It earns it."
         </blockquote>
         <p className="mt-8 md:mt-10 text-sm md:text-base text-muted-foreground max-w-lg mx-auto leading-relaxed font-light">
-          Every DORI piece is built on restraint - intentional cuts, reversible construction, and finishes that feel as good on the inside as they look on the outside.
+          We design for the pause before a compliment. For the second glance. For women who dress with clarity.
         </p>
         <div className="luxury-divider w-16 mx-auto mt-8 md:mt-12" />
       </motion.div>

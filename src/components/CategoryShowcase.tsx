@@ -7,19 +7,19 @@ import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
 const categories = [
   {
     title: 'Blazers',
-    description: 'Structured elegance for every occasion',
+    description: 'Sharp lines, soft movement',
     image: productBlueBlazer,
     href: '/collections',
   },
   {
     title: 'Waistcoats',
-    description: 'Layered intention, effortless form',
+    description: 'Layer with purpose',
     image: bannerWaistcoat,
     href: '/collections',
   },
   {
     title: 'Jackets',
-    description: 'Outerwear that moves with confidence',
+    description: 'Structure that travels',
     image: productBrownBlazer,
     href: '/collections',
   },
@@ -37,9 +37,9 @@ const CategoryShowcase = () => {
           className="text-center mb-10 md:mb-16"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">
-            Explore
+            Categories
           </p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Shop by Category</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Shop by silhouette</h2>
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 

@@ -9,27 +9,27 @@ import {
 const faqs = [
   {
     question: 'What materials do you use?',
-    answer: 'We work primarily with premium Italian wool blends, organic cotton, and responsibly sourced linen. Every fabric is chosen for its ability to hold structure while remaining breathable and comfortable.',
+    answer: 'Primarily Italian wool blends, organic cotton, and responsibly sourced linen. We select fabrics for structure, breathability, and how they age over time.',
   },
   {
-    question: 'How do your reversible pieces work?',
-    answer: 'Our reversible construction uses a fully finished interior - no raw seams, no linings to hide. Simply turn the garment inside out for a completely different colorway and texture.',
+    question: 'How does the reversible construction work?',
+    answer: 'The interior is fully finished with no raw seams. Turn the garment inside out for a different colourway and texture. Two considered looks from one piece.',
   },
   {
     question: 'What is your return policy?',
-    answer: 'We offer a 30-day return policy on all unworn items with tags attached. Returns are complimentary within India. International returns are at the customer\'s expense.',
+    answer: 'We accept returns within 14 days on unworn items with tags attached. Returns within India are on us. International returns are at the customer\'s cost.',
   },
   {
     question: 'Do you offer custom sizing?',
-    answer: 'Yes, we offer made-to-measure services for select styles. Please contact our atelier team at hello@dori.com with your measurements and desired piece.',
+    answer: 'We offer made-to-measure for select styles. Write to us at hello@dori.com with your measurements and preferred piece.',
   },
   {
-    question: 'How should I care for my DORI pieces?',
-    answer: 'We recommend dry cleaning for structured pieces. For casual styles, hand wash cold and lay flat to dry. Detailed care instructions are included with every garment.',
+    question: 'How should I care for my DORI piece?',
+    answer: 'Dry clean for structured pieces. For casual styles, hand wash cold and lay flat to dry. Each garment comes with specific care instructions.',
   },
   {
     question: 'Do you ship internationally?',
-    answer: 'Yes, we ship worldwide. Orders within India enjoy complimentary shipping over ₹5,000. International shipping rates are calculated at checkout.',
+    answer: 'Yes, we ship to 15+ countries. Orders within India ship free above ₹5,000. International rates are calculated at checkout.',
   },
 ];
 
@@ -44,8 +44,8 @@ const FAQSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-14"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Common Questions</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Frequently Asked</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Questions</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Good to know</h2>
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 

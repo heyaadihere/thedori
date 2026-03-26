@@ -36,10 +36,10 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">Get In Touch</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6">We'd love to<br />hear from you</h1>
+            <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">Contact</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6">Let's talk</h1>
             <p className="text-sm text-muted-foreground font-light max-w-md mx-auto leading-relaxed">
-              Whether it's a question about sizing, a custom order, or just to say hello - we're here.
+              Sizing, custom orders, or just a question. We're here.
             </p>
           </motion.div>
         </section>
@@ -82,8 +82,8 @@ const Contact = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-normal mb-3">Send a message</h2>
-              <p className="text-sm text-muted-foreground font-light">Fill out the form below and we'll get back to you shortly.</p>
+              <h2 className="text-2xl md:text-3xl font-normal mb-3">Write to us</h2>
+              <p className="text-sm text-muted-foreground font-light">We'll get back to you within 24 hours.</p>
             </motion.div>
 
             <motion.form

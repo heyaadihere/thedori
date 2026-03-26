@@ -4,23 +4,23 @@ import { Truck, RotateCcw, Shield, Leaf } from 'lucide-react';
 const features = [
   {
     icon: Truck,
-    title: 'Complimentary Shipping',
-    description: 'Free shipping on all orders over ₹5,000',
+    title: 'Free Shipping',
+    description: 'On all orders above ₹5,000',
   },
   {
     icon: RotateCcw,
-    title: 'Easy Returns',
-    description: '30-day return policy, no questions asked',
+    title: '14-Day Returns',
+    description: 'Simple, straightforward process',
   },
   {
     icon: Shield,
-    title: 'Quality Guarantee',
-    description: 'Every piece inspected for premium standards',
+    title: 'Quality Checked',
+    description: 'Every piece inspected before dispatch',
   },
   {
     icon: Leaf,
-    title: 'Conscious Design',
-    description: 'Sustainable materials, ethical production',
+    title: 'Responsibly Made',
+    description: 'Considered materials, mindful production',
   },
 ];
 

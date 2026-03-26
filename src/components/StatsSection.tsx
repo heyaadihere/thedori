@@ -2,10 +2,10 @@ import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
 const stats = [
-  { value: 48, suffix: 'hrs', label: 'Average crafting time per piece' },
+  { value: 48, suffix: 'hrs', label: 'Crafting time per piece' },
   { value: 12, suffix: '', label: 'Artisans in our atelier' },
-  { value: 97, suffix: '%', label: 'Repeat customer rate' },
-  { value: 0, suffix: '', label: 'Unsold inventory - we produce on intent', displayValue: 'Zero' },
+  { value: 97, suffix: '%', label: 'Customers who come back' },
+  { value: 0, suffix: '', label: 'We produce on intent, not excess', displayValue: 'Zero' },
 ];
 
 function AnimatedNumber({ value, suffix, displayValue }: { value: number; suffix: string; displayValue?: string }) {
