@@ -6,16 +6,16 @@ import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 
 const shippingOptions = [
-  { icon: Truck, title: 'Standard Shipping', time: '5–7 business days', cost: 'Free on orders above ₹2,999', description: 'Reliable delivery with tracking across India.' },
-  { icon: Package, title: 'Express Shipping', time: '2–3 business days', cost: '₹299', description: 'Priority handling and expedited delivery.' },
-  { icon: Globe, title: 'International', time: '7–14 business days', cost: 'Calculated at checkout', description: 'We ship to 15+ countries worldwide.' },
+  { icon: Truck, title: 'Standard', time: '5-7 business days', cost: 'Free above ₹2,999', description: 'Tracked delivery across India.' },
+  { icon: Package, title: 'Express', time: '2-3 business days', cost: '₹299', description: 'Priority handling, faster delivery.' },
+  { icon: Globe, title: 'International', time: '7-14 business days', cost: 'Calculated at checkout', description: 'Shipping to 15+ countries.' },
 ];
 
 const returnSteps = [
-  { step: '01', title: 'Initiate', description: 'Email us at hello@dori.com within 14 days of delivery with your order number.' },
-  { step: '02', title: 'Pack', description: 'Place the unworn item in its original packaging with all tags attached.' },
-  { step: '03', title: 'Ship', description: "We'll send a prepaid return label to your email within 24 hours." },
-  { step: '04', title: 'Refund', description: 'Once received and inspected, your refund is processed within 5–7 business days.' },
+  { step: '01', title: 'Initiate', description: 'Email hello@dori.com within 14 days of delivery with your order number.' },
+  { step: '02', title: 'Pack', description: 'Place the unworn item in its original packaging with tags attached.' },
+  { step: '03', title: 'Ship', description: 'We send a prepaid return label within 24 hours.' },
+  { step: '04', title: 'Refund', description: 'Processed within 5-7 business days after inspection.' },
 ];
 
 const ShippingReturns = () => {
@@ -33,7 +33,7 @@ const ShippingReturns = () => {
           >
             <h1 className="text-4xl md:text-5xl font-normal mb-4">Shipping & Returns</h1>
             <p className="text-sm text-muted-foreground font-light max-w-md mx-auto leading-relaxed">
-              We want every DORI experience to feel effortless - from order to unboxing.
+              Straightforward delivery, simple returns.
             </p>
           </motion.div>
         </section>
@@ -83,9 +83,9 @@ const ShippingReturns = () => {
               className="text-center mb-16"
             >
               <RotateCcw className="h-8 w-8 mx-auto mb-6 text-muted-foreground" strokeWidth={1} />
-              <h2 className="text-3xl md:text-4xl font-normal mb-3">Hassle-free returns</h2>
+              <h2 className="text-3xl md:text-4xl font-normal mb-3">Easy returns</h2>
               <p className="text-sm text-muted-foreground font-light max-w-md mx-auto">
-                14-day return window. No questions asked.
+                14-day return window. Simple process.
               </p>
             </motion.div>
 
@@ -119,9 +119,9 @@ const ShippingReturns = () => {
               className="text-center p-12 border border-border"
             >
               <Shield className="h-8 w-8 mx-auto mb-5 text-muted-foreground" strokeWidth={1} />
-              <h3 className="text-xl font-normal mb-3">Quality Guarantee</h3>
+              <h3 className="text-xl font-normal mb-3">Quality Assured</h3>
               <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-md mx-auto">
-                Every DORI piece is inspected for quality before shipping. If you receive a defective item, we'll replace it at no cost - no questions asked.
+                Every piece is inspected before it ships. If something isn't right, we replace it at no cost.
               </p>
             </motion.div>
           </div>

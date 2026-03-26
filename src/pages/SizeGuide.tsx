@@ -41,7 +41,7 @@ const sizeData = {
 const tips = [
   { title: 'Measure Flat', description: 'Lay your best-fitting garment flat and compare measurements to our chart.' },
   { title: 'Between Sizes?', description: 'We recommend sizing up for a relaxed fit, or sizing down for a more structured look.' },
-  { title: 'Still Unsure?', description: "Reach out to us at hello@dori.com \u2014 we\u2019re happy to help you find your fit." },
+  { title: 'Still Unsure?', description: 'Write to us at hello@dori.com. We\'re happy to help you find your fit.' },
 ];
 
 type Category = keyof typeof sizeData;
@@ -64,7 +64,7 @@ const SizeGuide = () => {
             <Ruler className="h-8 w-8 mx-auto mb-6 text-muted-foreground" strokeWidth={1} />
             <h1 className="text-4xl md:text-5xl font-normal mb-4">Size Guide</h1>
             <p className="text-sm text-muted-foreground font-light max-w-md mx-auto leading-relaxed">
-              Find your perfect fit. All measurements are in inches.
+              Find your fit. All measurements in inches.
             </p>
           </motion.div>
         </section>
