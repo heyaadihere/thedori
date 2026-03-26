@@ -8,12 +8,12 @@ import atelierImage from '@/assets/atelier.jpg';
 import bannerCollection from '@/assets/banner-collection.jpg';
 
 const milestones = [
-  { year: '2021', title: 'The Idea', description: 'DORI was conceived in a small Mumbai studio - a response to fast fashion\'s noise.', image: atelierImage },
-  { year: '2022', title: 'First Collection', description: 'Our debut collection of 8 reversible blazers sold out within 3 weeks.', image: productBlueBlazer },
-  { year: '2023', title: 'The Atelier', description: 'We opened our dedicated atelier, bringing together 12 skilled artisans under one roof.', image: productBrownBlazer },
-  { year: '2024', title: 'Going Global', description: 'DORI expanded to international markets, shipping to 15 countries across Asia and Europe.', image: productColorfulJacket },
-  { year: '2025', title: 'Sustainable Pledge', description: 'We achieved carbon-neutral production and committed to zero-waste pattern cutting.', image: productWaistcoat },
-  { year: '2026', title: 'SS26 Collection', description: 'Our most ambitious collection yet - 24 pieces that redefine structured outerwear.', image: bannerCollection },
+  { year: '2021', title: 'The Beginning', description: 'DORI started in a small Mumbai studio. A quiet response to an overcrowded market.', image: atelierImage },
+  { year: '2022', title: 'First Drop', description: 'Eight reversible blazers. Sold out in three weeks.', image: productBlueBlazer },
+  { year: '2023', title: 'The Atelier', description: 'A dedicated workshop, 12 artisans, one shared standard.', image: productBrownBlazer },
+  { year: '2024', title: 'Beyond India', description: 'Shipping to 15 countries across Asia and Europe.', image: productColorfulJacket },
+  { year: '2025', title: 'Sustainable Shift', description: 'Carbon-neutral production. Zero-waste pattern cutting.', image: productWaistcoat },
+  { year: '2026', title: 'SS26', description: 'Our most refined collection yet. 24 pieces.', image: bannerCollection },
 ];
 
 const TimelineItem = ({ m, i }: { m: typeof milestones[0]; i: number }) => {

@@ -4,7 +4,7 @@ import { Leaf, Recycle, Droplets, Wind } from 'lucide-react';
 const pillars = [
   {
     icon: Leaf,
-    title: 'Organic Materials',
+    title: 'Responsible Sourcing',
     stat: '85%',
     description: 'of our fabrics are certified organic or responsibly sourced',
   },
@@ -12,7 +12,7 @@ const pillars = [
     icon: Recycle,
     title: 'Zero Waste',
     stat: '0kg',
-    description: 'of fabric waste - all off-cuts are repurposed or donated',
+    description: 'of fabric waste, all off-cuts repurposed or donated',
   },
   {
     icon: Droplets,
@@ -24,7 +24,7 @@ const pillars = [
     icon: Wind,
     title: 'Carbon Neutral',
     stat: '100%',
-    description: 'of our carbon emissions are offset through verified programs',
+    description: 'of emissions offset through verified programmes',
   },
 ];
 
@@ -39,10 +39,10 @@ const SustainabilitySection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14 md:mb-20"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Our Commitment</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">Fashion with conscience</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Responsibility</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">Made with care, at every step</h2>
           <p className="text-sm md:text-base text-primary-foreground/50 font-light max-w-lg mx-auto leading-relaxed">
-            We believe beautiful design and environmental responsibility aren't opposites - they're inseparable.
+            Good design and environmental responsibility go together. We don't see them as separate conversations.
           </p>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>

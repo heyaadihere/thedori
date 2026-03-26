@@ -6,17 +6,17 @@ const materials = [
   {
     name: 'Italian Wool Blend',
     origin: 'Biella, Italy',
-    detail: 'A mid-weight wool blend that holds structure without stiffness. Breathable enough for long days, resilient enough for daily wear.',
+    detail: 'Mid-weight wool that holds structure without stiffness. Breathable for long days, resilient for daily wear.',
   },
   {
     name: 'Japanese Cotton Twill',
     origin: 'Okayama, Japan',
-    detail: 'Dense, smooth cotton twill with a matte finish. Naturally wrinkle-resistant and gets softer with each wash.',
+    detail: 'Dense, smooth, naturally wrinkle-resistant. Gets softer with every wash.',
   },
   {
     name: 'Belgian Linen',
     origin: 'Flanders, Belgium',
-    detail: 'Lightweight, temperature-regulating linen. Our summer blazers use this for a relaxed drape that still holds a clean line.',
+    detail: 'Lightweight and temperature-regulating. A relaxed drape that still holds a clean line.',
   },
 ];
 
@@ -38,7 +38,7 @@ const MaterialsSection = () => {
                 Materials that<br />tell a story
               </h2>
               <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-8 md:mb-12">
-                We don't pick fabrics from a catalogue. We visit the mills. We feel the weight, check the drape, test the recovery. If it doesn't pass our hand, it doesn't make the cut.
+                We visit the mills. Feel the weight, check the drape, test the recovery. If it doesn't pass our hand, it doesn't make the cut.
               </p>
             </motion.div>
 

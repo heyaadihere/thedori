@@ -14,8 +14,8 @@ const AboutProcessGallery = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-14"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Behind the Seams</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">The making of DORI</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">In the Atelier</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Where each piece takes shape</h2>
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
