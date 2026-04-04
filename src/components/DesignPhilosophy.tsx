@@ -4,20 +4,20 @@ import productWaistcoat from '@/assets/product-waistcoat.jpg';
 
 const principles = [
   {
-    title: 'Less, but better',
-    body: 'We make fewer pieces per season and edit until only the essential remains. Quality over quantity, always.',
+    title: 'Design-led, not trend-driven',
+    body: 'DORI isn\'t created to follow fashion. It\'s created to outlast it. Contemporary silhouettes with Indian textiles that stay relevant season after season.',
   },
   {
     title: 'Reversible by design',
-    body: 'Not a gimmick. A design principle. Two considered looks from one garment. Less waste, more versatility.',
+    body: 'Not a gimmick. A design principle. One side modern, the other traditionally inspired. Two considered looks from one garment, less waste, more versatility.',
   },
   {
-    title: 'Structure that moves',
-    body: 'We build structure into the shoulder and chest, but leave enough give for you to actually live in it.',
+    title: 'Functional intelligence',
+    body: 'Real pockets. Breathable fabrics. Wrinkle-free comfort. Hand-washable materials. Every feature designed for 12-hour days, not just photoshoots.',
   },
   {
-    title: 'Details for the wearer',
-    body: 'Contrast stitching on the inside. Hidden pockets. Fabric that feels different depending on which side you wear. Personal discoveries, not marketing points.',
+    title: 'Made to last',
+    body: 'Strong quality checks ensure every piece lasts 5-6 years. Handwoven fabrics, artisanal embroidery, and construction that holds shape through hundreds of wears.',
   },
 ];
 
@@ -38,7 +38,6 @@ const DesignPhilosophy = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
-          {/* Left - principles */}
           <div className="lg:col-span-2 space-y-8 md:space-y-10">
             {principles.map((p, i) => (
               <motion.div
@@ -58,7 +57,6 @@ const DesignPhilosophy = () => {
             ))}
           </div>
 
-          {/* Right - stacked product images */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -12,16 +12,14 @@ const AboutProductBanner = () => {
       >
         <img
           src={bannerEditorial}
-          alt="DORI brown blazer styled on velvet with gold accessories - editorial product shot"
+          alt="DORI everyday luxury jacket crafted with Indian textiles"
           className="w-full h-full object-cover object-center"
         />
       </motion.div>
 
-      {/* Cinematic gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
 
-      {/* Content pinned bottom-left */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -31,18 +29,17 @@ const AboutProductBanner = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="max-w-xl">
             <div className="luxury-divider w-14 mb-6" />
-            <p className="text-[10px] tracking-[0.6em] uppercase text-white/40 mb-4 font-light">Behind the Label</p>
+            <p className="text-[10px] tracking-[0.6em] uppercase text-white/40 mb-4 font-light">Our Story</p>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white leading-[1.05] font-serif">
-              Made to be<br />lived in
+              Effortless luxury,<br />everyday
             </h1>
             <p className="text-sm md:text-base text-white/45 font-light mt-6 max-w-md leading-relaxed">
-              Real clothes for real days. Designed in the studio, tested on the move.
+              Western silhouettes meet Indian fabrics. Jackets designed for women who don't have time to change but always want to look put-together.
             </p>
           </div>
         </div>
       </motion.div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

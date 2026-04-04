@@ -16,14 +16,14 @@ const AboutAtelier = () => {
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">The Atelier</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] mb-5 md:mb-6 font-serif">
-              Where every<br />piece begins
+              Where heritage<br />meets precision
             </h2>
             <div className="space-y-4 text-sm md:text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                Our atelier is where raw materials become intention. A small team of skilled artisans, dozens of hands on every piece, adding layers of craft that machines can't replicate.
+                Our atelier is where Indian textile artistry meets contemporary design. Skilled artisans work with handwoven khadi, organic cotton, linen, and ajrakh, applying techniques like chikankari, kantha, zari, and mirror work with practiced precision.
               </p>
               <p>
-                We take our time. The kind of quality we care about doesn't come from speed. It comes from paying attention to the details most people never see.
+                Every piece passes through strong quality checks to ensure a lifespan of 5+ years. The kind of quality we care about comes from attention to detail, from reversible seams that lie perfectly flat to pockets placed exactly where you need them.
               </p>
             </div>
           </motion.div>
@@ -36,12 +36,12 @@ const AboutAtelier = () => {
           >
             <div className="luxury-frame">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={atelierImage} alt="DORI atelier" className="w-full h-full object-cover" loading="lazy" />
+                <img src={atelierImage} alt="DORI atelier with artisans at work" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
             <div className="luxury-frame mt-6 md:mt-8">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={brandDetailImage} alt="DORI detail" className="w-full h-full object-cover" loading="lazy" />
+                <img src={brandDetailImage} alt="DORI handwoven fabric detail" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </motion.div>

@@ -33,17 +33,17 @@ const FounderNote = () => {
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">A Note from the Founder</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.2] mb-6 md:mb-8 font-serif">
-              "I wanted to make the kind of clothes I wished existed."
+              "I built DORI for women who value clarity over clutter."
             </h2>
             <div className="space-y-4 md:space-y-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                I grew up watching my mother get ready. No fuss, no overthinking. She wore what worked. A good blazer, clean lines, nothing that competed with her.
+                I wanted to create jackets for women like me, ambitious, always moving, tired of choosing between comfort and style. Something that goes from a 9am client meeting to evening drinks without a wardrobe change.
               </p>
               <p>
-                That stayed with me. When I started DORI, I wasn't chasing trends. I wanted pieces that earn their place in your wardrobe the way hers did, through use, through wear, through becoming part of how you show up.
+                DORI blends what I love about Western tailoring, the structure, the clean lines, with India's incredible textile heritage. Handwoven fabrics, artisanal embroidery, materials that breathe and last for years.
               </p>
               <p>
-                DORI isn't about making a statement. It's about making clothes that let you make yours.
+                Every feature has a purpose. Reversible construction gives you two looks. Functional pockets because you need them. Hand-washable fabrics because life is busy enough.
               </p>
             </div>
             <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-gold/20">

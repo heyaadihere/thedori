@@ -4,19 +4,19 @@ import process2 from '@/assets/process-2.jpg';
 
 const materials = [
   {
-    name: 'Italian Wool Blend',
-    origin: 'Biella, Italy',
-    detail: 'Mid-weight wool that holds structure without stiffness. Breathable for long days, resilient for daily wear.',
+    name: 'Handwoven Khadi',
+    origin: 'Indian Artisans',
+    detail: 'Breathable, structured, and rich in texture. Every yard is handwoven, carrying the skill of generations.',
   },
   {
-    name: 'Japanese Cotton Twill',
-    origin: 'Okayama, Japan',
-    detail: 'Dense, smooth, naturally wrinkle-resistant. Gets softer with every wash.',
+    name: 'Organic Cotton & Linen',
+    origin: 'Sustainably Sourced',
+    detail: 'Lightweight, temperature-regulating, and wrinkle-resistant. Comfortable for all-day wear across seasons.',
   },
   {
-    name: 'Belgian Linen',
-    origin: 'Flanders, Belgium',
-    detail: 'Lightweight and temperature-regulating. A relaxed drape that still holds a clean line.',
+    name: 'Ajrakh & Hand-Painted Designs',
+    origin: 'Traditional Craft',
+    detail: 'Block-printed and hand-painted patterns that bring character to every reversible side. No two pieces are exactly alike.',
   },
 ];
 
@@ -35,10 +35,10 @@ const MaterialsSection = () => {
               <div className="luxury-divider w-10 mb-6 md:mb-8" />
               <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">The Fabrics</p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] mb-5 md:mb-6 font-serif">
-                Materials that<br />tell a story
+                Premium Indian<br />textiles
               </h2>
               <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-8 md:mb-12">
-                We visit the mills. Feel the weight, check the drape, test the recovery. If it doesn't pass our hand, it doesn't make the cut.
+                We celebrate India's textile heritage. Every fabric is selected for breathability, durability, and how it feels after hours of wear. Artisanal embroidery, chikankari, kantha, zari, mirror work, adds character that machines cannot replicate.
               </p>
             </motion.div>
 
@@ -69,12 +69,12 @@ const MaterialsSection = () => {
           >
             <div className="luxury-frame">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={brandDetailImage} alt="DORI fabric close-up detail" className="w-full h-full object-cover" loading="lazy" />
+                <img src={brandDetailImage} alt="DORI handwoven fabric close-up" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
             <div className="luxury-frame">
               <div className="aspect-[16/9] overflow-hidden">
-                <img src={process2} alt="DORI fabric cutting process" className="w-full h-full object-cover" loading="lazy" />
+                <img src={process2} alt="DORI artisanal fabric crafting" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </motion.div>

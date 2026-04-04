@@ -9,35 +9,35 @@ const careCategories = [
     icon: Droplets,
     title: 'Washing',
     tips: [
-      'Dry clean recommended for all structured pieces.',
-      'For spot cleaning, use a damp cloth with mild detergent.',
-      'Avoid machine washing - it can break down the internal structure.',
+      'Most DORI pieces are hand-washable with cold water and mild detergent.',
+      'For structured blazers, spot clean with a damp cloth for day-to-day care.',
+      'No dry cleaning needed for most styles, saving you time and cost.',
     ],
   },
   {
     icon: ThermometerSun,
     title: 'Ironing',
     tips: [
-      'Use a steamer instead of a direct iron to preserve fabric texture.',
+      'Use a steamer to freshen up between wears, it preserves the handwoven texture.',
       'If ironing, use low heat with a pressing cloth between the iron and fabric.',
-      'Never iron directly on embellishments or contrast panels.',
+      'Never iron directly on artisanal embroidery, chikankari, kantha, or mirror work.',
     ],
   },
   {
     icon: Wind,
     title: 'Drying',
     tips: [
-      'Air dry only - hang on a padded hanger to maintain shoulder shape.',
-      'Never tumble dry - heat damages the structured lining.',
-      'Avoid direct sunlight to prevent color fading.',
+      'Lay flat to dry after hand washing to maintain shape and structure.',
+      'For quick refreshing, hang on a padded hanger in a well-ventilated area.',
+      'Avoid direct sunlight to preserve the vibrancy of handwoven and hand-painted fabrics.',
     ],
   },
   {
     icon: Shirt,
     title: 'Storage',
     tips: [
-      'Store on broad, padded hangers - never fold structured pieces.',
-      'Keep in a breathable garment bag, not plastic.',
+      'Store on broad, padded hangers to maintain shoulder structure.',
+      'Keep in a breathable garment bag, not plastic, to protect handwoven fabrics.',
       'Allow space between garments for air circulation.',
     ],
   },
@@ -49,7 +49,6 @@ const CareInstructions = () => {
       <AnnouncementBar />
       <Header />
       <main>
-        {/* Hero */}
         <section className="py-20 lg:py-28 px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -59,12 +58,11 @@ const CareInstructions = () => {
             <Sparkles className="h-8 w-8 mx-auto mb-6 text-muted-foreground" strokeWidth={1} />
             <h1 className="text-4xl md:text-5xl font-normal mb-4">Care Instructions</h1>
             <p className="text-sm text-muted-foreground font-light max-w-lg mx-auto leading-relaxed">
-              A little care keeps your DORI piece looking and feeling its best for years.
+              DORI pieces are designed for easy care. A little attention keeps your jacket looking its best for 5+ years.
             </p>
           </motion.div>
         </section>
 
-        {/* Care sections */}
         <section className="px-6 pb-24">
           <div className="container mx-auto max-w-4xl space-y-16">
             {careCategories.map((cat, i) => (
@@ -93,7 +91,6 @@ const CareInstructions = () => {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="px-6 pb-20">
           <motion.div
             initial={{ opacity: 0 }}
@@ -103,7 +100,7 @@ const CareInstructions = () => {
           >
             <h3 className="text-xl font-normal mb-3">Questions about care?</h3>
             <p className="text-sm text-muted-foreground font-light mb-6">
-              Our team is happy to help with any specifics.
+              Our team is happy to help with specifics about your piece.
             </p>
             <a
               href="/contact"

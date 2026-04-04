@@ -3,23 +3,23 @@ import { motion } from 'framer-motion';
 const values = [
   {
     number: '01',
-    title: 'Intentional Design',
-    description: 'Every detail has a reason. We edit until only the essential remains.',
+    title: 'Effortless Design',
+    description: 'Every detail serves a purpose. Wrinkle-free fabrics, breathable linings, structured shoulders that hold shape from morning to night.',
   },
   {
     number: '02',
-    title: 'Reversible Construction',
-    description: 'Two looks from one piece. Your wardrobe doubles without the excess.',
+    title: 'Personal Versatility',
+    description: 'Reversible construction. Two distinct looks from one piece. Your wardrobe works harder so you don\'t have to.',
   },
   {
     number: '03',
-    title: 'Considered Materials',
-    description: 'We source fabrics that improve with wear, getting softer and more personal over time.',
+    title: 'Warm Confidence',
+    description: 'Clothing that makes you feel put-together the moment you put it on. Confident but approachable. Aspirational but personal.',
   },
   {
     number: '04',
-    title: 'Structured Silhouettes',
-    description: 'Tailoring that holds its shape so you can hold yours. Clean, commanding, comfortable.',
+    title: 'Functional Intelligence',
+    description: 'Pockets where you need them. Hand-washable fabrics. Easy-to-care-for materials. Design that works for your actual life.',
   },
 ];
 
@@ -34,8 +34,8 @@ const AboutValues = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-16"
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Our Principles</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">What guides us</h2>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">Brand Pillars</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">What defines DORI</h2>
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 
