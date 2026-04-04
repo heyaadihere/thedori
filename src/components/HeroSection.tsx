@@ -57,8 +57,9 @@ const HeroSection = () => {
           >
             <Link to="/collections">
               <Button
+                variant="ghost"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none bg-white text-primary hover:bg-white/90 hover:text-primary"
               >
                 Shop the Collection
               </Button>
