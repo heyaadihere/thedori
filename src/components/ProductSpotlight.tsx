@@ -1,39 +1,39 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import productBerryWrap from '@/assets/product-berry-wrap.jpg';
-import productLeatherBlazer from '@/assets/product-leather-blazer.jpg';
-import productFridaJacket from '@/assets/product-frida-jacket.jpg';
-import productFloralBlazer from '@/assets/product-floral-blazer.jpg';
+import spotlightLeather from '@/assets/spotlight-leather-blazer.jpg';
+import spotlightBerry from '@/assets/spotlight-berry-wrap.jpg';
+import spotlightArt from '@/assets/spotlight-art-jacket.jpg';
+import spotlightReversible from '@/assets/spotlight-reversible-blazer.jpg';
 
 const spotlights = [
   {
-    image: productLeatherBlazer,
+    image: spotlightLeather,
     name: 'The Leather Blazer',
     tagline: 'Signature',
     description: 'Premium leather with structured tailoring. Clean lines, functional pockets, a silhouette that holds its shape through 12-hour days. Office to evening, no change needed.',
     price: '₹8,900',
   },
   {
-    image: productBerryWrap,
+    image: spotlightBerry,
     name: 'The Berry Wrap Jacket',
     tagline: 'Artisanal',
-    description: 'Handwoven cotton-linen blend with block-printed reversible lapels and a signature belt. The kind of piece that starts conversations without trying.',
+    description: 'Handwoven cotton-linen blend with block-printed reversible lapels and a signature fabric buckle. The kind of piece that starts conversations without trying.',
     price: '₹9,400',
   },
   {
-    image: productFridaJacket,
+    image: spotlightArt,
     name: 'The Art Jacket',
     tagline: 'Expressive',
     description: 'Bold hand-painted artisan prints meet magenta silk lining with gold elephant buttons. Wearable art that turns every entrance into a moment.',
     price: '₹7,800',
   },
   {
-    image: productFloralBlazer,
-    name: 'The Floral Blazer',
-    tagline: 'Essential',
-    description: 'Delicate hand-painted botanical prints on breathable linen. Layers effortlessly, hand-washable, and travels without creasing.',
-    price: '₹5,600',
+    image: spotlightReversible,
+    name: 'The Reversible Blazer',
+    tagline: 'Versatile',
+    description: 'Indigo linen exterior with vibrant artisan-print lapels and cuffs. Flip it for a completely different look. Two jackets in one, wrinkle-free and breathable.',
+    price: '₹6,800',
   },
 ];
 
