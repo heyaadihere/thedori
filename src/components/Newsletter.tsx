@@ -48,8 +48,7 @@ const Newsletter = () => {
           />
           <Button
             type="submit"
-            variant="outline"
-            className="rounded-none tracking-[0.15em] uppercase text-xs md:text-sm px-8 h-12 border-gold/40 text-primary-foreground hover:bg-gold/10"
+            className="rounded-none tracking-[0.15em] uppercase text-xs md:text-sm px-8 h-12 bg-primary-foreground text-primary hover:bg-primary-foreground/90 border-0"
           >
             Join
           </Button>
