@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img 
           src={bannerHero} 
-          alt="DORI structured blazer on marble with pampas grass" 
+          alt="DORI everyday luxury jacket styled for modern Indian women" 
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/20" />
@@ -30,7 +30,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/60 mb-4 md:mb-6"
           >
-            SS26 Collection
+            Everyday Luxury Jackets
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -38,7 +38,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-5 md:mb-6 font-medium text-white font-serif"
           >
-            Quiet pieces,<br />strong presence
+            Look put-together.<br />Always.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-sm md:text-base text-white/70 mb-8 md:mb-10 max-w-sm font-light leading-relaxed"
           >
-            Structured outerwear for women who lead with intention, not volume.
+            Western silhouettes. Indian fabrics. Jackets designed for women who don't have time to change but always want to show up ready.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -60,14 +60,14 @@ const HeroSection = () => {
                 size="lg"
                 className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none bg-white text-black hover:bg-white/90"
               >
-                Shop Now
+                Shop the Collection
               </Button>
             </Link>
             <Link to="/about">
               <Button
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border-black text-black hover:bg-black hover:text-white"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border-white text-white hover:bg-white hover:text-black"
               >
                 Our Story
               </Button>

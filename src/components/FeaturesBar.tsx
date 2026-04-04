@@ -9,18 +9,18 @@ const features = [
   },
   {
     icon: RotateCcw,
-    title: '14-Day Returns',
-    description: 'Simple, straightforward process',
+    title: 'Reversible Design',
+    description: 'Two looks from one jacket',
   },
   {
     icon: Shield,
-    title: 'Quality Checked',
-    description: 'Every piece inspected before dispatch',
+    title: '5+ Year Lifespan',
+    description: 'Built to last, not to replace',
   },
   {
     icon: Leaf,
-    title: 'Responsibly Made',
-    description: 'Considered materials, mindful production',
+    title: 'Handwoven Fabrics',
+    description: 'Khadi, organic cotton, linen, ajrakh',
   },
 ];
 

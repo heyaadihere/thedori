@@ -7,7 +7,7 @@ const CraftsmanshipSection = () => {
       <div className="relative h-[50vh] md:h-[60vh] lg:h-[70vh]">
         <img
           src={bannerCollection}
-          alt="DORI collection flatlay - blazer, waistcoat, jacket with gold accessories"
+          alt="DORI collection with handwoven Indian fabrics and artisanal details"
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -24,13 +24,13 @@ const CraftsmanshipSection = () => {
             <div className="max-w-lg">
               <div className="luxury-divider w-12 mb-4 md:mb-6" />
               <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/50 mb-3 md:mb-4">
-                The Making
+                Artisanal Craft
               </p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] text-white mb-3 md:mb-4 font-serif">
-                Built by hand,<br />worn with ease
+                Handwoven heritage,<br />modern precision
               </h2>
               <p className="text-sm md:text-base text-white/60 font-light leading-relaxed max-w-md">
-                Every cut, every seam, every finish is deliberate. Our atelier works slowly so the final piece feels effortless.
+                Khadi, organic cotton, ajrakh, chikankari, kantha, zari, mirror work. Every piece carries the skill of Indian artisans and the precision of contemporary design.
               </p>
             </div>
           </div>

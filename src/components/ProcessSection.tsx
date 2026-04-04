@@ -6,20 +6,20 @@ import process3 from '@/assets/process-3.jpg';
 const steps = [
   {
     number: '01',
-    title: 'Pattern',
-    description: 'Each piece starts as a sketch. We draft patterns that balance structure with natural movement.',
+    title: 'Design',
+    description: 'Every jacket starts as a sketch blending Western silhouettes with Indian textile traditions. We draft patterns that balance structure with all-day comfort.',
     image: process1,
   },
   {
     number: '02',
-    title: 'Cut',
-    description: 'Fabric is cut by hand, one panel at a time. The grain, the drape, the weight - all considered.',
+    title: 'Craft',
+    description: 'Handwoven fabrics are cut with precision. Artisanal details like chikankari, kantha, and zari are applied by skilled craftspeople.',
     image: process2,
   },
   {
     number: '03',
     title: 'Finish',
-    description: 'The final press. Clean seams, crisp edges, a silhouette that holds its own.',
+    description: 'Strong quality checks ensure every piece lasts 5+ years. Reversible seams, functional pockets, breathable linings. Ready for your day.',
     image: process3,
   },
 ];

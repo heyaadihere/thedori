@@ -12,13 +12,13 @@ const BrandStatement = () => {
       >
         <div className="luxury-divider w-16 mx-auto mb-8 md:mb-12" />
         <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-8 md:mb-10">
-          The DORI Ethos
+          Designed with Intention
         </p>
         <blockquote className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[1.3] font-light italic text-foreground font-serif">
-          "The right piece doesn't<br />ask for attention.<br />It earns it."
+          "Everyday luxury jackets for<br />women who don't have time<br />to change but always want to<br />look put-together."
         </blockquote>
         <p className="mt-8 md:mt-10 text-sm md:text-base text-muted-foreground max-w-lg mx-auto leading-relaxed font-light">
-          We design for the pause before a compliment. For the second glance. For women who dress with clarity.
+          Western silhouettes meet premium Indian fabrics. Confident, expressive, and naturally polished.
         </p>
         <div className="luxury-divider w-16 mx-auto mt-8 md:mt-12" />
       </motion.div>

@@ -5,22 +5,22 @@ import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
 
 const occasions = [
   {
-    title: 'The Meeting',
+    title: 'The Boardroom',
     image: productBlueBlazer,
-    description: 'The Structured Blazer with tailored trousers. Let the cut speak.',
-    tip: 'Flip to the contrast side on Fridays for a subtle shift.',
+    description: 'The Reversible Blazer with tailored trousers. Structured shoulders, breathable lining, wrinkle-free after a full day.',
+    tip: 'Flip to the Indian textile side for Friday meetings.',
   },
   {
-    title: 'The Weekend',
+    title: 'The Travel Day',
     image: productColorfulJacket,
-    description: 'The Reversible Jacket over a plain tee and good denim. Done.',
-    tip: 'Bold side for brunch, muted side for evening.',
+    description: 'The Expressive Jacket over a plain tee. Hand-washable, packs flat, two looks in your carry-on.',
+    tip: 'Bold print for arrivals, muted side for the flight.',
   },
   {
     title: 'The Evening',
     image: productBrownBlazer,
-    description: 'The Heritage Blazer with a dark roll-neck. Classic enough, distinctive enough.',
-    tip: 'Hand-finished lapels catch candlelight well.',
+    description: 'The Heritage Jacket with a silk blouse. Handwoven fabric catches the light. No change needed from the office.',
+    tip: 'Artisanal embroidery details reward a closer look.',
   },
 ];
 
@@ -36,9 +36,9 @@ const WardrobeGuide = () => {
           className="text-center mb-12 md:mb-20"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">Styling Notes</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Three settings, one wardrobe</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">One wardrobe, every moment</h2>
           <p className="text-sm md:text-base text-muted-foreground font-light mt-4 max-w-lg mx-auto leading-relaxed">
-            The same pieces, styled differently. That's the point.
+            Boardroom. Travel. Evening. Same jacket, different sides. That's the DORI way.
           </p>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>

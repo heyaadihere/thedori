@@ -16,7 +16,7 @@ const BrandStory = () => {
             <div className="aspect-[4/5] overflow-hidden">
               <img
                 src={bannerFounder}
-                alt="DORI founder in colorful jacket - editorial portrait"
+                alt="DORI founder in signature jacket"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
@@ -32,29 +32,29 @@ const BrandStory = () => {
           >
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">
-              The DORI Way
+              The DORI Story
             </p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] mb-6 md:mb-8 font-serif">
-              Clothing that<br />serves you
+              Redefining Indian<br />fusion wear
             </h2>
             <div className="space-y-4 md:space-y-5 text-sm md:text-base text-muted-foreground leading-relaxed font-light">
               <p>
-                DORI exists for a simple reason: your clothes should work as hard as you do. Not louder. Not flashier. Just better.
+                DORI was created for women who want to look put-together without overthinking it. We blend distinctive Western silhouettes with premium Indian fabrics to create jackets that feel personal, not prescribed.
               </p>
               <p>
-                Reversible construction, contrast panels, interiors that reward a closer look. These are choices, not gimmicks.
+                Reversible construction, functional pockets, breathable comfort. Every feature is designed for the way you actually live, from boardroom meetings to evening events.
               </p>
               <p>
-                Designed with clarity. Built to last.
+                Style it. Own it. Dori it.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-4 md:gap-6 mt-8 md:mt-10 pt-6 md:pt-10 border-t border-gold/20">
               {[
                 { number: '01', label: 'Reversible Construction' },
-                { number: '02', label: 'Contrast Panels' },
-                { number: '03', label: 'Premium Fabrics' },
-                { number: '04', label: 'Structured Tailoring' },
+                { number: '02', label: 'Functional Pockets' },
+                { number: '03', label: 'Handwoven Fabrics' },
+                { number: '04', label: 'Hand-Washable' },
               ].map((feature) => (
                 <div key={feature.number}>
                   <span className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] text-gold/60">{feature.number}</span>
