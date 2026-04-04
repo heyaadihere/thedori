@@ -57,18 +57,16 @@ const HeroSection = () => {
           >
             <Link to="/collections">
               <Button
-                variant="default"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none bg-foreground text-background hover:bg-foreground/90"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none bg-primary-foreground text-primary hover:bg-primary-foreground/90"
               >
                 Shop the Collection
               </Button>
             </Link>
             <Link to="/about">
               <Button
-                variant="outline"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border-foreground/60 text-foreground hover:bg-foreground hover:text-background"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border border-primary-foreground/50 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
               >
                 Our Story
               </Button>
