@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
-import productWaistcoat from '@/assets/product-waistcoat.jpg';
+import productBerryWrap from '@/assets/product-berry-wrap.jpg';
+import productFloralBlazer from '@/assets/product-floral-blazer.jpg';
 
 const LuxuryShowcase = () => {
   return (
@@ -42,7 +42,7 @@ const LuxuryShowcase = () => {
               className="luxury-frame"
             >
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={productColorfulJacket} alt="DORI reversible jacket with handwoven fabric" className="w-full h-full object-cover" loading="lazy" />
+                <img src={productBerryWrap} alt="DORI berry wrap jacket with handwoven print detail" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </motion.div>
             <motion.div
@@ -53,7 +53,7 @@ const LuxuryShowcase = () => {
               className="luxury-frame mt-8 md:mt-12"
             >
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={productWaistcoat} alt="DORI tailored waistcoat" className="w-full h-full object-cover" loading="lazy" />
+                <img src={productFloralBlazer} alt="DORI floral blazer with hand-painted botanical print" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </motion.div>
           </div>
