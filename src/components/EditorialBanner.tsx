@@ -33,9 +33,8 @@ const EditorialBanner = () => {
             </h2>
             <Link to="/collections">
               <Button
-                variant="outline"
                 size="lg"
-                className="rounded-none tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 border-white/40 text-white hover:bg-white/10"
+                className="rounded-none tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 border border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
               >
                 View Collection
               </Button>

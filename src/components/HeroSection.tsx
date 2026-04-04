@@ -59,7 +59,7 @@ const HeroSection = () => {
               <Button
                 variant="default"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none bg-white text-black hover:bg-white/90"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none bg-foreground text-background hover:bg-foreground/90"
               >
                 Shop the Collection
               </Button>
@@ -68,7 +68,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border-white text-white hover:bg-white hover:text-black"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border-foreground/60 text-foreground hover:bg-foreground hover:text-background"
               >
                 Our Story
               </Button>
