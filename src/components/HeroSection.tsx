@@ -65,8 +65,9 @@ const HeroSection = () => {
             </Link>
             <Link to="/about">
               <Button
+                variant="ghost"
                 size="lg"
-                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border border-primary-foreground/50 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+                className="w-full sm:w-auto tracking-[0.15em] uppercase text-xs md:text-sm px-8 md:px-10 py-5 md:py-6 rounded-none border border-white/50 text-white hover:bg-white/10 hover:text-white"
               >
                 Our Story
               </Button>
