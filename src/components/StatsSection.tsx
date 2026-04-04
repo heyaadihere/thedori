@@ -2,10 +2,10 @@ import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
 const stats = [
-  { value: 48, suffix: 'hrs', label: 'Crafting time per piece' },
-  { value: 12, suffix: '', label: 'Artisans in our atelier' },
-  { value: 97, suffix: '%', label: 'Customers who come back' },
-  { value: 0, suffix: '', label: 'We produce on intent, not excess', displayValue: 'Zero' },
+  { value: 5, suffix: '+', label: 'Years of wear per piece' },
+  { value: 2, suffix: '-in-1', label: 'Reversible design' },
+  { value: 100, suffix: '%', label: 'Handwoven Indian fabrics' },
+  { value: 0, suffix: '', label: 'Hand-washable, no dry cleaning', displayValue: 'Easy' },
 ];
 
 function AnimatedNumber({ value, suffix, displayValue }: { value: number; suffix: string; displayValue?: string }) {

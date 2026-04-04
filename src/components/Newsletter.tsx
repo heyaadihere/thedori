@@ -10,8 +10,8 @@ const Newsletter = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      toast.success('Welcome to the DORI world', {
-        description: "You'll be the first to know about new collections.",
+      toast.success('Welcome to the DORI inner circle', {
+        description: "You'll be the first to know about new drops and early access.",
         position: 'top-center',
       });
       setEmail('');
@@ -29,13 +29,13 @@ const Newsletter = () => {
       >
         <div className="luxury-divider w-16 mx-auto mb-6 md:mb-8" />
         <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4 md:mb-6">
-          Stay in the loop
+          Join the Inner Circle
         </p>
         <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">
-          First to know
+          First access, always
         </h2>
         <p className="text-sm md:text-base text-primary-foreground/50 font-light mb-8 md:mb-10 leading-relaxed">
-          New drops, restocks, and stories from the atelier. No noise, just updates that matter.
+          New collections, early access, and stories from the atelier. Be the first to know when something new drops.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <Input
@@ -51,7 +51,7 @@ const Newsletter = () => {
             variant="outline"
             className="rounded-none tracking-[0.15em] uppercase text-xs md:text-sm px-8 h-12 border-gold/40 text-primary-foreground hover:bg-gold/10"
           >
-            Subscribe
+            Join
           </Button>
         </form>
       </motion.div>

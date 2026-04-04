@@ -25,7 +25,7 @@ const About = () => {
         <section className="py-24 lg:py-32 px-6">
           <div className="container mx-auto max-w-3xl text-center">
             <p className="text-lg md:text-xl leading-relaxed text-foreground font-light font-serif">
-              DORI was born from a simple observation: the best-dressed women in any room aren't the loudest. We make structured outerwear for those who understand that presence is earned, not performed.
+              DORI creates effortless everyday luxury jackets for modern Indian women who want to look put-together without changing outfits. We blend distinctive Western silhouettes with premium Indian fabrics to deliver design-led versatility that feels personal, not prescribed.
             </p>
             <div className="luxury-divider w-16 mx-auto mt-12" />
           </div>

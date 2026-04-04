@@ -9,30 +9,30 @@ import productWaistcoat from '@/assets/product-waistcoat.jpg';
 const spotlights = [
   {
     image: productBlueBlazer,
-    name: 'The Structured Blazer',
+    name: 'The Reversible Blazer',
     tagline: 'Signature',
-    description: 'Clean shoulders, defined waist, fully reversible. The piece that started it all.',
+    description: 'Western structure meets Indian textile. Fully reversible with functional pockets, breathable lining, and wrinkle-free comfort. Office to evening, no change needed.',
     price: '₹8,900',
   },
   {
     image: productBrownBlazer,
-    name: 'The Heritage Blazer',
-    tagline: 'Timeless',
-    description: 'Warm-toned wool blend with hand-finished lapels. A quiet authority.',
+    name: 'The Heritage Jacket',
+    tagline: 'Artisanal',
+    description: 'Handwoven fabric with hand-painted detailing. Premium finish that holds shape through 12-hour days. Designed to last 5+ years.',
     price: '₹9,400',
   },
   {
     image: productColorfulJacket,
-    name: 'The Reversible Jacket',
+    name: 'The Expressive Jacket',
     tagline: 'Versatile',
-    description: 'Two distinct looks in one garment. Bold on one side, understated on the other.',
+    description: 'Bold on one side, understated on the other. Ajrakh prints meet contemporary silhouettes. Hand-washable, travel-ready.',
     price: '₹7,800',
   },
   {
     image: productWaistcoat,
     name: 'The Tailored Waistcoat',
     tagline: 'Essential',
-    description: 'Cut slightly longer than tradition. Layers under a blazer or stands alone.',
+    description: 'Layers effortlessly under a blazer or stands alone with confidence. Organic cotton blend with artisanal embroidery details.',
     price: '₹5,600',
   },
 ];

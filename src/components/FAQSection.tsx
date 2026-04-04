@@ -8,12 +8,16 @@ import {
 
 const faqs = [
   {
-    question: 'What materials do you use?',
-    answer: 'Primarily Italian wool blends, organic cotton, and responsibly sourced linen. We select fabrics for structure, breathability, and how they age over time.',
+    question: 'What fabrics does DORI use?',
+    answer: 'We use handwoven Indian textiles including khadi, organic cotton, linen, and ajrakh. Many pieces feature artisanal embroidery like chikankari, kantha, zari, and mirror work. All fabrics are breathable, durable, and selected for a 5+ year lifespan.',
   },
   {
     question: 'How does the reversible construction work?',
-    answer: 'The interior is fully finished with no raw seams. Turn the garment inside out for a different colourway and texture. Two considered looks from one piece.',
+    answer: 'Both sides are fully finished with clean seams. One side features contemporary Western styling, the other showcases Indian textile artistry. Simply turn the jacket inside out for a completely different look. Two wardrobes in one piece.',
+  },
+  {
+    question: 'Can I wash DORI jackets at home?',
+    answer: 'Yes. Most DORI pieces are hand-washable with cold water and mild detergent. No dry cleaning needed. Lay flat to dry and they maintain their shape beautifully.',
   },
   {
     question: 'What is your return policy?',
@@ -22,10 +26,6 @@ const faqs = [
   {
     question: 'Do you offer custom sizing?',
     answer: 'We offer made-to-measure for select styles. Write to us at hello@dori.com with your measurements and preferred piece.',
-  },
-  {
-    question: 'How should I care for my DORI piece?',
-    answer: 'Dry clean for structured pieces. For casual styles, hand wash cold and lay flat to dry. Each garment comes with specific care instructions.',
   },
   {
     question: 'Do you ship internationally?',

@@ -14,21 +14,21 @@ const LuxuryShowcase = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
-            <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">Signature Pieces</p>
+            <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">Design-Led Versatility</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif leading-[1.2] mb-5 md:mb-6">
-              Craft you can<br />feel, not just see
+              One jacket,<br />two distinct looks
             </h2>
             <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-6 md:mb-8 max-w-md">
-              From reversible blazers to precision-cut waistcoats, each piece is built to age well and wear better.
+              Reversible construction with handwoven Indian textiles on one side and contemporary finishes on the other. Functional pockets, breathable fabrics, wrinkle-free comfort.
             </p>
             <div className="flex gap-8 md:gap-12">
               <div>
-                <span className="text-2xl md:text-3xl font-serif text-gold/60">24</span>
-                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Pieces this season</p>
+                <span className="text-2xl md:text-3xl font-serif text-gold/60">5+</span>
+                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Years of wear</p>
               </div>
               <div>
-                <span className="text-2xl md:text-3xl font-serif text-gold/60">48hrs</span>
-                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Per garment</p>
+                <span className="text-2xl md:text-3xl font-serif text-gold/60">2-in-1</span>
+                <p className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase text-muted-foreground mt-1">Reversible design</p>
               </div>
             </div>
           </motion.div>
@@ -42,7 +42,7 @@ const LuxuryShowcase = () => {
               className="luxury-frame"
             >
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={productColorfulJacket} alt="DORI colorful jacket" className="w-full h-full object-cover" loading="lazy" />
+                <img src={productColorfulJacket} alt="DORI reversible jacket with handwoven fabric" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </motion.div>
             <motion.div
@@ -53,7 +53,7 @@ const LuxuryShowcase = () => {
               className="luxury-frame mt-8 md:mt-12"
             >
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={productWaistcoat} alt="DORI waistcoat" className="w-full h-full object-cover" loading="lazy" />
+                <img src={productWaistcoat} alt="DORI tailored waistcoat" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </motion.div>
           </div>

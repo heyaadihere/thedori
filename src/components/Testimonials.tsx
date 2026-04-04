@@ -5,19 +5,19 @@ import bannerWaistcoat from '@/assets/banner-waistcoat.jpg';
 
 const testimonials = [
   {
-    quote: "I put it on and stopped reaching for anything else. That's the whole review.",
+    quote: "I wore it from a 9am meeting straight to dinner. No outfit change. Three compliments before dessert.",
     author: "Priya M.",
     location: "Mumbai",
     rating: 5,
   },
   {
-    quote: "Two sides, zero compromise. I travel lighter now because of this jacket.",
+    quote: "The reversible feature is genius. My travel wardrobe just got halved. And it's hand-washable, which is a game-changer.",
     author: "Ananya R.",
     location: "Delhi",
     rating: 5,
   },
   {
-    quote: "The kind of piece you notice because it fits, not because it's loud.",
+    quote: "It feels like it was made for my life. Breathable in Mumbai heat, structured enough for client presentations.",
     author: "Meera K.",
     location: "Bangalore",
     rating: 5,
@@ -48,7 +48,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/40 mb-4">In Their Words</p>
+          <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/40 mb-4">Women Who Wear DORI</p>
           <div className="luxury-divider w-16 mx-auto mb-8 md:mb-12" />
         </motion.div>
 

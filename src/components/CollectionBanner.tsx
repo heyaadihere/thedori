@@ -13,7 +13,7 @@ const CollectionBanner = () => {
         transition={{ duration: 1.5, ease: 'easeOut' }}
         className="absolute inset-0"
       >
-        <img src={bannerColorful} alt="DORI colorful collection" className="w-full h-full object-cover" loading="lazy" />
+        <img src={bannerColorful} alt="DORI vibrant collection with hand-painted designs" className="w-full h-full object-cover" loading="lazy" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/40 to-black/10" />
 
@@ -29,7 +29,7 @@ const CollectionBanner = () => {
              <div className="luxury-divider w-10 ml-auto mb-4 md:mb-6" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/50 mb-3 md:mb-4">New Arrivals</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-white leading-[1.2] mb-5 md:mb-6 font-serif">
-              Colour with<br />conviction
+              Expressive by<br />design
             </h2>
             <Link to="/collections">
               <Button

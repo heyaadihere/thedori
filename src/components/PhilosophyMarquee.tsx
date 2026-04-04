@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const words = ['Intentional', '✦', 'Structured', '✦', 'Reversible', '✦', 'Considered', '✦', 'Enduring', '✦', 'Refined', '✦'];
+const words = ['Effortless', '✦', 'Versatile', '✦', 'Reversible', '✦', 'Breathable', '✦', 'Handwoven', '✦', 'Intentional', '✦'];
 
 const PhilosophyMarquee = () => {
   return (

@@ -7,19 +7,19 @@ import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
 const categories = [
   {
     title: 'Blazers',
-    description: 'Sharp lines, soft movement',
+    description: 'Structured. Reversible. Boardroom to evening.',
     image: productBlueBlazer,
     href: '/collections',
   },
   {
     title: 'Waistcoats',
-    description: 'Layer with purpose',
+    description: 'Layer with purpose, stand alone with confidence.',
     image: bannerWaistcoat,
     href: '/collections',
   },
   {
     title: 'Jackets',
-    description: 'Structure that travels',
+    description: 'Breathable, wrinkle-free, all-day comfort.',
     image: productBrownBlazer,
     href: '/collections',
   },

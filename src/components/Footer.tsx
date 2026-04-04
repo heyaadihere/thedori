@@ -12,10 +12,10 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <img src={doriLogo} alt="DORI" className="h-14 md:h-16 w-auto mb-4" />
             <p className="text-xs md:text-sm text-primary-foreground/60 leading-relaxed font-light max-w-xs">
-              Structured outerwear for women who lead with intention, not volume.
+              Everyday luxury jackets for modern Indian women. Designed with intention, defined by presence.
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="#" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/dori.it/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
