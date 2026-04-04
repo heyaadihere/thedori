@@ -1,38 +1,38 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
-import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
-import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
-import productWaistcoat from '@/assets/product-waistcoat.jpg';
+import productBerryWrap from '@/assets/product-berry-wrap.jpg';
+import productLeatherBlazer from '@/assets/product-leather-blazer.jpg';
+import productFridaJacket from '@/assets/product-frida-jacket.jpg';
+import productFloralBlazer from '@/assets/product-floral-blazer.jpg';
 
 const spotlights = [
   {
-    image: productBlueBlazer,
-    name: 'The Reversible Blazer',
+    image: productLeatherBlazer,
+    name: 'The Leather Blazer',
     tagline: 'Signature',
-    description: 'Western structure meets Indian textile. Fully reversible with functional pockets, breathable lining, and wrinkle-free comfort. Office to evening, no change needed.',
+    description: 'Premium leather with structured tailoring. Clean lines, functional pockets, a silhouette that holds its shape through 12-hour days. Office to evening, no change needed.',
     price: '₹8,900',
   },
   {
-    image: productBrownBlazer,
-    name: 'The Heritage Jacket',
+    image: productBerryWrap,
+    name: 'The Berry Wrap Jacket',
     tagline: 'Artisanal',
-    description: 'Handwoven fabric with hand-painted detailing. Premium finish that holds shape through 12-hour days. Designed to last 5+ years.',
+    description: 'Handwoven cotton-linen blend with block-printed reversible lapels and a signature belt. The kind of piece that starts conversations without trying.',
     price: '₹9,400',
   },
   {
-    image: productColorfulJacket,
-    name: 'The Expressive Jacket',
-    tagline: 'Versatile',
-    description: 'Bold on one side, understated on the other. Ajrakh prints meet contemporary silhouettes. Hand-washable, travel-ready.',
+    image: productFridaJacket,
+    name: 'The Art Jacket',
+    tagline: 'Expressive',
+    description: 'Bold hand-painted artisan prints meet magenta silk lining with gold elephant buttons. Wearable art that turns every entrance into a moment.',
     price: '₹7,800',
   },
   {
-    image: productWaistcoat,
-    name: 'The Tailored Waistcoat',
+    image: productFloralBlazer,
+    name: 'The Floral Blazer',
     tagline: 'Essential',
-    description: 'Layers effortlessly under a blazer or stands alone with confidence. Organic cotton blend with artisanal embroidery details.',
+    description: 'Delicate hand-painted botanical prints on breathable linen. Layers effortlessly, hand-washable, and travels without creasing.',
     price: '₹5,600',
   },
 ];

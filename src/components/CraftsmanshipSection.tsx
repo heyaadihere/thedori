@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import bannerCollection from '@/assets/banner-collection.jpg';
+import bannerCraft from '@/assets/banner-craft-detail.jpg';
 
 const CraftsmanshipSection = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="relative h-[50vh] md:h-[60vh] lg:h-[70vh]">
         <img
-          src={bannerCollection}
-          alt="DORI collection with handwoven Indian fabrics and artisanal details"
+          src={bannerCraft}
+          alt="DORI artisanal hand-painted jacket detail with gold elephant buttons"
           className="w-full h-full object-cover"
           loading="lazy"
         />

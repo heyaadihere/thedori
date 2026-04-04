@@ -1,17 +1,24 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import bannerHero from '@/assets/banner-hero.jpg';
+import heroEditorial from '@/assets/hero-berry-editorial.jpg';
+import teaserAsset from '../../public/videos/teaser-hero.mp4.asset.json';
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-[80vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Video background with fallback image */}
       <div className="absolute inset-0">
-        <img 
-          src={bannerHero} 
-          alt="DORI everyday luxury jacket styled for modern Indian women" 
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={heroEditorial}
           className="w-full h-full object-cover object-center"
-        />
+        >
+          <source src={teaserAsset.url} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10" />
       </div>

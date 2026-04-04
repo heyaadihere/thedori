@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import bannerColorful from '@/assets/banner-colorful.jpg';
+import bannerArt from '@/assets/banner-collection-art.jpg';
 
 const CollectionBanner = () => {
   return (
@@ -13,7 +13,7 @@ const CollectionBanner = () => {
         transition={{ duration: 1.5, ease: 'easeOut' }}
         className="absolute inset-0"
       >
-        <img src={bannerColorful} alt="DORI vibrant collection with hand-painted designs" className="w-full h-full object-cover" loading="lazy" />
+        <img src={bannerArt} alt="DORI vibrant artisan collection with hand-painted designs" className="w-full h-full object-cover" loading="lazy" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/40 to-black/10" />
 

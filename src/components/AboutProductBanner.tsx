@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bannerEditorial from '@/assets/banner-editorial.jpg';
+import heroEditorial from '@/assets/hero-berry-editorial.jpg';
 
 const AboutProductBanner = () => {
   return (
@@ -11,7 +11,7 @@ const AboutProductBanner = () => {
         className="absolute inset-0"
       >
         <img
-          src={bannerEditorial}
+          src={heroEditorial}
           alt="DORI everyday luxury jacket crafted with Indian textiles"
           className="w-full h-full object-cover object-center"
         />

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import bannerEditorial from '@/assets/banner-editorial.jpg';
+import bannerReversible from '@/assets/banner-reversible-detail.jpg';
 
 const EditorialBanner = () => {
   return (
@@ -13,7 +13,7 @@ const EditorialBanner = () => {
         transition={{ duration: 1.5, ease: 'easeOut' }}
         className="absolute inset-0"
       >
-        <img src={bannerEditorial} alt="DORI jacket styled for office to evening transition" className="w-full h-full object-cover" loading="lazy" />
+        <img src={bannerReversible} alt="DORI reversible blazer with artisan print lapels" className="w-full h-full object-cover" loading="lazy" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/15" />
 
