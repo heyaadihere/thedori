@@ -19,7 +19,7 @@ const values = [
   {
     number: '04',
     title: 'Functional Intelligence',
-    description: 'Pockets where you need them. Hand-washable fabrics. Easy-to-care-for materials. Design that works for your actual life.',
+    description: 'Real pockets. Breathable fabrics. Wrinkle-free comfort. Hand-washable materials. Design that works for your actual life.',
   },
 ];
 
