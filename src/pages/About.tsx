@@ -2,7 +2,7 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
-import TimelineSection from '@/components/TimelineSection';
+
 import SustainabilitySection from '@/components/SustainabilitySection';
 import StatsSection from '@/components/StatsSection';
 import AboutProductBanner from '@/components/AboutProductBanner';
@@ -38,7 +38,7 @@ const About = () => {
         <AboutAtelier />
         <DesignPhilosophy />
         <AboutProcessGallery />
-        <TimelineSection />
+        
         <SustainabilitySection />
         <Newsletter />
       </main>
