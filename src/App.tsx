@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { useCartSync } from "@/hooks/useCartSync";
 import ScrollToTop from "@/components/ScrollToTop";
+import ScrollProgressBar from "@/components/ScrollProgressBar";
 import PageTransition from "@/components/PageTransition";
 import Index from "./pages/Index";
 import ProductDetail from "./pages/ProductDetail";
@@ -42,6 +43,7 @@ const AppContent = () => {
   useCartSync();
   return (
     <>
+      <ScrollProgressBar />
       <ScrollToTop />
       <AnimatedRoutes />
     </>

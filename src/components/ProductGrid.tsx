@@ -23,7 +23,7 @@ const ProductCard = ({ product, index }: { product: ShopifyProduct; index: numbe
               <img
                 src={image.url}
                 alt={image.altText || title}
-                className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
             ) : (
@@ -31,10 +31,14 @@ const ProductCard = ({ product, index }: { product: ShopifyProduct; index: numbe
                 <span className="text-xs tracking-wider uppercase">No image</span>
               </div>
             )}
-            {/* Quick view overlay */}
-            <div className="absolute inset-0 flex items-end justify-center pb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="bg-black/80 backdrop-blur-sm text-white text-xs tracking-[0.15em] uppercase px-6 py-3">
-                View Details
+            {/* Hover overlay with gradient reveal */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            <div className="absolute inset-0 flex flex-col items-center justify-end pb-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+              <span className="text-white text-xs tracking-[0.2em] uppercase font-light mb-1">
+                {title}
+              </span>
+              <span className="bg-white/90 text-primary text-[10px] tracking-[0.15em] uppercase px-5 py-2.5 mt-2 hover:bg-white transition-colors">
+                Quick View
               </span>
             </div>
           </div>
