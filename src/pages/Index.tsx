@@ -14,6 +14,7 @@ import CraftsmanshipSection from '@/components/CraftsmanshipSection';
 import CollectionBanner from '@/components/CollectionBanner';
 import ProductSpotlight from '@/components/ProductSpotlight';
 import ProcessSection from '@/components/ProcessSection';
+import VideoShowcase from '@/components/VideoShowcase';
 import EditorialBanner from '@/components/EditorialBanner';
 import LookbookGallery from '@/components/LookbookGallery';
 import WardrobeGuide from '@/components/WardrobeGuide';
@@ -44,6 +45,7 @@ const Index = () => {
         <CollectionBanner />
         <ProductSpotlight />
         <ProcessSection />
+        <VideoShowcase />
         <EditorialBanner />
         <LookbookGallery />
         <WardrobeGuide />
