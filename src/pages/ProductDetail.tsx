@@ -10,6 +10,7 @@ import { ArrowLeft, Loader2, Truck, RotateCcw, Shield } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ImageMagnifier from '@/components/ImageMagnifier';
 import type { ShopifyProduct } from '@/lib/shopify';
 import { toast } from 'sonner';
 
@@ -104,7 +105,7 @@ const ProductDetail = () => {
             transition={{ duration: 0.5 }}
             className="space-y-3"
           >
-            <div className="aspect-[3/4] bg-secondary rounded overflow-hidden relative group">
+            <div className="aspect-[3/4] bg-secondary rounded overflow-hidden relative">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={selectedImageIndex}
@@ -115,10 +116,10 @@ const ProductDetail = () => {
                   className="w-full h-full"
                 >
                   {images[selectedImageIndex]?.node ? (
-                    <img
+                    <ImageMagnifier
                       src={images[selectedImageIndex].node.url}
                       alt={images[selectedImageIndex].node.altText || product.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-cover"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-muted-foreground text-xs">No image</div>

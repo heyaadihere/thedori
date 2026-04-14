@@ -1,21 +1,28 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 import heroEditorial from '@/assets/hero-berry-editorial.jpg';
 
 const HeroSection = () => {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
+  const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '25%']);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.5, 0.8]);
+
   return (
-    <section className="relative min-h-[80vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary">
-      {/* Image background */}
-      <div className="absolute inset-0">
+    <section ref={ref} className="relative min-h-[80vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary">
+      {/* Parallax image background */}
+      <motion.div className="absolute inset-0" style={{ y: imgY }}>
         <img
           src={heroEditorial}
           alt="DORI luxury jacket editorial"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/20" />
+        <motion.div className="absolute inset-0 bg-black" style={{ opacity: overlayOpacity }} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10" />
-      </div>
+      </motion.div>
 
       <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-12">
         <div className="max-w-xl">
