@@ -79,6 +79,29 @@ const MaterialsSection = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Fabric philosophy tagline */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 md:mt-24 text-center"
+        >
+          <p className="text-sm md:text-base text-muted-foreground font-light mb-3">
+            We work with master textiles for quality, not for volume.
+          </p>
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-serif font-medium mb-6">
+            Breathability. Texture. Longevity.
+          </h3>
+          <div className="luxury-divider w-16 mx-auto mb-8" />
+          <div className="max-w-md mx-auto">
+            <p className="text-xs md:text-sm tracking-[0.3em] uppercase text-gold/60 mb-2">Particular Qualities</p>
+            <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed">
+              Every fabric scores in peace through performance.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

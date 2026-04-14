@@ -44,6 +44,9 @@ const SustainabilitySection = () => {
           <p className="text-sm md:text-base text-primary-foreground/50 font-light max-w-lg mx-auto leading-relaxed">
             Sustainability through longevity. We make fewer pieces that last longer, crafted with handwoven fabrics and artisanal techniques.
           </p>
+          <p className="text-sm md:text-base text-gold/80 font-serif italic mt-4 max-w-xl mx-auto leading-relaxed">
+            We design with restraint creating pieces that do more, last longer and reduce the need for excess.
+          </p>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>
 
