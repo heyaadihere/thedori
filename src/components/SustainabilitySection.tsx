@@ -24,7 +24,7 @@ const pillars = [
     icon: Wind,
     title: 'Breathable Comfort',
     stat: '12hrs',
-    description: 'of all-day wear with temperature-regulating natural fibres',
+    description: 'regulating natural fibres',
   },
 ];
 
