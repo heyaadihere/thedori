@@ -4,14 +4,14 @@ import process2 from '@/assets/process-2.jpg';
 
 const materials = [
   {
-    name: 'Handwoven Khadi',
-    origin: 'Indian Artisans',
-    detail: 'Breathable, structured, and rich in texture. Every yard is handwoven, carrying the skill of generations.',
+    name: 'Chikankari',
+    origin: 'Artisanal Embroidery',
+    detail: 'Embroidered with precision, chikankari introduces depth without weight. It allows the garment to remain structured, while adding a quiet layer of detail that reveals itself up close.',
   },
   {
     name: 'Organic Cotton & Linen',
     origin: 'Sustainably Sourced',
-    detail: 'Lightweight, temperature-regulating, and wrinkle-resistant. Comfortable for all-day wear across seasons.',
+    detail: 'Lightweight, temperature-regulating, and resilient across long hours of wear. These fabrics are chosen for consistency — how they feel at hour one and hour twelve.',
   },
   {
     name: 'Ajrakh & Hand-Painted Designs',
@@ -35,10 +35,10 @@ const MaterialsSection = () => {
               <div className="luxury-divider w-10 mb-6 md:mb-8" />
               <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">The Fabrics</p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] mb-5 md:mb-6 font-serif">
-                Premium Indian<br />textiles
+                Fabrics that<br />perform
               </h2>
               <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-8 md:mb-12">
-                We celebrate India's textile heritage. Every fabric is selected for breathability, durability, and how it feels after hours of wear. Artisanal embroidery, chikankari, kantha, zari, mirror work, adds character that machines cannot replicate.
+                We work with Indian textiles for what they offer, not for nostalgia. Breathability. Texture. Longevity. Every fabric earns its place through performance.
               </p>
             </motion.div>
 

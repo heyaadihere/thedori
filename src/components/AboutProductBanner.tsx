@@ -31,10 +31,10 @@ const AboutProductBanner = () => {
             <div className="luxury-divider w-14 mb-6" />
             <p className="text-[10px] tracking-[0.6em] uppercase text-white/40 mb-4 font-light">Our Story</p>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white leading-[1.05] font-serif">
-              Effortless luxury,<br />everyday
+              Designed for women<br />operating at full pace
             </h1>
             <p className="text-sm md:text-base text-white/45 font-light mt-6 max-w-md leading-relaxed">
-              Western silhouettes meet Indian fabrics. Jackets designed for women who don't have time to change but always want to look put-together.
+              DORI creates pieces that hold structure, presence and clarity without interruption.
             </p>
           </div>
         </div>

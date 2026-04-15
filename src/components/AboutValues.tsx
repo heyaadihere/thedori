@@ -3,23 +3,23 @@ import { motion } from 'framer-motion';
 const values = [
   {
     number: '01',
-    title: 'Effortless Design',
-    description: 'Every detail serves a purpose. Wrinkle-free fabrics, breathable linings, structured shoulders that hold shape from morning to night.',
+    title: 'Design with Intent',
+    description: 'Every line, seam and silhouette is deliberate. Nothing is added without purpose, nothing exists without function.',
   },
   {
     number: '02',
-    title: 'Personal Versatility',
-    description: 'Reversible construction. Two distinct looks from one piece. Your wardrobe works harder so you don\'t have to.',
+    title: 'Versatility Without Compromise',
+    description: 'Pieces are built to move across context — professional, personal, transitional. Not by diluting identity, but by allowing it to adapt.',
   },
   {
     number: '03',
-    title: 'Warm Confidence',
-    description: 'Clothing that makes you feel put-together the moment you put it on. Confident but approachable. Aspirational but personal.',
+    title: 'Presence Over Noise',
+    description: 'DORI does not rely on excess to create impact. The strength lies in structure, proportion and restraint. It\'s not about being noticed. It\'s about being remembered.',
   },
   {
     number: '04',
-    title: 'Functional Intelligence',
-    description: 'Real pockets. Breathable fabrics. Wrinkle-free comfort. Hand-washable materials. Design that works for your actual life.',
+    title: 'Utility is Not an Afterthought',
+    description: 'Every element of fit, fabric, construction serves a purpose — refined to feel seamless, not technical.',
   },
 ];
 
