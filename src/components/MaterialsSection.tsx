@@ -24,7 +24,7 @@ const MaterialsSection = () => {
   return (
     <section className="py-16 md:py-24 lg:py-32 px-4 md:px-6 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-start">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center">
           <div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}

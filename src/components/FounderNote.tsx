@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import founderEditorial from '@/assets/founder-editorial.jpg';
+import bannerFounder from '@/assets/banner-founder.jpg';
 
 const FounderNote = () => {
   return (
     <section className="py-16 md:py-24 lg:py-36 px-4 md:px-6 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-5 gap-8 md:gap-12 lg:gap-20 items-start">
+        <div className="grid md:grid-cols-5 gap-8 md:gap-12 lg:gap-20 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -15,7 +15,7 @@ const FounderNote = () => {
           >
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src={founderEditorial}
+                src={bannerFounder}
                 alt="DORI founder portrait"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"
