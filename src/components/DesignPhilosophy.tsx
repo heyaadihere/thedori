@@ -37,7 +37,7 @@ const DesignPhilosophy = () => {
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
+        <div className="grid lg:grid-cols-3 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-2 space-y-8 md:space-y-10">
             {principles.map((p, i) => (
               <motion.div
