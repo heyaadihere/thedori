@@ -33,17 +33,29 @@ const FounderNote = () => {
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">A Note from the Founder</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.2] mb-6 md:mb-8 font-serif">
-              "I built DORI for women who value clarity over clutter."
+              "I didn't want more clothes. I wanted better decisions."
             </h2>
             <div className="space-y-4 md:space-y-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                I wanted to create jackets for women like me, ambitious, always moving, tired of choosing between comfort and style. Something that goes from a 9am client meeting to evening drinks without a wardrobe change.
+                I built DORI at a point where my life had outgrown my wardrobe.
               </p>
               <p>
-                DORI blends what I love about Western tailoring, the structure, the clean lines, with India's incredible textile heritage. Handwoven fabrics, artisanal embroidery, materials that breathe and last for years.
+                The days were full with meetings, travel, conversations that mattered. But what I wore still felt like it belonged to a slower version of life.
               </p>
               <p>
-                Every feature has a purpose. Reversible construction gives you two looks. Functional pockets because you need them. Hand-washable fabrics because life is busy enough.
+                Everything required a change. Clothing designed for moments not for continuity. And that's where the shift began.
+              </p>
+              <p>
+                DORI is built on clarity in design. Every piece is considered for how it performs across a full day: Structure that holds. Fabrics that adapt. Design that moves without compromise.
+              </p>
+              <p>
+                Reversible construction isn't a feature. It's a response to the way modern lives actually function. I've always been drawn to the discipline of Western tailoring — its precision, its control. And equally to the depth of Indian textiles — its texture, its individuality.
+              </p>
+              <p>
+                DORI brings these together with intent. This brand is for women who already know who they are. Who don't need clothing to define them — but expect it to keep up.
+              </p>
+              <p>
+                DORI doesn't transform you. It removes friction.
               </p>
             </div>
             <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-gold/20">
