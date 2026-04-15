@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import brandDetailImage from '@/assets/brand-detail.jpg';
-import process2 from '@/assets/process-2.jpg';
+import fabricChikankari from '@/assets/fabric-chikankari.jpg';
+import fabricCottonLinen from '@/assets/fabric-cotton-linen.jpg';
 
 const materials = [
   {
@@ -69,12 +69,12 @@ const MaterialsSection = () => {
           >
             <div className="luxury-frame">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={brandDetailImage} alt="DORI handwoven fabric close-up" className="w-full h-full object-cover" loading="lazy" />
+                <img src={fabricChikankari} alt="Chikankari embroidery detail" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
             <div className="luxury-frame">
               <div className="aspect-[16/9] overflow-hidden">
-                <img src={process2} alt="DORI artisanal fabric crafting" className="w-full h-full object-cover" loading="lazy" />
+                <img src={fabricCottonLinen} alt="Organic cotton and linen fabric texture" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </motion.div>
