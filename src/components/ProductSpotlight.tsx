@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import spotlightLeather from '@/assets/spotlight-leather-blazer.jpg';
-import spotlightBerry from '@/assets/spotlight-berry-wrap.jpg';
+import spotlightBerry from '@/assets/product-berry-wrap.jpg';
 import spotlightArt from '@/assets/spotlight-art-jacket.jpg';
 import spotlightReversible from '@/assets/spotlight-reversible-blazer.jpg';
 
