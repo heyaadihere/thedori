@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bannerFounder from '@/assets/banner-founder.jpg';
+import founderEditorial from '@/assets/founder-editorial.jpg';
 
 const FounderNote = () => {
   return (
@@ -15,7 +15,7 @@ const FounderNote = () => {
           >
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src={bannerFounder}
+                src={founderEditorial}
                 alt="DORI founder portrait"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"

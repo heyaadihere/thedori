@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import process1 from '@/assets/process-1.jpg';
-import process2 from '@/assets/process-2.jpg';
-import process3 from '@/assets/process-3.jpg';
+import productFlatlay from '@/assets/product-flatlay-1.jpg';
+import productStyledEditorial from '@/assets/product-styled-editorial.jpg';
+import productDetailTailoring from '@/assets/product-detail-tailoring.jpg';
 
 const AboutProcessGallery = () => {
   return (
@@ -19,7 +19,7 @@ const AboutProcessGallery = () => {
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {[process1, process2, process3].map((img, i) => (
+          {[productFlatlay, productStyledEditorial, productDetailTailoring].map((img, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }}
