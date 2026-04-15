@@ -16,14 +16,17 @@ const AboutAtelier = () => {
             <div className="luxury-divider w-10 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-gold/70 mb-4 md:mb-6">The Atelier</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] mb-5 md:mb-6 font-serif">
-              Where heritage<br />meets precision
+              Where precision<br />meets craft
             </h2>
             <div className="space-y-4 text-sm md:text-base text-muted-foreground font-light leading-relaxed">
               <p>
-                Our atelier is where Indian textile artistry meets contemporary design. Skilled artisans work with handwoven khadi, organic cotton, linen, and ajrakh, applying techniques like chikankari, kantha, zari, and mirror work with practiced precision.
+                Every garment is shaped through a balance of tailoring discipline and textile expertise.
               </p>
               <p>
-                Every piece passes through strong quality checks to ensure a lifespan of 5+ years. The kind of quality we care about comes from attention to detail, from reversible seams that lie perfectly flat to pockets placed exactly where you need them.
+                Artisans and pattern makers work in tandem ensuring each piece holds both structure and individuality.
+              </p>
+              <p>
+                The result is clothing that feels considered, not constructed.
               </p>
             </div>
           </motion.div>

@@ -8,16 +8,16 @@ const principles = [
     body: 'DORI isn\'t created to follow fashion. It\'s created to outlast it. Contemporary silhouettes with Indian textiles that stay relevant season after season.',
   },
   {
-    title: 'Reversible by design',
-    body: 'Not a gimmick. A design principle. One side modern, the other traditionally inspired. Two considered looks from one garment, less waste, more versatility.',
+    title: 'Built for Movement',
+    body: 'Modern lives don\'t pause between roles. Our clothing is designed to move through them.',
   },
   {
-    title: 'Functional intelligence',
-    body: 'Real pockets. Breathable fabrics. Wrinkle-free comfort. Hand-washable materials. Every feature designed for 12-hour days, not just photoshoots.',
+    title: 'Reduced Complexity',
+    body: 'Fewer decisions. Better outcomes. Each piece simplifies what your wardrobe demands of you.',
   },
   {
     title: 'Made to last',
-    body: 'Strong quality checks ensure every piece lasts 5-6 years. Handwoven fabrics, artisanal embroidery, and construction that holds shape through hundreds of wears.',
+    body: 'Structure, finish, and material are chosen to endure — visually and functionally. Not temporary. Not disposable.',
   },
 ];
 
