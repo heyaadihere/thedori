@@ -6,7 +6,7 @@ import { useCartStore } from '@/stores/cartStore';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowLeft, Loader2, Truck, RotateCcw, Shield } from 'lucide-react';
+import { ArrowLeft, Loader2, Truck, RotateCcw, Shield, Heart, Share2, ChevronDown } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -22,6 +22,8 @@ const ProductDetail = () => {
 
   const [selectedOptions, setSelectedOptions] = useState<Record<string, string>>({});
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [isWishlisted, setIsWishlisted] = useState(false);
+  const [quantity, setQuantity] = useState(1);
 
   if (isLoading) {
     return (
@@ -81,7 +83,7 @@ const ProductDetail = () => {
       variantId: selectedVariant.id,
       variantTitle: selectedVariant.title,
       price: selectedVariant.price,
-      quantity: 1,
+      quantity,
       selectedOptions: selectedVariant.selectedOptions,
     });
     toast.success('Added to bag', { position: 'top-center' });
@@ -92,10 +94,18 @@ const ProductDetail = () => {
       <AnnouncementBar />
       <Header />
       <main className="container mx-auto max-w-6xl px-6 py-8 lg:py-12">
-        <Link to="/" className="inline-flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors mb-8">
-          <ArrowLeft className="h-3 w-3" />
-          <span className="tracking-wider uppercase">Back to shop</span>
-        </Link>
+        {/* Breadcrumb */}
+        <motion.nav
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="flex items-center gap-2 text-[10px] tracking-[0.15em] uppercase text-muted-foreground mb-8"
+        >
+          <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
+          <span>/</span>
+          <Link to="/collections" className="hover:text-foreground transition-colors">Collections</Link>
+          <span>/</span>
+          <span className="text-foreground">{product.title}</span>
+        </motion.nav>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
           {/* Images */}
@@ -105,7 +115,7 @@ const ProductDetail = () => {
             transition={{ duration: 0.5 }}
             className="space-y-3"
           >
-            <div className="aspect-[3/4] bg-secondary rounded overflow-hidden relative">
+            <div className="aspect-[3/4] bg-secondary rounded overflow-hidden relative group">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={selectedImageIndex}
@@ -126,7 +136,16 @@ const ProductDetail = () => {
                   )}
                 </motion.div>
               </AnimatePresence>
+
+              {/* Image counter badge */}
+              {images.length > 1 && (
+                <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm px-3 py-1.5 text-[10px] tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">
+                  {selectedImageIndex + 1} / {images.length}
+                </div>
+              )}
             </div>
+
+            {/* Thumbnail strip */}
             {images.length > 1 && (
               <div className="flex gap-2 overflow-x-auto pb-1">
                 {images.map((img, i) => (
@@ -152,10 +171,11 @@ const ProductDetail = () => {
             className="flex flex-col"
           >
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-2">DORI</p>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal mb-3">{product.title}</h1>
-            <p className="text-xl text-foreground mb-8">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-normal mb-3 font-serif">{product.title}</h1>
+            <p className="text-xl text-foreground mb-2">
               {selectedVariant?.price.currencyCode} {parseFloat(selectedVariant?.price.amount || '0').toFixed(2)}
             </p>
+            <p className="text-xs text-muted-foreground mb-8">Tax included. Shipping calculated at checkout.</p>
 
             {/* Variant selectors */}
             {options.map(option => (
@@ -168,7 +188,7 @@ const ProductDetail = () => {
                     <button
                       key={value}
                       onClick={() => setSelectedOptions(prev => ({ ...prev, [option.name]: value }))}
-                      className={`px-5 py-2.5 text-xs tracking-wider uppercase border transition-all duration-200 ${
+                      className={`px-5 py-2.5 text-xs tracking-wider uppercase border transition-all duration-200 hover:scale-[1.02] ${
                         selectedOptions[option.name] === value
                           ? 'bg-primary text-primary-foreground border-primary'
                           : 'border-border text-foreground hover:border-foreground'
@@ -181,20 +201,65 @@ const ProductDetail = () => {
               </div>
             ))}
 
-            <Button
-              onClick={handleAddToCart}
-              disabled={cartLoading || !selectedVariant?.availableForSale}
-              size="lg"
-              className="w-full rounded-none tracking-[0.15em] uppercase text-xs py-7 mt-2"
-            >
-              {cartLoading ? (
-                <Loader2 className="w-4 h-4 animate-spin" />
-              ) : !selectedVariant?.availableForSale ? (
-                'Sold Out'
-              ) : (
-                'Add to Bag'
-              )}
-            </Button>
+            {/* Quantity selector */}
+            <div className="mb-6">
+              <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground mb-3">Quantity</p>
+              <div className="inline-flex items-center border border-border">
+                <button
+                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                  className="px-4 py-2.5 text-sm hover:bg-secondary transition-colors"
+                >
+                  −
+                </button>
+                <span className="px-5 py-2.5 text-sm min-w-[3rem] text-center">{quantity}</span>
+                <button
+                  onClick={() => setQuantity(quantity + 1)}
+                  className="px-4 py-2.5 text-sm hover:bg-secondary transition-colors"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            {/* Action buttons */}
+            <div className="flex gap-3 mt-2">
+              <Button
+                onClick={handleAddToCart}
+                disabled={cartLoading || !selectedVariant?.availableForSale}
+                size="lg"
+                className="flex-1 rounded-none tracking-[0.15em] uppercase text-xs py-7 hover:scale-[1.01] transition-transform"
+              >
+                {cartLoading ? (
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                ) : !selectedVariant?.availableForSale ? (
+                  'Sold Out'
+                ) : (
+                  'Add to Bag'
+                )}
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-none py-7 px-4 border-border hover:border-foreground"
+                onClick={() => {
+                  setIsWishlisted(!isWishlisted);
+                  toast.success(isWishlisted ? 'Removed from wishlist' : 'Added to wishlist', { position: 'top-center' });
+                }}
+              >
+                <Heart className={`h-4 w-4 transition-all ${isWishlisted ? 'fill-destructive text-destructive scale-110' : ''}`} />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-none py-7 px-4 border-border hover:border-foreground"
+                onClick={() => {
+                  navigator.clipboard.writeText(window.location.href);
+                  toast.success('Link copied!', { position: 'top-center' });
+                }}
+              >
+                <Share2 className="h-4 w-4" />
+              </Button>
+            </div>
 
             {/* Trust badges */}
             <div className="flex justify-center gap-8 mt-6 py-4 border-t border-b border-border">
@@ -210,7 +275,7 @@ const ProductDetail = () => {
               ))}
             </div>
 
-            {/* Tabs */}
+            {/* Collapsible info sections */}
             {product.description && (
               <Tabs defaultValue="description" className="mt-8">
                 <TabsList className="w-full justify-start bg-transparent border-b border-border rounded-none h-auto p-0 gap-6">
@@ -234,7 +299,7 @@ const ProductDetail = () => {
                     <p>• Premium wool-blend fabric</p>
                     <p>• Reversible construction</p>
                     <p>• Contrast panel detailing</p>
-                    <p>• Dry clean recommended</p>
+                    <p>• Hand-washable with cold water</p>
                     <p>• Made in India</p>
                   </div>
                 </TabsContent>
@@ -250,6 +315,20 @@ const ProductDetail = () => {
             )}
           </motion.div>
         </div>
+
+        {/* You may also like */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mt-20 lg:mt-32 pt-12 border-t border-border"
+        >
+          <div className="text-center mb-12">
+            <p className="text-xs tracking-[0.5em] uppercase text-muted-foreground mb-3">Complete the Look</p>
+            <h2 className="text-2xl md:text-3xl font-medium font-serif">You May Also Like</h2>
+            <div className="luxury-divider w-16 mx-auto mt-5" />
+          </div>
+        </motion.div>
       </main>
       <Footer />
     </div>

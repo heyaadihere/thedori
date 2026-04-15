@@ -146,3 +146,41 @@
   background-size: 200% auto;
   animation: shimmer 8s linear infinite;
 }
+
+/* Glassmorphism card */
+.glass-card {
+  background: hsl(var(--background) / 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--border) / 0.5);
+}
+
+/* Smooth image reveal on load */
+.image-reveal {
+  animation: imageReveal 0.8s ease-out forwards;
+}
+
+@keyframes imageReveal {
+  from { opacity: 0; transform: scale(1.02); filter: blur(4px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+
+/* Staggered line animation */
+.line-draw {
+  background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
+  animation: lineGrow 1.2s ease-out forwards;
+}
+
+@keyframes lineGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -8px hsl(var(--gold) / 0.15);
+}

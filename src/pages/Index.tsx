@@ -24,6 +24,11 @@ import FAQSection from '@/components/FAQSection';
 import InstagramFeed from '@/components/InstagramFeed';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
+import CuratedPicks from '@/components/CuratedPicks';
+import SplitEditorial from '@/components/SplitEditorial';
+import ScrollRevealText from '@/components/ScrollRevealText';
+import ReversibleShowcase from '@/components/ReversibleShowcase';
+import ServiceCards from '@/components/ServiceCards';
 
 const Index = () => {
   return (
@@ -38,12 +43,16 @@ const Index = () => {
         <PhilosophyMarquee />
         <CategoryShowcase />
         <ProductGrid />
+        <ReversibleShowcase />
         <LuxuryShowcase />
+        <SplitEditorial />
         <BehindTheWeave />
         <StatsSection />
         <CraftsmanshipSection />
         <CollectionBanner />
+        <CuratedPicks />
         <ProductSpotlight />
+        <ScrollRevealText />
         <ProcessSection />
         <VideoShowcase />
         <EditorialBanner />
@@ -51,6 +60,7 @@ const Index = () => {
         <WardrobeGuide />
         <Testimonials />
         <BrandStory />
+        <ServiceCards />
         <FAQSection />
         <InstagramFeed />
         <Newsletter />

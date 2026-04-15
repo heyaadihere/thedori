@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { SlidersHorizontal, X, Grid3X3, LayoutList } from 'lucide-react';
+import { SlidersHorizontal, X, Grid3X3, LayoutList, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,21 +12,31 @@ import bannerCollection from '@/assets/banner-collection.jpg';
 
 const categories = ['All', 'Blazers', 'Jackets', 'Waistcoats'];
 const sortOptions = ['Newest', 'Price: Low to High', 'Price: High to Low', 'Best Sellers'];
+const priceRanges = ['All Prices', 'Under ₹5,000', '₹5,000 - ₹10,000', 'Above ₹10,000'];
 
 const Collections = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [activeSort, setActiveSort] = useState('Newest');
+  const [activePriceRange, setActivePriceRange] = useState('All Prices');
   const [showFilters, setShowFilters] = useState(false);
   const [gridView, setGridView] = useState<'grid' | 'list'>('grid');
+  const [searchQuery, setSearchQuery] = useState('');
 
   return (
     <div className="min-h-screen bg-background">
       <AnnouncementBar />
       <Header />
       <main>
-        {/* Hero with product banner */}
+        {/* Hero with parallax banner */}
         <section className="relative h-[40vh] lg:h-[50vh] overflow-hidden">
-          <img src={bannerCollection} alt="DORI collection" className="w-full h-full object-cover" />
+          <motion.img
+            src={bannerCollection}
+            alt="DORI collection"
+            className="w-full h-full object-cover"
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5 }}
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -44,7 +55,7 @@ const Collections = () => {
           </motion.div>
         </section>
 
-        {/* Filters bar */}
+        {/* Enhanced filters bar */}
         <section className="sticky top-[96px] lg:top-[112px] z-30 bg-background/95 backdrop-blur-sm border-b border-border">
           <div className="container mx-auto max-w-7xl px-6">
             <div className="flex items-center justify-between h-14">
@@ -53,11 +64,18 @@ const Collections = () => {
                   <button
                     key={cat}
                     onClick={() => setActiveCategory(cat)}
-                    className={`text-xs tracking-[0.15em] uppercase transition-colors ${
+                    className={`relative text-xs tracking-[0.15em] uppercase transition-colors py-4 ${
                       activeCategory === cat ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
                     }`}
                   >
                     {cat}
+                    {activeCategory === cat && (
+                      <motion.div
+                        layoutId="categoryUnderline"
+                        className="absolute bottom-0 left-0 right-0 h-[2px] bg-gold"
+                        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                      />
+                    )}
                   </button>
                 ))}
               </div>
@@ -73,6 +91,18 @@ const Collections = () => {
               </Button>
 
               <div className="flex items-center gap-4">
+                {/* Search */}
+                <div className="hidden lg:flex items-center gap-2 border border-border px-3 py-1.5 focus-within:border-foreground transition-colors">
+                  <Search className="h-3 w-3 text-muted-foreground" />
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="text-xs bg-transparent outline-none w-24 text-foreground placeholder:text-muted-foreground"
+                  />
+                </div>
+
                 <select
                   value={activeSort}
                   onChange={(e) => setActiveSort(e.target.value)}
@@ -120,7 +150,7 @@ const Collections = () => {
                       <X className="h-4 w-4 text-muted-foreground" />
                     </button>
                   </div>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {categories.map((cat) => (
                       <button
                         key={cat}
@@ -135,11 +165,58 @@ const Collections = () => {
                       </button>
                     ))}
                   </div>
+                  <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-2">Price Range</p>
+                  <div className="flex flex-wrap gap-2">
+                    {priceRanges.map((range) => (
+                      <button
+                        key={range}
+                        onClick={() => setActivePriceRange(range)}
+                        className={`px-4 py-2 text-xs tracking-[0.1em] border transition-colors ${
+                          activePriceRange === range
+                            ? 'border-foreground bg-foreground text-background'
+                            : 'border-border text-muted-foreground hover:border-foreground'
+                        }`}
+                      >
+                        {range}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
         </section>
+
+        {/* Active filters display */}
+        {(activeCategory !== 'All' || activePriceRange !== 'All Prices') && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            className="border-b border-border"
+          >
+            <div className="container mx-auto max-w-7xl px-6 py-3 flex items-center gap-3">
+              <span className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground">Active filters:</span>
+              {activeCategory !== 'All' && (
+                <button
+                  onClick={() => setActiveCategory('All')}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary text-xs tracking-wider"
+                >
+                  {activeCategory}
+                  <X className="h-3 w-3" />
+                </button>
+              )}
+              {activePriceRange !== 'All Prices' && (
+                <button
+                  onClick={() => setActivePriceRange('All Prices')}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary text-xs tracking-wider"
+                >
+                  {activePriceRange}
+                  <X className="h-3 w-3" />
+                </button>
+              )}
+            </div>
+          </motion.div>
+        )}
 
         {/* Products */}
         <section className="py-12 lg:py-16">
