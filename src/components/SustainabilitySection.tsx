@@ -4,27 +4,27 @@ import { Leaf, Recycle, Droplets, Wind } from 'lucide-react';
 const pillars = [
   {
     icon: Leaf,
-    title: 'Handwoven Fabrics',
+    title: 'Artisan Crafted',
     stat: '100%',
-    description: 'Indian textiles, handwoven by skilled artisans preserving traditional craft',
+    description: 'Handcrafted by skilled artisans, preserving technique and individuality in every piece',
   },
   {
     icon: Recycle,
-    title: 'Built to Last',
+    title: 'Built to Endure',
     stat: '5+',
-    description: 'years of wear per piece, reducing the need for replacement',
+    description: 'Years of wear per piece — designed to reduce the cycle of replacement',
   },
   {
     icon: Droplets,
-    title: 'Hand-Washable',
+    title: 'Low Maintenance',
     stat: 'Easy',
-    description: 'care with cold water, no dry cleaning needed for most pieces',
+    description: 'Hand-washable with cold water. No dry cleaning required for most pieces',
   },
   {
     icon: Wind,
-    title: 'Breathable Comfort',
+    title: 'All-Day Comfort',
     stat: '12hrs',
-    description: 'regulating natural fibres',
+    description: 'Temperature-regulating natural fibres that perform from morning to night',
   },
 ];
 
@@ -40,12 +40,12 @@ const SustainabilitySection = () => {
           className="text-center mb-14 md:mb-20"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-primary-foreground/40 mb-4">Responsibility</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">Celebrating India's textile heritage</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-4 font-serif">Fewer pieces. Greater purpose.</h2>
           <p className="text-sm md:text-base text-primary-foreground/50 font-light max-w-lg mx-auto leading-relaxed">
-            Sustainability through longevity. We make fewer pieces that last longer, crafted with handwoven fabrics and artisanal techniques.
+            We design with restraint creating pieces that do more, last longer and reduce the need for excess.
           </p>
           <p className="text-sm md:text-base text-gold/80 font-serif italic mt-4 max-w-xl mx-auto leading-relaxed">
-            We design with restraint creating pieces that do more, last longer and reduce the need for excess.
+            Not as a statement, but as a standard.
           </p>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>
