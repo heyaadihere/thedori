@@ -10,9 +10,15 @@ const AboutProductBanner = () => {
         transition={{ duration: 2, ease: 'easeOut' }}
         className="absolute inset-0"
       >
-        <img
-          src={heroEditorial}
-          alt="DORI everyday luxury jacket crafted with Indian textiles"
+        <video
+          src="/videos/about-hero.mp4"
+          poster={heroEditorial}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label="DORI atelier — artisans crafting jackets"
           className="w-full h-full object-cover object-center"
         />
       </motion.div>

@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import brandAmbient from '@/assets/videos/brand-ambient.mp4.asset.json';
 
 const VideoShowcase = () => {
   const ref = useRef<HTMLElement>(null);
@@ -25,11 +24,12 @@ const VideoShowcase = () => {
 
         <motion.div style={{ scale, opacity }} className="relative aspect-video rounded overflow-hidden">
           <video
-            src={brandAmbient.url}
+            src="/videos/showcase-cinematic.mp4"
             autoPlay
             muted
             loop
             playsInline
+            preload="metadata"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-primary/20 pointer-events-none" />
