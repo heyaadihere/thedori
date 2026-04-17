@@ -2,7 +2,6 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import FeaturesBar from '@/components/FeaturesBar';
-import PressMentions from '@/components/PressMentions';
 import BrandStatement from '@/components/BrandStatement';
 import PhilosophyMarquee from '@/components/PhilosophyMarquee';
 import CategoryShowcase from '@/components/CategoryShowcase';
@@ -38,7 +37,6 @@ const Index = () => {
       <main>
         <HeroSection />
         <FeaturesBar />
-        <PressMentions />
         <BrandStatement />
         <PhilosophyMarquee />
         <CategoryShowcase />
