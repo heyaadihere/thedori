@@ -12,11 +12,16 @@ const HeroSection = () => {
 
   return (
     <section ref={ref} className="relative min-h-[80vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary">
-      {/* Parallax image background */}
+      {/* Parallax cinematic video background */}
       <motion.div className="absolute inset-0" style={{ y: imgY }}>
-        <img
-          src={heroEditorial}
-          alt="DORI luxury jacket editorial"
+        <video
+          src="/videos/hero-cinematic.mp4"
+          poster={heroEditorial}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
           className="w-full h-full object-cover object-center scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/20" />
