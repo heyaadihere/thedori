@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="py-12 md:py-16 lg:py-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <img src={doriLogo} alt="DORI" className="h-14 md:h-16 w-auto mb-4" />
+            <img src={doriLogo} alt="DORI" className="h-20 md:h-24 w-auto mb-4" />
             <p className="text-xs md:text-sm text-primary-foreground/60 leading-relaxed font-light max-w-xs">
               Everyday luxury jackets for modern Indian women. Designed with intention, defined by presence.
             </p>
