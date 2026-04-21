@@ -39,9 +39,12 @@ const AboutProductBanner = () => {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white leading-[1.05] font-serif">
               Designed for women<br />operating at full pace
             </h1>
-            <p className="text-sm md:text-base text-white/45 font-light mt-6 max-w-md leading-relaxed">
-              DORI creates pieces that hold structure, presence and clarity without interruption.
-            </p>
+<p className="text-sm md:text-base text-white/45 font-light mt-6 max-w-md leading-relaxed">
+            DORI creates pieces that hold structure, presence and clarity without interruption.
+          </p>
+          <p className="text-sm md:text-base text-white/45 font-light mt-4 max-w-md leading-relaxed">
+            Clothing that moves across contexts as seamlessly as you do.
+          </p>
           </div>
         </div>
       </motion.div>
