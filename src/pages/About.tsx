@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
 
 import SustainabilitySection from '@/components/SustainabilitySection';
-import StatsSection from '@/components/StatsSection';
 import AboutProductBanner from '@/components/AboutProductBanner';
 import FounderNote from '@/components/FounderNote';
 import MaterialsSection from '@/components/MaterialsSection';
@@ -33,7 +32,6 @@ const About = () => {
 
         <FounderNote />
         <AboutValues />
-        <StatsSection />
         <MaterialsSection />
         <AboutAtelier />
         <DesignPhilosophy />
