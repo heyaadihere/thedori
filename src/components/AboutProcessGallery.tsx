@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion';
-import productFlatlay from '@/assets/product-flatlay-1.jpg';
-import productStyledEditorial from '@/assets/product-styled-editorial.jpg';
-import productDetailTailoring from '@/assets/product-detail-tailoring.jpg';
+import atelierSewing from '@/assets/atelier-sewing.jpg';
+import atelierLabel from '@/assets/atelier-label.jpg';
+import atelierReversible from '@/assets/atelier-reversible.jpg';
+
+const tiles = [
+  { src: atelierSewing, alt: 'Hands at the sewing machine in the DORI atelier' },
+  { src: atelierLabel, alt: 'DORI woven label on the reverse of a hand-printed jacket' },
+  { src: atelierReversible, alt: 'Reverse side of a DORI piece showing the second face of the fabric' },
+];
 
 const AboutProcessGallery = () => {
   return (
