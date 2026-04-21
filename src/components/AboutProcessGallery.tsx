@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion';
-import productFlatlay from '@/assets/product-flatlay-1.jpg';
-import productStyledEditorial from '@/assets/product-styled-editorial.jpg';
-import productDetailTailoring from '@/assets/product-detail-tailoring.jpg';
+import atelierSewing from '@/assets/atelier-sewing.jpg';
+import atelierLabel from '@/assets/atelier-label.jpg';
+import atelierReversible from '@/assets/atelier-reversible.jpg';
+
+const tiles = [
+  { src: atelierSewing, alt: 'Hands at the sewing machine in the DORI atelier' },
+  { src: atelierLabel, alt: 'DORI woven label on the reverse of a hand-printed jacket' },
+  { src: atelierReversible, alt: 'Reverse side of a DORI piece showing the second face of the fabric' },
+];
 
 const AboutProcessGallery = () => {
   return (
@@ -19,7 +25,7 @@ const AboutProcessGallery = () => {
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {[productFlatlay, productStyledEditorial, productDetailTailoring].map((img, i) => (
+          {tiles.map((tile, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }}
@@ -30,8 +36,8 @@ const AboutProcessGallery = () => {
             >
               <div className="aspect-[4/5] overflow-hidden">
                 <img
-                  src={img}
-                  alt={`DORI process ${i + 1}`}
+                  src={tile.src}
+                  alt={tile.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
