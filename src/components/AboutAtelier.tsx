@@ -47,7 +47,7 @@ const AboutAtelier = () => {
             </div>
             <div className="luxury-frame mt-6 md:mt-8">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={brandDetailImage} alt="DORI handwoven fabric detail" className="w-full h-full object-cover" loading="lazy" />
+                <img src={floralBlazerImage} alt="DORI floral printed linen blazer — atelier craftsmanship" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </motion.div>
