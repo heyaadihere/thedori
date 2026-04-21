@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import atelierImage from '@/assets/atelier.jpg';
-import brandDetailImage from '@/assets/brand-detail.jpg';
+import floralBlazerImage from '@/assets/atelier-floral-blazer.jpg';
 
 const AboutAtelier = () => {
   return (
