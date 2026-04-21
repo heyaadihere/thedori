@@ -25,7 +25,7 @@ const AboutProcessGallery = () => {
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {[productFlatlay, productStyledEditorial, productDetailTailoring].map((img, i) => (
+          {tiles.map((tile, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }}
@@ -36,8 +36,8 @@ const AboutProcessGallery = () => {
             >
               <div className="aspect-[4/5] overflow-hidden">
                 <img
-                  src={img}
-                  alt={`DORI process ${i + 1}`}
+                  src={tile.src}
+                  alt={tile.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
