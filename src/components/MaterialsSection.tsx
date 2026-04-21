@@ -11,12 +11,7 @@ const materials = [
   {
     name: 'Organic Cotton & Linen',
     origin: 'Sustainably Sourced',
-    detail: 'Lightweight, temperature-regulating, and resilient across long hours of wear. These fabrics are chosen for consistency — how they feel at hour one and hour twelve.',
-  },
-  {
-    name: 'Ajrakh & Hand-Painted Designs',
-    origin: 'Traditional Craft',
-    detail: 'Block-printed and hand-painted patterns that bring character to every reversible side. No two pieces are exactly alike.',
+    detail: 'Lightweight, temperature-regulating, and resilient across long hours of wear. These fabrics are chosen for consistency, how they feel at hour one and hour twelve.',
   },
 ];
 

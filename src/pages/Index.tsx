@@ -8,7 +8,6 @@ import CategoryShowcase from '@/components/CategoryShowcase';
 import ProductGrid from '@/components/ProductGrid';
 import LuxuryShowcase from '@/components/LuxuryShowcase';
 import BehindTheWeave from '@/components/BehindTheWeave';
-import StatsSection from '@/components/StatsSection';
 import CraftsmanshipSection from '@/components/CraftsmanshipSection';
 import CollectionBanner from '@/components/CollectionBanner';
 import ProductSpotlight from '@/components/ProductSpotlight';
@@ -45,7 +44,6 @@ const Index = () => {
         <LuxuryShowcase />
         <SplitEditorial />
         <BehindTheWeave />
-        <StatsSection />
         <CraftsmanshipSection />
         <CollectionBanner />
         <CuratedPicks />
