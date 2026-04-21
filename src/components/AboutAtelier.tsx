@@ -31,6 +31,7 @@ const AboutAtelier = () => {
               <p>
                 Every piece passes through strong quality checks to ensure lasting wear for years. The kind of quality we care about comes from attention to detail, from reversible seams that lie perfectly flat to pockets placed exactly where you need them.
               </p>
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 40 }}
