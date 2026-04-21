@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram } from 'lucide-react';
+import { Instagram, Linkedin, Facebook } from 'lucide-react';
 import doriLogo from '@/assets/dori-logo-white.png';
 
 const Footer = () => {
