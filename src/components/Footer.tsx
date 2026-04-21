@@ -15,8 +15,14 @@ const Footer = () => {
               Everyday luxury jackets for modern Indian women. Designed with intention, defined by presence.
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="https://www.instagram.com/dori.it/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/dori.styleit" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://www.linkedin.com/company/doristyleit/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="https://www.facebook.com/dori.styleit" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors" aria-label="Facebook">
+                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
