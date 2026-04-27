@@ -7,20 +7,20 @@ const occasions = [
   {
     title: 'The Boardroom',
     image: productBlueBlazer,
-    description: 'The Reversible Blazer with tailored trousers. Structured shoulders, breathable lining, wrinkle-free after a full day.',
-    tip: 'Flip to the Indian textile side for Friday meetings.',
+    description: '',
+    tip: '',
   },
   {
     title: 'The Travel Day',
     image: productColorfulJacket,
-    description: 'The Expressive Jacket over a plain tee. Hand-washable, packs flat, two looks in your carry-on.',
-    tip: 'Bold print for arrivals, muted side for the flight.',
+    description: '',
+    tip: '',
   },
   {
     title: 'The Evening',
     image: productBrownBlazer,
-    description: 'The Heritage Jacket with a silk blouse. Handwoven fabric catches the light. No change needed from the office.',
-    tip: 'Artisanal embroidery details reward a closer look.',
+    description: '',
+    tip: '',
   },
 ];
 
@@ -36,9 +36,11 @@ const WardrobeGuide = () => {
           className="text-center mb-12 md:mb-20"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">Styling Notes</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">One wardrobe, every moment</h2>
-          <p className="text-sm md:text-base text-muted-foreground font-light mt-4 max-w-lg mx-auto leading-relaxed">
-            Boardroom. Travel. Evening. Same jacket, different sides. That's the DORI way.
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">One piece. Multiple contexts.</h2>
+          <p className="text-sm md:text-base text-muted-foreground font-light mt-4 max-w-xl mx-auto leading-relaxed">
+            Morning meetings. Late flights. Evenings that extend.
+            <br />
+            The jacket stays. The setting changes.
           </p>
           <div className="luxury-divider w-20 mx-auto mt-6 md:mt-8" />
         </motion.div>
@@ -63,9 +65,7 @@ const WardrobeGuide = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-base md:text-lg font-serif font-medium mb-2 md:mb-3">{item.title}</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed mb-3 md:mb-4">{item.description}</p>
-              <p className="text-xs md:text-sm text-gold/60 italic font-serif leading-relaxed">{item.tip}</p>
+              <h3 className="text-base md:text-lg font-serif font-medium">{item.title}</h3>
             </motion.div>
           ))}
         </div>

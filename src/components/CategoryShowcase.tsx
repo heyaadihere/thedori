@@ -7,19 +7,19 @@ import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
 const categories = [
   {
     title: 'Blazers',
-    description: 'Structured. Reversible. Boardroom to evening.',
+    description: 'Tailored for command. Built to transition without compromise.',
     image: productBlueBlazer,
     href: '/collections',
   },
   {
     title: 'Waistcoats',
-    description: 'Layer with purpose, stand alone with confidence.',
+    description: 'Layered with intent. Strong on their own.',
     image: bannerWaistcoat,
     href: '/collections',
   },
   {
     title: 'Jackets',
-    description: 'Breathable, wrinkle-free, all-day comfort.',
+    description: 'Lightweight structure. Designed for movement across the day.',
     image: productBrownBlazer,
     href: '/collections',
   },

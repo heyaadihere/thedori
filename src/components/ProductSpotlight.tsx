@@ -11,21 +11,21 @@ const spotlights = [
     image: spotlightLeather,
     name: 'The Leather Blazer',
     tagline: 'Signature',
-    description: 'Premium leather with structured tailoring. Clean lines, functional pockets, a silhouette that holds its shape through 12-hour days. Office to evening, no change needed.',
+    description: 'Premium leather with structured tailoring. Clean lines, functional pockets, a silhouette that holds its shape through 12-hour days. Holds its structure through long days — and stronger evenings.',
     price: '₹8,900',
   },
   {
     image: spotlightBerry,
     name: 'The Berry Wrap Jacket',
     tagline: 'Artisanal',
-    description: 'Handwoven cotton-linen blend with block-printed reversible lapels and a signature fabric buckle. The kind of piece that starts conversations without trying.',
+    description: 'Presence without effort. Impact without excess.',
     price: '₹9,400',
   },
   {
     image: spotlightArt,
     name: 'The Art Jacket',
     tagline: 'Expressive',
-    description: 'Bold hand-painted artisan prints meet magenta silk lining with gold elephant buttons. Wearable art that turns every entrance into a moment.',
+    description: 'Bold artisan prints meet a vivid magenta lining with gold elephant buttons. Wearable art that turns every entrance into a moment.',
     price: '₹7,800',
   },
   {
@@ -49,7 +49,7 @@ const ProductSpotlight = () => {
           className="text-center mb-12 md:mb-20"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-4">Closer Look</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Pieces worth knowing</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">The Showstoppers'</h2>
           <div className="luxury-divider w-20 mx-auto mt-6" />
         </motion.div>
 

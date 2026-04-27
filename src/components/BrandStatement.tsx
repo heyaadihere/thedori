@@ -15,10 +15,12 @@ const BrandStatement = () => {
           Designed with Intention
         </p>
         <blockquote className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[1.3] font-light italic text-foreground font-serif">
-          "Everyday luxury jackets for<br />women who don't have time<br />to change but always want to<br />look put-together."
+          "DORI brings structure<br />to expression."
         </blockquote>
-        <p className="mt-8 md:mt-10 text-sm md:text-base text-muted-foreground max-w-lg mx-auto leading-relaxed font-light">
-          Western silhouettes meet premium Indian fabrics. Confident, expressive, and naturally polished.
+        <p className="mt-8 md:mt-10 text-sm md:text-base text-muted-foreground max-w-xl mx-auto leading-relaxed font-light">
+          Tailored silhouettes meet Indian textiles in pieces designed to move across contexts without losing authority.
+          <br className="hidden md:block" />
+          <span className="block mt-3 text-gold/70 not-italic tracking-wide">This is not fusion. It's precision.</span>
         </p>
         <div className="luxury-divider w-16 mx-auto mt-8 md:mt-12" />
       </motion.div>
