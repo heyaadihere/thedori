@@ -40,7 +40,7 @@ const ProcessSection = () => {
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 
-        <div className="space-y-16 md:space-y-24 lg:space-y-32">
+        <div className="space-y-8 md:space-y-10 lg:space-y-12">
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
