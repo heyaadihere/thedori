@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import heroStudio from '@/assets/hero-studio-berry.jpg';
+import heroStudio from '@/assets/hero-studio-floral.jpg';
 
 const HeroSection = () => {
   const ref = useRef<HTMLElement>(null);
@@ -16,7 +16,7 @@ const HeroSection = () => {
       <motion.div className="absolute inset-0" style={{ y: imgY }}>
         <img
           src={heroStudio}
-          alt="DORI berry wrap jacket — studio editorial"
+          alt="DORI floral linen blazer — studio editorial"
           className="w-full h-full object-cover object-center scale-110"
           loading="eager"
         />

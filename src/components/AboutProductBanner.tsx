@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import aboutStudio from '@/assets/hero-studio-leather.jpg';
+import aboutStudio from '@/assets/hero-studio-ivory.jpg';
 
 const AboutProductBanner = () => {
   return (
@@ -12,7 +12,7 @@ const AboutProductBanner = () => {
       >
         <img
           src={aboutStudio}
-          alt="DORI leather coat — studio editorial"
+          alt="DORI ivory linen blazer — studio editorial"
           className="w-full h-full object-cover object-center"
           loading="eager"
         />
