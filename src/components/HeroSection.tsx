@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import heroEditorial from '@/assets/hero-berry-editorial.jpg';
+import heroStudio from '@/assets/hero-studio-berry.jpg';
 
 const HeroSection = () => {
   const ref = useRef<HTMLElement>(null);
@@ -12,21 +12,17 @@ const HeroSection = () => {
 
   return (
     <section ref={ref} className="relative min-h-[80vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-primary">
-      {/* Parallax cinematic video background */}
+      {/* Parallax studio product background */}
       <motion.div className="absolute inset-0" style={{ y: imgY }}>
-        <video
-          src="/videos/hero-cinematic.mp4"
-          poster={heroEditorial}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
+        <img
+          src={heroStudio}
+          alt="DORI berry wrap jacket — studio editorial"
           className="w-full h-full object-cover object-center scale-110"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-transparent" />
         <motion.div className="absolute inset-0 bg-black" style={{ opacity: overlayOpacity }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10" />
       </motion.div>
 
       <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-12">
