@@ -17,9 +17,9 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "It feels like it was made for my life. Breathable in Mumbai heat, structured enough for client presentations.",
+    quote: "It carries through every room I walk into. I don't have to think about it and that's the point.",
     author: "Meera K.",
-    location: "Bangalore",
+    location: "Bengaluru",
     rating: 5,
   },
 ];

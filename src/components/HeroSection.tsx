@@ -49,17 +49,17 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-5 md:mb-6 font-medium text-white font-serif"
+            className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.15] mb-5 md:mb-6 font-medium text-white font-serif"
           >
-            Look put-together.<br />Always.
+            Designed for women who move between boardrooms, schedules and moments, without changing who they are.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-sm md:text-base text-white/70 mb-8 md:mb-10 max-w-sm font-light leading-relaxed"
+            className="text-sm md:text-base text-white/70 mb-8 md:mb-10 max-w-md font-light leading-relaxed"
           >
-            Western silhouettes. Indian fabrics. Jackets designed for women who don't have time to change but always want to show up ready.
+            Structured silhouettes. Indian textiles. Designed to hold presence from morning to evening.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

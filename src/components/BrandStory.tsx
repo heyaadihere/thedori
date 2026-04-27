@@ -39,22 +39,37 @@ const BrandStory = () => {
             </h2>
             <div className="space-y-4 md:space-y-5 text-sm md:text-base text-muted-foreground leading-relaxed font-light">
               <p>
-                DORI was created for women who want to look put-together without overthinking it. We blend distinctive Western silhouettes with premium Indian fabrics to create jackets that feel personal, not prescribed.
+                DORI was created for women who already know who they are. The design simply keeps up. Structured. Expressive. Built for days that don't divide neatly.
               </p>
               <p>
-                Reversible construction, functional pockets, breathable comfort. Every feature is designed for the way you actually live, from boardroom meetings to evening events.
+                DORI began when our wardrobes stopped keeping up with our life. The days were full, but everything we owned required a change.
               </p>
               <p>
-                Style it. Own it. Dori it.
+                Clothing designed for moments, not for how women actually move through their day. So we approached it differently.
+              </p>
+              <p>DORI is built on clarity:</p>
+              <ul className="space-y-1.5 pl-5 list-disc marker:text-gold/60">
+                <li>Structure that holds</li>
+                <li>Fabrics that perform</li>
+                <li>Design that adapts without compromise</li>
+              </ul>
+              <p>
+                Reversible construction isn't an add-on. It's a way to move across contexts, without interruption.
+              </p>
+              <p>
+                Because the right piece doesn't change how you look. It changes how little you have to think about it.
+              </p>
+              <p className="text-foreground italic font-serif">
+                Style it. Stay it. Dori it.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-4 md:gap-6 mt-8 md:mt-10 pt-6 md:pt-10 border-t border-gold/20">
               {[
-                { number: '01', label: 'Reversible Construction' },
+                { number: '01', label: 'Reversible Designs' },
                 { number: '02', label: 'Functional Pockets' },
                 { number: '03', label: 'Handwoven Fabrics' },
-                { number: '04', label: 'Hand-Washable' },
+                { number: '04', label: 'Built to Last' },
               ].map((feature) => (
                 <div key={feature.number}>
                   <span className="text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] text-gold/60">{feature.number}</span>

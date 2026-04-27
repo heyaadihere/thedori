@@ -7,19 +7,19 @@ const steps = [
   {
     number: '01',
     title: 'Design',
-    description: 'Every jacket starts as a sketch blending Western silhouettes with Indian textile traditions. We draft patterns that balance structure with all-day comfort.',
+    description: 'Every piece begins with intent. Balancing structure, movement and longevity.',
     image: process1,
   },
   {
     number: '02',
     title: 'Craft',
-    description: 'Handwoven fabrics are cut with precision. Artisanal details like chikankari, kantha, and zari are applied by skilled craftspeople.',
+    description: 'Indian textiles are shaped with precision tailoring, finished with details that hold over time.',
     image: process2,
   },
   {
     number: '03',
     title: 'Finish',
-    description: 'Strong quality checks ensure every piece lasts 5+ years. Reversible seams, functional pockets, breathable linings. Ready for your day.',
+    description: 'Strong quality checks ensure every piece lasts years. Nothing excessive. Nothing accidental. Ready for your days running into evenings.',
     image: process3,
   },
 ];
@@ -36,7 +36,7 @@ const ProcessSection = () => {
           className="text-center mb-12 md:mb-20"
         >
           <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-muted-foreground mb-3 md:mb-4">How It's Made</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">From sketch to shoulder</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif">Where design meets discipline</h2>
           <div className="luxury-divider w-20 mx-auto mt-5 md:mt-6" />
         </motion.div>
 

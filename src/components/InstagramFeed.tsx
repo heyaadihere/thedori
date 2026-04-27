@@ -21,13 +21,13 @@ const InstagramFeed = () => {
           className="text-center mb-8 md:mb-12"
         >
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/dori.styleit"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
           >
             <Instagram className="h-5 w-5" strokeWidth={1.5} />
-            <span className="text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em] uppercase">@dori.official</span>
+            <span className="text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em] uppercase">@dori.styleit</span>
           </a>
         </motion.div>
 
@@ -35,7 +35,7 @@ const InstagramFeed = () => {
           {images.map((img, i) => (
             <motion.a
               key={i}
-              href="https://instagram.com"
+              href="https://www.instagram.com/dori.styleit"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}

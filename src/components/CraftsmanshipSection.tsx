@@ -24,13 +24,13 @@ const CraftsmanshipSection = () => {
             <div className="max-w-lg">
               <div className="luxury-divider w-12 mb-4 md:mb-6" />
               <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/50 mb-3 md:mb-4">
-                Artisanal Craft
+                Hero Piece 1
               </p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.2] text-white mb-3 md:mb-4 font-serif">
-                Handwoven heritage,<br />modern precision
+                HANDWOVEN HERITAGE,<br />MODERN PRECISION
               </h2>
               <p className="text-sm md:text-base text-white/60 font-light leading-relaxed max-w-md">
-                Khadi, organic cotton, ajrakh, chikankari, kantha, zari, mirror work. Every piece carries the skill of Indian artisans and the precision of contemporary design.
+                Khadi / Organic Cotton / Linen / Chikankari / Zari / Mirror Work. Every piece carries the skill of Indian artisans and the precision of contemporary design.
               </p>
             </div>
           </div>

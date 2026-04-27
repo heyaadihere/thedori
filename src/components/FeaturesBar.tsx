@@ -4,8 +4,8 @@ import { Truck, RotateCcw, Shield, Leaf } from 'lucide-react';
 const features = [
   {
     icon: Truck,
-    title: 'Free Shipping',
-    description: 'On all orders above ₹5,000',
+    title: 'Functional By Design',
+    description: 'Pockets, structure and finish made for real days',
   },
   {
     icon: RotateCcw,
@@ -14,13 +14,13 @@ const features = [
   },
   {
     icon: Shield,
-    title: '5+ Year Lifespan',
-    description: 'Built to last, not to replace',
+    title: 'Designed for Long Days',
+    description: 'Holds shape from morning to evening',
   },
   {
     icon: Leaf,
-    title: 'Handwoven Fabrics',
-    description: 'Khadi, organic cotton, linen, ajrakh',
+    title: 'Breathable Natural Fabrics',
+    description: 'Khadi, Organic, Linen, Chikan',
   },
 ];
 

@@ -58,9 +58,9 @@ const SplitEditorial = () => {
             {/* Stats row */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               {[
-                { number: '100%', label: 'Indian Textiles' },
-                { number: '5+', label: 'Year Lifespan' },
-                { number: '2-in-1', label: 'Reversible' },
+                { number: 'Crafted', label: 'In India' },
+                { number: 'Considered', label: 'Construction' },
+                { number: 'Made', label: 'To Move With You' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p className="text-2xl md:text-3xl font-serif font-medium text-gold">{stat.number}</p>
