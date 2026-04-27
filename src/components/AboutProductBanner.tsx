@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import heroEditorial from '@/assets/hero-berry-editorial.jpg';
+import aboutStudio from '@/assets/hero-studio-leather.jpg';
 
 const AboutProductBanner = () => {
   return (
@@ -10,21 +10,16 @@ const AboutProductBanner = () => {
         transition={{ duration: 2, ease: 'easeOut' }}
         className="absolute inset-0"
       >
-        <video
-          src="/videos/about-hero.mp4"
-          poster={heroEditorial}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label="DORI atelier — artisans crafting jackets"
+        <img
+          src={aboutStudio}
+          alt="DORI leather coat — studio editorial"
           className="w-full h-full object-cover object-center"
+          loading="eager"
         />
       </motion.div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
