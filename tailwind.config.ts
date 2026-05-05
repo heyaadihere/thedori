@@ -64,6 +64,10 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
         },
+        forest: "hsl(var(--forest))",
+        mocha: "hsl(var(--mocha))",
+        espresso: "hsl(var(--espresso))",
+        ivory: "hsl(var(--ivory))",
       },
       fontFamily: {
         serif: ['Cormorant Garamond', 'serif'],
