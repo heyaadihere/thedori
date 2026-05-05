@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Linkedin, Facebook, Mail, Globe, Check } from 'lucide-react';
+import { FaCcVisa, FaCcMastercard, FaCcAmex, FaCcPaypal, FaCcApplePay, FaGooglePay } from 'react-icons/fa6';
+import { SiRazorpay } from 'react-icons/si';
 import doriLogo from '@/assets/dori-logo-ivory.svg';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -159,15 +161,14 @@ const Footer = () => {
         {/* Payment & shipping bar */}
         <div className="py-6 md:py-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-5">
           <p className="text-xs tracking-[0.3em] uppercase text-primary-foreground/40">We accept</p>
-          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
-            {['Visa', 'Mastercard', 'Amex', 'UPI', 'PayPal', 'Apple Pay', 'Google Pay'].map((m) => (
-              <span
-                key={m}
-                className="text-[10px] md:text-xs tracking-[0.15em] uppercase text-primary-foreground/70 border border-primary-foreground/20 px-3 py-1.5 rounded-sm font-medium"
-              >
-                {m}
-              </span>
-            ))}
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-5 text-primary-foreground/80">
+            <FaCcVisa className="h-7 w-auto md:h-8" aria-label="Visa" title="Visa" />
+            <FaCcMastercard className="h-7 w-auto md:h-8" aria-label="Mastercard" title="Mastercard" />
+            <FaCcAmex className="h-7 w-auto md:h-8" aria-label="American Express" title="American Express" />
+            <FaCcPaypal className="h-7 w-auto md:h-8" aria-label="PayPal" title="PayPal" />
+            <FaCcApplePay className="h-7 w-auto md:h-8" aria-label="Apple Pay" title="Apple Pay" />
+            <FaGooglePay className="h-7 w-auto md:h-8" aria-label="Google Pay" title="Google Pay" />
+            <SiRazorpay className="h-5 w-auto md:h-6" aria-label="Razorpay" title="Razorpay (UPI / Netbanking)" />
           </div>
         </div>
 
