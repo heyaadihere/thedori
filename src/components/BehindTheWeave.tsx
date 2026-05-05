@@ -32,6 +32,7 @@ const BehindTheWeave = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif text-primary-foreground">Behind the Weave</h2>
         </motion.div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+          {weavePanels.map((panel, i) => (
             <motion.div
               key={panel.title}
               initial={{ opacity: 0, y: 40 }}
