@@ -31,31 +31,6 @@ const BehindTheWeave = () => {
           <p className="text-xs md:text-sm tracking-[0.4em] uppercase text-primary-foreground/50 mb-4">The Craft</p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium font-serif text-primary-foreground">Behind the Weave</h2>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9 }}
-          className="relative aspect-video overflow-hidden mb-12 md:mb-20 rounded-sm"
-        >
-          <video
-            src="/videos/atelier-loop.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            aria-label="Inside the DORI atelier"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-primary/10 pointer-events-none" />
-          <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8">
-            <p className="text-white/70 text-[10px] md:text-xs tracking-[0.35em] uppercase font-light">Inside the atelier</p>
-          </div>
-        </motion.div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
           {weavePanels.map((panel, i) => (
             <motion.div
               key={panel.title}
