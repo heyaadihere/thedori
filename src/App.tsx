@@ -17,6 +17,8 @@ import Collections from "./pages/Collections";
 import SizeGuide from "./pages/SizeGuide";
 import ShippingReturns from "./pages/ShippingReturns";
 import CareInstructions from "./pages/CareInstructions";
+import Sustainability from "./pages/Sustainability";
+import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,8 @@ const AnimatedRoutes = () => {
         <Route path="/size-guide" element={<PageTransition><SizeGuide /></PageTransition>} />
         <Route path="/shipping-returns" element={<PageTransition><ShippingReturns /></PageTransition>} />
         <Route path="/care-instructions" element={<PageTransition><CareInstructions /></PageTransition>} />
+        <Route path="/sustainability" element={<PageTransition><Sustainability /></PageTransition>} />
+        <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
         <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
       </Routes>
     </AnimatePresence>
