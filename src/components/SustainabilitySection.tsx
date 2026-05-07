@@ -67,7 +67,7 @@ const SustainabilitySection = () => {
               >
                 <pillar.icon className="h-5 w-5 text-gold/70" strokeWidth={1.5} />
               </motion.div>
-              <span className="text-2xl md:text-3xl font-serif block mb-2">{pillar.stat}</span>
+              {pillar.stat && <span className="text-2xl md:text-3xl font-serif block mb-2">{pillar.stat}</span>}
               <h3 className="text-xs md:text-sm tracking-[0.15em] md:tracking-[0.2em] uppercase font-medium mb-2">{pillar.title}</h3>
               <p className="text-xs md:text-sm text-primary-foreground/40 font-light leading-relaxed">{pillar.description}</p>
             </motion.div>
