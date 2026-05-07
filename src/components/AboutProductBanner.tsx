@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import aboutStudio from '@/assets/hero-studio-ivory.jpg';
+import aboutStudio from '@/assets/banner-floral-editorial.jpg';
 
 const AboutProductBanner = () => {
   return (
