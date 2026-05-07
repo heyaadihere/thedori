@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import approachMovement from '@/assets/approach-movement.jpg';
-import productDetailTailoring from '@/assets/product-detail-tailoring.jpg';
+import productDetailTailoring from '@/assets/banner-founder.jpg';
 
 const principles = [
   {
@@ -71,7 +71,7 @@ const DesignPhilosophy = () => {
             </div>
             <div className="luxury-frame">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={productDetailTailoring} alt="DORI tailoring detail" className="w-full h-full object-cover" loading="lazy" />
+                <img src={productDetailTailoring} alt="Woman wearing a DORI tailored blazer" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </motion.div>
