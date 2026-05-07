@@ -46,10 +46,12 @@ const Footer = () => {
           <img
             src={doriLogo}
             alt="DORI"
-            className="h-32 md:h-40 lg:h-48 w-auto mb-6"
+            className="h-56 md:h-72 lg:h-96 w-auto mb-6"
           />
           <p className="text-sm md:text-base text-primary-foreground/70 font-light max-w-md leading-relaxed">
-            Everyday luxury jackets for modern Indian women. Designed with intention, defined by presence.
+            Everyday luxury jackets for modern Indian women.
+            <br />
+            Designed with intention, defined by presence.
           </p>
         </div>
 

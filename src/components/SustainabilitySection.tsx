@@ -11,8 +11,8 @@ const pillars = [
   {
     icon: Recycle,
     title: 'Built to Endure',
-    stat: '5+',
-    description: 'Years of wear per piece — designed to reduce the cycle of replacement',
+    stat: '\u00B7',
+    description: 'Designed to be worn, layered, and returned to season after season.',
   },
   {
     icon: Droplets,
