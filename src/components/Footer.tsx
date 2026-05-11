@@ -175,14 +175,17 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="py-5 md:py-6 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
-          <p className="text-xs text-primary-foreground/40 tracking-wider">&copy; 2026 DORI. All rights reserved.</p>
-          <p className="text-xs text-primary-foreground/40 tracking-wider">
-            Website powered by{' '}
-            <a href="https://techbook.co.in/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors underline underline-offset-2">
-              Techbook Technologies
-            </a>
-          </p>
+        <div className="py-5 md:py-6 border-t border-primary-foreground/10 flex flex-col items-center gap-2 md:gap-3">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-3 md:gap-4">
+            <p className="text-xs text-primary-foreground/40 tracking-wider">&copy; 2026 DORI. All rights reserved.</p>
+            <p className="text-xs text-primary-foreground/40 tracking-wider">
+              Website powered by{' '}
+              <a href="https://techbook.co.in/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors underline underline-offset-2">
+                Techbook Technologies
+              </a>
+            </p>
+          </div>
+          <p className="text-[10px] text-primary-foreground/30 tracking-wider uppercase">Penguin Enterprises</p>
         </div>
       </div>
     </footer>
