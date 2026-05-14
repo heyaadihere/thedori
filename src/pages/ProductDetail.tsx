@@ -90,8 +90,34 @@ const ProductDetail = () => {
     toast.success('Added to bag', { position: 'top-center' });
   };
 
+  const productJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title,
+    description: product.description?.slice(0, 300),
+    image: images[0]?.node.url,
+    sku: selectedVariant?.id,
+    brand: { '@type': 'Brand', name: 'Dori' },
+    offers: selectedVariant ? {
+      '@type': 'Offer',
+      price: selectedVariant.price.amount,
+      priceCurrency: selectedVariant.price.currencyCode,
+      availability: selectedVariant.availableForSale
+        ? 'https://schema.org/InStock'
+        : 'https://schema.org/OutOfStock',
+      url: `https://thedori.in/product/${handle}`,
+    } : undefined,
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${product.title} | Dori`}
+        description={(product.description || `Shop ${product.title} from Dori — handcrafted, sustainable activewear.`).slice(0, 160)}
+        path={`/product/${handle}`}
+        ogType="product"
+        jsonLd={productJsonLd}
+      />
       <AnnouncementBar />
       <Header />
       <main className="container mx-auto max-w-6xl px-6 py-8 lg:py-12">
