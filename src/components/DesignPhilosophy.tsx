@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import approachMovement from '@/assets/approach-movement.jpg';
-import productDetailTailoring from '@/assets/design-philosophy-vest.png';
+import approachMovement from '@/assets/design-philosophy-vest.png';
+import productDetailTailoring from '@/assets/design-philosophy-blazer.png';
 
 const principles = [
   {
@@ -66,12 +66,12 @@ const DesignPhilosophy = () => {
           >
             <div className="luxury-frame">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={approachMovement} alt="DORI jacket in motion" className="w-full h-full object-cover" loading="lazy" />
+                <img src={approachMovement} alt="Woman wearing a DORI gingham vest with tailored trousers" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
             <div className="luxury-frame">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={productDetailTailoring} alt="Woman wearing a DORI gingham vest with tailored trousers" className="w-full h-full object-cover" loading="lazy" />
+                <img src={productDetailTailoring} alt="DORI rose-pink belted blazer with printed contrast lapel" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </motion.div>
