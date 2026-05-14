@@ -52,7 +52,7 @@ const Index = () => {
         <CraftsmanshipSection />
         <CollectionBanner />
         <CuratedPicks />
-        <ProductSpotlight />
+        
         <ScrollRevealText />
         <ProcessSection />
         <EditorialBanner />
