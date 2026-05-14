@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
-import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
+import sideADesigner from '@/assets/reversible-side-a-designer.png';
+import sideBPink from '@/assets/reversible-side-b-pink.png';
 
 const sides = [
-  { label: 'Side A', image: productBlueBlazer, description: 'Structured tailoring for boardroom confidence.' },
-  { label: 'Side B', image: productBrownBlazer, description: 'Relaxed sophistication for evening transitions.' },
+  { label: 'Side A', image: sideADesigner, description: 'Designer side — vivid hand-painted artistry for moments that ask to be seen.' },
+  { label: 'Side B', image: sideBPink, description: 'Pink quilted side — clean lines and gold detailing for a quieter, polished finish.' },
 ];
 
 const ReversibleShowcase = () => {
