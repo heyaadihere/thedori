@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { RotateCcw, Shield, Sparkles, Gift, Clock, XCircle, PackageCheck, AlertTriangle, Ban, Mail, Truck } from 'lucide-react';
+import { RotateCcw, Shield, Sparkles, Gift, Clock, XCircle, PackageCheck, AlertTriangle, Ban, Mail } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -25,46 +25,6 @@ const ShippingReturns = () => {
             </p>
             <div className="luxury-divider w-16 mx-auto mt-8" />
           </motion.div>
-        </section>
-
-        {/* Shipping Policy */}
-        <section className="px-6 pb-16">
-          <div className="container mx-auto max-w-4xl">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="p-8 md:p-12 border border-border bg-secondary/20"
-            >
-              <Truck className="h-7 w-7 text-gold mb-5" strokeWidth={1.2} />
-              <h2 className="text-2xl md:text-3xl font-serif font-normal mb-4">Shipping Policy</h2>
-              <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6">
-                We ship across India via trusted logistics partners. Every Dori order is carefully packed and dispatched from our atelier with the utmost care.
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="p-6 border border-border bg-background">
-                  <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Complimentary Shipping</p>
-                  <p className="text-sm font-light text-foreground/85 leading-relaxed">
-                    Enjoy <span className="text-foreground font-medium">complimentary shipping on all orders above ₹5,000</span>. For orders below this threshold, a nominal shipping fee will be calculated at checkout based on your delivery location.
-                  </p>
-                </div>
-                <div className="p-6 border border-border bg-background">
-                  <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Delivery Timeline</p>
-                  <p className="text-sm font-light text-foreground/85 leading-relaxed">
-                    Standard delivery takes <span className="text-foreground font-medium">5–7 business days</span> depending on your location. Made-to-order pieces may require additional time, which will be communicated at the time of purchase.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-6 p-4 border border-gold/20 bg-gold/5">
-                <p className="text-xs text-muted-foreground font-light leading-relaxed">
-                  Once your order is dispatched, you will receive a tracking link via email and WhatsApp to follow your package in real time.
-                </p>
-              </div>
-            </motion.div>
-          </div>
         </section>
 
         {/* 7-Day Easy Exchanges */}
