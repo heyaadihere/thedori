@@ -323,7 +323,9 @@ const ProductDetail = () => {
                 </TabsContent>
                 <TabsContent value="details" className="pt-6">
                   <div className="space-y-3 text-sm text-muted-foreground font-light">
-                    <p>• Premium wool-blend fabric</p>
+                    <p>• Premium linen-cotton blend</p>
+                    <p>• Structured, breathable fabric</p>
+                    <p>• Soft, all-day wear feel</p>
                     <p>• Reversible construction</p>
                     <p>• Contrast panel detailing</p>
                     <p>• Hand-washable with cold water</p>
