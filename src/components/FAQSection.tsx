@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     question: 'What fabrics does DORI use?',
-    answer: 'We use handwoven Indian textiles including khadi, organic cotton, linen, and ajrakh. Many pieces feature artisanal embroidery like chikankari, kantha, zari, and mirror work. All fabrics are breathable, durable, and selected for a 5+ year lifespan.',
+    answer: 'We use handwoven Indian textiles including khadi, organic cotton, linen, and ajrakh. Many pieces feature artisanal embroidery like chikankari, kantha, zari, and mirror work. All fabrics are breathable and durable, chosen for quality you can feel.',
   },
   {
     question: 'How does the reversible construction work?',
