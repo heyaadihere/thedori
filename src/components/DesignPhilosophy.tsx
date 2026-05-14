@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import approachMovement from '@/assets/approach-movement.jpg';
-import productDetailTailoring from '@/assets/banner-founder.jpg';
+import productDetailTailoring from '@/assets/design-philosophy-vest.png';
 
 const principles = [
   {
