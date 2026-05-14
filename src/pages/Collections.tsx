@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
 import ProductGrid from '@/components/ProductGrid';
 import bannerCollection from '@/assets/banner-collection.jpg';
+import SEO from '@/components/SEO';
 
 const categories = ['All', 'Blazers', 'Jackets', 'Waistcoats'];
 const sortOptions = ['Newest', 'Price: Low to High', 'Price: High to Low', 'Best Sellers'];
