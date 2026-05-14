@@ -8,7 +8,7 @@ import { useCartSync } from "@/hooks/useCartSync";
 import ScrollToTop from "@/components/ScrollToTop";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import PageTransition from "@/components/PageTransition";
-import CursorFollower from "@/components/CursorFollower";
+
 import Index from "./pages/Index";
 import ProductDetail from "./pages/ProductDetail";
 import About from "./pages/About";
@@ -48,7 +48,6 @@ const AppContent = () => {
   useCartSync();
   return (
     <>
-      <CursorFollower />
       <ScrollProgressBar />
       <ScrollToTop />
       <AnimatedRoutes />
