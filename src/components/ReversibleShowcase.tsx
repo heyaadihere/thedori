@@ -83,7 +83,7 @@ const ReversibleShowcase = () => {
               Fewer pieces, more versatility, zero compromise on presence.
             </p>
             <div className="space-y-3">
-              {['Two complete looks', 'Hand-washable fabrics', 'Breathable all-day wear', 'Built to last 5+ years'].map((point) => (
+              {['Two complete looks', 'Hand-washable fabrics', 'Breathable all-day wear'].map((point) => (
                 <div key={point} className="flex items-center gap-3">
                   <div className="w-1 h-1 rounded-full bg-gold" />
                   <span className="text-xs tracking-wider text-muted-foreground">{point}</span>

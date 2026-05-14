@@ -64,7 +64,7 @@ const CareInstructions = () => {
             <Sparkles className="h-8 w-8 mx-auto mb-6 text-muted-foreground" strokeWidth={1} />
             <h1 className="text-4xl md:text-5xl font-normal mb-4">Care Instructions</h1>
             <p className="text-sm text-muted-foreground font-light max-w-lg mx-auto leading-relaxed">
-              DORI pieces are designed for easy care. A little attention keeps your jacket looking its best for 5+ years.
+              DORI pieces are designed for easy care. A little attention keeps your jacket looking its best.
             </p>
           </motion.div>
         </section>

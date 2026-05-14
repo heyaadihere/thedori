@@ -33,7 +33,7 @@ const pillars = [
   },
   {
     icon: Globe,
-    title: 'Made to last five years and beyond',
+    title: 'Mindful making',
     body: 'Reinforced seams, real buttonholes, structured shoulders. Care for it well and it will outlive most things in your wardrobe.',
   },
 ];
