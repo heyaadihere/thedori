@@ -66,7 +66,7 @@ const DesignPhilosophy = () => {
           >
             <div className="luxury-frame">
               <div className="aspect-[3/4] overflow-hidden">
-                <img src={approachMovement} alt="Woman wearing a DORI gingham vest with tailored trousers" className="w-full h-full object-cover" loading="lazy" />
+                <img src={approachMovement} alt="Woman wearing a DORI gingham vest with tailored trousers" className="w-full h-full object-cover object-top" loading="lazy" />
               </div>
             </div>
             <div className="luxury-frame">
