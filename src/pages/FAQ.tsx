@@ -8,6 +8,7 @@ import {
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const groups = [
   {
@@ -80,9 +81,25 @@ const groups = [
   },
 ];
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: groups.flatMap(g => g.items.map(it => ({
+    '@type': 'Question',
+    name: it.q,
+    acceptedAnswer: { '@type': 'Answer', text: it.a },
+  }))),
+};
+
 const FAQ = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="FAQ | Dori — Sizing, Shipping, Returns & Care"
+        description="Answers to common questions about Dori — sizing and fit, shipping and delivery, returns and exchanges, and how to care for your pieces."
+        path="/faq"
+        jsonLd={faqJsonLd}
+      />
       <AnnouncementBar />
       <Header />
 

@@ -11,10 +11,16 @@ import DesignPhilosophy from '@/components/DesignPhilosophy';
 import AboutValues from '@/components/AboutValues';
 import AboutAtelier from '@/components/AboutAtelier';
 import AboutProcessGallery from '@/components/AboutProcessGallery';
+import SEO from '@/components/SEO';
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="About Dori | The Atelier & Our Craft"
+        description="Inside the Dori atelier — meet the artisans, materials, and design philosophy behind our handcrafted, sustainable activewear."
+        path="/about"
+      />
       <AnnouncementBar />
       <Header />
       <main>

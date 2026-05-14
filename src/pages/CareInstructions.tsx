@@ -3,6 +3,7 @@ import { Droplets, Wind, ThermometerSun, Shirt, Sparkles } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const careCategories = [
   {
@@ -46,6 +47,11 @@ const careCategories = [
 const CareInstructions = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Care Instructions | Caring for Your Dori Pieces"
+        description="How to wash, iron, and store your Dori handcrafted activewear so each piece lasts and looks its best for years to come."
+        path="/care-instructions"
+      />
       <AnnouncementBar />
       <Header />
       <main>

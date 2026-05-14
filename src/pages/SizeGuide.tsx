@@ -4,6 +4,7 @@ import { Ruler, Info } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const sizeData = {
   Blazers: {
@@ -51,6 +52,11 @@ const SizeGuide = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Size Guide | Find Your Fit at Dori"
+        description="Detailed measurements for Dori blazers, jackets, and waistcoats — find the right fit with chest, waist, shoulder, and length guidance."
+        path="/size-guide"
+      />
       <AnnouncementBar />
       <Header />
       <main>

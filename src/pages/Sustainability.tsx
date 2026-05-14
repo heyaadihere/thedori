@@ -3,6 +3,7 @@ import { Leaf, Recycle, Heart, Sprout, Hand, Globe } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const pillars = [
   {
@@ -40,6 +41,11 @@ const pillars = [
 const Sustainability = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Sustainability | Dori's Craft, Materials & Ethics"
+        description="How Dori works — handcrafted in small batches, natural fibres only, reversible designs, and fair, named makers across India."
+        path="/sustainability"
+      />
       <AnnouncementBar />
       <Header />
 

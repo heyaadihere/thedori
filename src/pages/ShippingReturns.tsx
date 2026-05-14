@@ -4,10 +4,16 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
+import SEO from '@/components/SEO';
 
 const ShippingReturns = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Returns & Refund Policy | Dori"
+        description="Dori's return and refund policy — 7-day easy exchanges, complimentary reverse pickup on first orders, and 72-hour refund window."
+        path="/shipping-returns"
+      />
       <AnnouncementBar />
       <Header />
       <main>

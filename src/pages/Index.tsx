@@ -26,10 +26,16 @@ import SplitEditorial from '@/components/SplitEditorial';
 import ScrollRevealText from '@/components/ScrollRevealText';
 import ReversibleShowcase from '@/components/ReversibleShowcase';
 import ServiceCards from '@/components/ServiceCards';
+import SEO from '@/components/SEO';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Dori — Premium Activewear Made to Move With You"
+        description="Premium, sustainable activewear designed in Mumbai for women — handcrafted pieces made to move with you, in comfort and quiet confidence."
+        path="/"
+      />
       <AnnouncementBar />
       <Header />
       <main>

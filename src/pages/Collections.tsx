@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
 import ProductGrid from '@/components/ProductGrid';
 import bannerCollection from '@/assets/banner-collection.jpg';
+import SEO from '@/components/SEO';
 
 const categories = ['All', 'Blazers', 'Jackets', 'Waistcoats'];
 const sortOptions = ['Newest', 'Price: Low to High', 'Price: High to Low', 'Best Sellers'];
@@ -24,6 +25,11 @@ const Collections = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Shop Collections | Dori Premium Activewear"
+        description="Browse the full Dori collection — handcrafted blazers, jackets, and waistcoats in natural fibres, designed in Mumbai for everyday confidence."
+        path="/collections"
+      />
       <AnnouncementBar />
       <Header />
       <main>
