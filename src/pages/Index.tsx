@@ -10,7 +10,7 @@ import LuxuryShowcase from '@/components/LuxuryShowcase';
 import BehindTheWeave from '@/components/BehindTheWeave';
 import CraftsmanshipSection from '@/components/CraftsmanshipSection';
 import CollectionBanner from '@/components/CollectionBanner';
-import ProductSpotlight from '@/components/ProductSpotlight';
+
 import ProcessSection from '@/components/ProcessSection';
 import EditorialBanner from '@/components/EditorialBanner';
 import LookbookGallery from '@/components/LookbookGallery';
