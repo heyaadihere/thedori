@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { RotateCcw, Shield, Sparkles, Gift, Clock, XCircle, PackageCheck, AlertTriangle, Ban, Mail } from 'lucide-react';
+import { RotateCcw, Shield, Sparkles, Gift, Clock, XCircle, PackageCheck, AlertTriangle, Ban, Mail, Truck } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
