@@ -1,0 +1,15 @@
+# Dori
+
+> Premium, sustainable activewear designed in Mumbai for women — made to move with you, with a focus on comfort, fit, and quiet confidence.
+
+## Pages
+
+- [Home](/): Brand introduction and featured pieces.
+- [Collections](/collections): Shop the full range of activewear.
+- [About](/about): The Dori atelier, founders' story, and craft philosophy.
+- [Sustainability](/sustainability): Our materials, ethics, and sourcing.
+- [Contact](/contact): Mumbai studio details and customer support.
+- [FAQ](/faq): Common questions about sizing, fit, and orders.
+- [Size Guide](/size-guide): Measurements and fit guidance.
+- [Care Instructions](/care-instructions): How to care for your Dori pieces.
+- [Shipping & Returns](/shipping-returns): Shipping, exchange, and refund policy.
