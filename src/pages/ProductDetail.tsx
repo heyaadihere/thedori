@@ -332,7 +332,7 @@ const ProductDetail = () => {
                 </TabsContent>
                 <TabsContent value="shipping" className="pt-6">
                   <div className="space-y-3 text-sm text-muted-foreground font-light">
-                    <p>Complimentary shipping on orders over ₹5,000.</p>
+                    <p>Complimentary reverse pickup on first-order exchanges across India.</p>
                     <p>Standard delivery: 5–7 business days.</p>
                     <p>Express delivery: 2–3 business days.</p>
                     <p>30-day return policy. Items must be unworn with tags attached.</p>
