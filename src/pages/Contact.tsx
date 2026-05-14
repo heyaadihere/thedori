@@ -49,6 +49,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Contact Dori | Mumbai Studio & Customer Care"
+        description="Get in touch with Dori — visit our Mumbai atelier, message us on WhatsApp at +91-8088272704, or write to dori.styleit@gmail.com."
+        path="/contact"
+        jsonLd={localBusinessJsonLd}
+      />
       <AnnouncementBar />
       <Header />
       <main>

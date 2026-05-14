@@ -41,6 +41,11 @@ const pillars = [
 const Sustainability = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Sustainability | Dori's Craft, Materials & Ethics"
+        description="How Dori works — handcrafted in small batches, natural fibres only, reversible designs, and fair, named makers across India."
+        path="/sustainability"
+      />
       <AnnouncementBar />
       <Header />
 

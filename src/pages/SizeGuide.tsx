@@ -52,6 +52,11 @@ const SizeGuide = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Size Guide | Find Your Fit at Dori"
+        description="Detailed measurements for Dori blazers, jackets, and waistcoats — find the right fit with chest, waist, shoulder, and length guidance."
+        path="/size-guide"
+      />
       <AnnouncementBar />
       <Header />
       <main>
