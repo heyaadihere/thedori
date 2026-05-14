@@ -13,6 +13,7 @@ import Footer from '@/components/Footer';
 import ImageMagnifier from '@/components/ImageMagnifier';
 import type { ShopifyProduct } from '@/lib/shopify';
 import { toast } from 'sonner';
+import SEO from '@/components/SEO';
 
 const ProductDetail = () => {
   const { handle } = useParams<{ handle: string }>();

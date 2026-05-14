@@ -25,6 +25,11 @@ const Collections = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Shop Collections | Dori Premium Activewear"
+        description="Browse the full Dori collection — handcrafted blazers, jackets, and waistcoats in natural fibres, designed in Mumbai for everyday confidence."
+        path="/collections"
+      />
       <AnnouncementBar />
       <Header />
       <main>

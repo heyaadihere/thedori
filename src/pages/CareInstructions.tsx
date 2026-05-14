@@ -3,6 +3,7 @@ import { Droplets, Wind, ThermometerSun, Shirt, Sparkles } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const careCategories = [
   {

@@ -11,6 +11,29 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQSection';
 import Newsletter from '@/components/Newsletter';
+import SEO from '@/components/SEO';
+
+const localBusinessJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Dori',
+  image: 'https://thedori.in/og-image.jpg',
+  url: 'https://thedori.in/contact',
+  telephone: '+91-8088272704',
+  email: 'dori.styleit@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Mumbai',
+    addressRegion: 'MH',
+    addressCountry: 'IN',
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+    opens: '10:00',
+    closes: '19:00',
+  },
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
