@@ -48,7 +48,6 @@ const AppContent = () => {
   useCartSync();
   return (
     <>
-      <CursorFollower />
       <ScrollProgressBar />
       <ScrollToTop />
       <AnimatedRoutes />
