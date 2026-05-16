@@ -7,34 +7,61 @@ import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 
 const sizeData = {
-  Blazers: {
-    headers: ['Size', 'Chest (in)', 'Waist (in)', 'Shoulder (in)', 'Length (in)'],
+  'The Muse': {
+    headers: ['Measurement (in)', 'M', 'L', 'XL', 'XXL'],
     rows: [
-      ['XS', '32–34', '26–28', '14.5', '25'],
-      ['S', '34–36', '28–30', '15', '25.5'],
-      ['M', '36–38', '30–32', '15.5', '26'],
-      ['L', '38–40', '32–34', '16', '26.5'],
-      ['XL', '40–42', '34–36', '16.5', '27'],
+      ['Front Length', '29.5', '30', '30.5', '31'],
+      ['To Fit Bust', '42', '44', '46', '48'],
+      ['To Fit Waist', '35', '37', '39', '41'],
     ],
   },
-  Jackets: {
-    headers: ['Size', 'Chest (in)', 'Waist (in)', 'Shoulder (in)', 'Length (in)'],
+  'Azure Presence': {
+    headers: ['Measurement (in)', 'M', 'L', 'XL', 'XXL'],
     rows: [
-      ['XS', '32–34', '26–28', '14.5', '24'],
-      ['S', '34–36', '28–30', '15', '24.5'],
-      ['M', '36–38', '30–32', '15.5', '25'],
-      ['L', '38–40', '32–34', '16', '25.5'],
-      ['XL', '40–42', '34–36', '16.5', '26'],
+      ['Front Length', '30', '30', '30', '30'],
+      ['To Fit Bust', '37', '39', '41', '43'],
+      ['To Fit Waist', '33', '35', '37', '39'],
     ],
   },
-  Waistcoats: {
-    headers: ['Size', 'Chest (in)', 'Waist (in)', 'Shoulder (in)', 'Length (in)'],
+  'Scarlet Authority': {
+    headers: ['Measurement (in)', 'M', 'L', 'XL', 'XXL'],
     rows: [
-      ['XS', '32–34', '26–28', '13.5', '21'],
-      ['S', '34–36', '28–30', '14', '21.5'],
-      ['M', '36–38', '30–32', '14.5', '22'],
-      ['L', '38–40', '32–34', '15', '22.5'],
-      ['XL', '40–42', '34–36', '15.5', '23'],
+      ['Front Length', '30', '30', '30', '30'],
+      ['To Fit Bust', '37', '39', '41', '43'],
+      ['To Fit Waist', '34', '36', '38', '40'],
+    ],
+  },
+  'Ivory Apex': {
+    headers: ['Measurement (in)', 'M', 'L', 'XL', 'XXL'],
+    rows: [
+      ['Front Length', '30', '30', '30', '30'],
+      ['To Fit Bust', '36', '38', '40', '42'],
+      ['To Fit Waist', '33', '35', '37', '39'],
+    ],
+  },
+  'Ivory Bloom': {
+    headers: ['Measurement (in)', 'M', 'L', 'XL', 'XXL'],
+    rows: [
+      ['Front Length', '30', '30', '30', '30'],
+      ['To Fit Bust', '36', '38', '40', '42'],
+      ['To Fit Waist', '33', '35', '37', '39'],
+    ],
+  },
+  'Sand Signature': {
+    headers: ['Measurement (in)', 'M', 'L', 'XL', 'XXL'],
+    rows: [
+      ['Front Length', '21', '21', '21', '21'],
+      ['To Fit Bust', '36', '38', '40', '42'],
+      ['To Fit Waist', '34', '36', '38', '40'],
+    ],
+  },
+  'Espresso Command': {
+    headers: ['Measurement (in)', 'S', 'M', 'L', 'XL', 'XXL'],
+    note: 'Custom made',
+    rows: [
+      ['Front Length', '32', '33', '34', '35', '36'],
+      ['To Fit Bust', '36', '38', '40', '42', '44'],
+      ['To Fit Waist', '32', '34', '36', '38', '40'],
     ],
   },
 };
@@ -48,7 +75,7 @@ const tips = [
 type Category = keyof typeof sizeData;
 
 const SizeGuide = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>('Blazers');
+  const [activeCategory, setActiveCategory] = useState<Category>('The Muse');
 
   return (
     <div className="min-h-screen bg-background">
@@ -77,7 +104,7 @@ const SizeGuide = () => {
 
         {/* Category tabs */}
         <section className="px-6 pb-6">
-          <div className="container mx-auto max-w-4xl flex justify-center gap-4">
+          <div className="container mx-auto max-w-4xl flex flex-wrap justify-center gap-3">
             {(Object.keys(sizeData) as Category[]).map((cat) => (
               <button
                 key={cat}
@@ -103,6 +130,11 @@ const SizeGuide = () => {
             transition={{ duration: 0.4 }}
             className="container mx-auto max-w-4xl"
           >
+            {'note' in sizeData[activeCategory] && (sizeData[activeCategory] as { note?: string }).note && (
+              <p className="text-xs tracking-[0.25em] uppercase text-gold/70 mb-4 text-center">
+                {(sizeData[activeCategory] as { note: string }).note}
+              </p>
+            )}
             <div className="overflow-x-auto border border-border">
               <table className="w-full">
                 <thead>
