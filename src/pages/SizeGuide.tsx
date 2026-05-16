@@ -104,7 +104,7 @@ const SizeGuide = () => {
 
         {/* Category tabs */}
         <section className="px-6 pb-6">
-          <div className="container mx-auto max-w-4xl flex justify-center gap-4">
+          <div className="container mx-auto max-w-4xl flex flex-wrap justify-center gap-3">
             {(Object.keys(sizeData) as Category[]).map((cat) => (
               <button
                 key={cat}
@@ -130,6 +130,11 @@ const SizeGuide = () => {
             transition={{ duration: 0.4 }}
             className="container mx-auto max-w-4xl"
           >
+            {'note' in sizeData[activeCategory] && (sizeData[activeCategory] as { note?: string }).note && (
+              <p className="text-xs tracking-[0.25em] uppercase text-gold/70 mb-4 text-center">
+                {(sizeData[activeCategory] as { note: string }).note}
+              </p>
+            )}
             <div className="overflow-x-auto border border-border">
               <table className="w-full">
                 <thead>
