@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import bannerWaistcoat from '@/assets/banner-waistcoat.jpg';
-import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
+import productBlueBlazer from '@/assets/blazer-azure-presence.png';
 import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
 
 const categories = [

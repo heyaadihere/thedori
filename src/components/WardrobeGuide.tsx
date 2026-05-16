@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
+import productBlueBlazer from '@/assets/blazer-azure-presence.png';
 import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
 import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
 

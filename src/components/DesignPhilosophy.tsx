@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import approachMovement from '@/assets/design-philosophy-vest.png';
-import productDetailTailoring from '@/assets/design-philosophy-blazer.png';
+import productDetailTailoring from '@/assets/blazer-azure-presence.png';
 
 const principles = [
   {
