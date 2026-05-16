@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
+import productBlueBlazer from '@/assets/blazer-azure-presence.png';
 import productBrownBlazer from '@/assets/product-brown-blazer.jpg';
 import productColorfulJacket from '@/assets/product-colorful-jacket.jpg';
 
