@@ -75,7 +75,7 @@ const tips = [
 type Category = keyof typeof sizeData;
 
 const SizeGuide = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>('Blazers');
+  const [activeCategory, setActiveCategory] = useState<Category>('The Muse');
 
   return (
     <div className="min-h-screen bg-background">
