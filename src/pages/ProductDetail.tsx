@@ -334,10 +334,11 @@ const ProductDetail = () => {
                 </TabsContent>
                 <TabsContent value="shipping" className="pt-6">
                   <div className="space-y-3 text-sm text-muted-foreground font-light">
-                    <p>Complimentary reverse pickup on first-order exchanges across India.</p>
-                    <p>Standard delivery: 5–7 business days.</p>
-                    <p>Express delivery: 2–3 business days.</p>
-                    <p>30-day return policy. Items must be unworn with tags attached.</p>
+                    <p>Easy exchanges within 7 days of delivery for eligible products.</p>
+                    <p>Refunds applicable within 72 hours of delivery for damaged, defective, incorrect, or significantly mismatched items.</p>
+                    <p>Complimentary reverse pickup on first-order exchanges across India, on damaged or incorrect items, and on eligible orders above ₹10,000. A ₹249 reverse logistics fee may apply for preference-based requests.</p>
+                    <p>Prefer Dori Credit over a refund? Receive an additional 5% value instantly.</p>
+                    <p>Items must be unused, with all original tags and packaging intact. Read our full <a href="/shipping-returns" className="underline hover:text-foreground">Returns &amp; Refund Policy</a>.</p>
                   </div>
                 </TabsContent>
               </Tabs>
