@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import bannerWaistcoat from '@/assets/banner-waistcoat.jpg';
-import productBlueBlazer from '@/assets/product-blue-blazer.jpg';
+import productBlueBlazer from '@/assets/blazer-azure-presence.png';
 
 const SplitEditorial = () => {
   const ref = useRef<HTMLElement>(null);
