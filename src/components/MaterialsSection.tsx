@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import fabricChikankari from '@/assets/fabric-chikankari.jpg';
-import fabricCottonLinen from '@/assets/fabric-cotton-linen.jpg';
+import fabricChikankari from '@/assets/fabric-azure-presence.png';
+import fabricCottonLinen from '@/assets/fabric-scarlet-authority.png';
 
 const materials = [
   {
