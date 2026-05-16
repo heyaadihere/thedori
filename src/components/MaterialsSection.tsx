@@ -68,8 +68,8 @@ const MaterialsSection = () => {
               </div>
             </div>
             <div className="luxury-frame">
-              <div className="aspect-[16/9] overflow-hidden">
-                <img src={fabricCottonLinen} alt="Organic cotton and linen fabric texture" className="w-full h-full object-cover" loading="lazy" />
+              <div className="aspect-[3/4] overflow-hidden">
+                <img src={fabricCottonLinen} alt="Organic cotton and linen fabric texture" className="w-full h-full object-contain bg-background" loading="lazy" />
               </div>
             </div>
           </motion.div>
