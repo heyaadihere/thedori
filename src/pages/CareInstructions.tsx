@@ -38,7 +38,7 @@ const careCategories = [
     title: 'Storage',
     tips: [
       'Store on broad, padded hangers to maintain shoulder structure.',
-      'Keep in a breathable garment bag, not plastic, to protect handwoven fabrics.',
+      'When not in use, keep your piece inside the DORI breathable garment cover to protect from dust and maintain longevity. Avoid plastic.',
       'Allow space between garments for air circulation.',
     ],
   },

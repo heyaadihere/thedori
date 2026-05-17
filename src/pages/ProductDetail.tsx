@@ -6,7 +6,7 @@ import { useCartStore } from '@/stores/cartStore';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowLeft, Loader2, Truck, RotateCcw, Shield, Heart, Share2, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Loader2, Truck, Shield, Heart, Share2, ChevronDown } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -14,6 +14,61 @@ import ImageMagnifier from '@/components/ImageMagnifier';
 import type { ShopifyProduct } from '@/lib/shopify';
 import { toast } from 'sonner';
 import SEO from '@/components/SEO';
+
+const GARMENT_COVER_LINE = 'When not in use, keep inside the DORI garment cover to protect from dust and maintain longevity.';
+
+const DETAILS_BY_HANDLE: Record<string, string[]> = {
+  'espresso-command': [
+    'Made to order piece',
+    'Premium leather',
+    'Soft structured feel',
+    'Functional front pocket design',
+    'Versatile day to night styling',
+    'Durable craftsmanship with 3 years guarantee for any cracks in the leather',
+    'Easy-care finish',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+  'the-muse': [
+    'Premium organic cotton',
+    'Structured, breathable fabric',
+    'Soft, all-day wear feel',
+    'Reversible construction',
+    'Contrast panel detailing',
+    'Hand-washable with cold water',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+  'scarlet-authority': [
+    'Premium linen-cotton blend',
+    'Structured, breathable fabric',
+    'Soft, all-day wear feel',
+    'Contrast panel detailing',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+  'azure-presence': [
+    'Premium linen-cotton blend',
+    'Structured, breathable fabric',
+    'Soft, all-day wear feel',
+    'Contrast panel detailing',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+};
+
+const DEFAULT_DETAILS: string[] = [
+  'Premium linen-cotton blend',
+  'Structured, breathable fabric',
+  'Soft, all-day wear feel',
+  'Made in India',
+  GARMENT_COVER_LINE,
+];
+
+const getDetailsForProduct = (handle: string | undefined): string[] => {
+  if (!handle) return DEFAULT_DETAILS;
+  return DETAILS_BY_HANDLE[handle] ?? DEFAULT_DETAILS;
+};
 
 const ProductDetail = () => {
   const { handle } = useParams<{ handle: string }>();
@@ -205,28 +260,41 @@ const ProductDetail = () => {
             <p className="text-xs text-muted-foreground mb-8">Tax included. Shipping calculated at checkout.</p>
 
             {/* Variant selectors */}
-            {options.map(option => (
-              <div key={option.name} className="mb-6">
-                <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground mb-3">
-                  {option.name}: <span className="text-foreground">{selectedOptions[option.name]}</span>
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {option.values.map(value => (
-                    <button
-                      key={value}
-                      onClick={() => setSelectedOptions(prev => ({ ...prev, [option.name]: value }))}
-                      className={`px-5 py-2.5 text-xs tracking-wider uppercase border transition-all duration-200 hover:scale-[1.02] ${
-                        selectedOptions[option.name] === value
-                          ? 'bg-primary text-primary-foreground border-primary'
-                          : 'border-border text-foreground hover:border-foreground'
-                      }`}
-                    >
-                      {value}
-                    </button>
-                  ))}
+            {options.map(option => {
+              const isSizeOption = option.name.toLowerCase() === 'size';
+              return (
+                <div key={option.name} className="mb-6">
+                  <div className="flex items-baseline justify-between mb-3">
+                    <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground">
+                      {option.name}: <span className="text-foreground">{selectedOptions[option.name]}</span>
+                    </p>
+                    {isSizeOption && (
+                      <Link
+                        to="/size-guide"
+                        className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors"
+                      >
+                        Size Chart
+                      </Link>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {option.values.map(value => (
+                      <button
+                        key={value}
+                        onClick={() => setSelectedOptions(prev => ({ ...prev, [option.name]: value }))}
+                        className={`px-5 py-2.5 text-xs tracking-wider uppercase border transition-all duration-200 hover:scale-[1.02] ${
+                          selectedOptions[option.name] === value
+                            ? 'bg-primary text-primary-foreground border-primary'
+                            : 'border-border text-foreground hover:border-foreground'
+                        }`}
+                      >
+                        {value}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
 
             {/* Quantity selector */}
             <div className="mb-6">
@@ -291,8 +359,7 @@ const ProductDetail = () => {
             {/* Trust badges */}
             <div className="flex justify-center gap-8 mt-6 py-4 border-t border-b border-border">
               {[
-                { icon: Truck, label: 'Free Shipping' },
-                { icon: RotateCcw, label: '30-Day Returns' },
+                { icon: Truck, label: 'Shipping Across India' },
                 { icon: Shield, label: 'Quality Guaranteed' },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 text-muted-foreground">
@@ -323,13 +390,9 @@ const ProductDetail = () => {
                 </TabsContent>
                 <TabsContent value="details" className="pt-6">
                   <div className="space-y-3 text-sm text-muted-foreground font-light">
-                    <p>• Premium linen-cotton blend</p>
-                    <p>• Structured, breathable fabric</p>
-                    <p>• Soft, all-day wear feel</p>
-                    <p>• Reversible construction</p>
-                    <p>• Contrast panel detailing</p>
-                    <p>• Hand-washable with cold water</p>
-                    <p>• Made in India</p>
+                    {getDetailsForProduct(handle).map((line, idx) => (
+                      <p key={idx}>• {line}</p>
+                    ))}
                   </div>
                 </TabsContent>
                 <TabsContent value="shipping" className="pt-6">
