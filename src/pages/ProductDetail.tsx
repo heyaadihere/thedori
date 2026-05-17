@@ -304,8 +304,7 @@ const ProductDetail = () => {
             {/* Trust badges */}
             <div className="flex justify-center gap-8 mt-6 py-4 border-t border-b border-border">
               {[
-                { icon: Truck, label: 'Free Shipping' },
-                { icon: RotateCcw, label: '30-Day Returns' },
+                { icon: Truck, label: 'Shipping Across India' },
                 { icon: Shield, label: 'Quality Guaranteed' },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 text-muted-foreground">
@@ -336,13 +335,9 @@ const ProductDetail = () => {
                 </TabsContent>
                 <TabsContent value="details" className="pt-6">
                   <div className="space-y-3 text-sm text-muted-foreground font-light">
-                    <p>• Premium linen-cotton blend</p>
-                    <p>• Structured, breathable fabric</p>
-                    <p>• Soft, all-day wear feel</p>
-                    <p>• Reversible construction</p>
-                    <p>• Contrast panel detailing</p>
-                    <p>• Hand-washable with cold water</p>
-                    <p>• Made in India</p>
+                    {getDetailsForProduct(handle).map((line, idx) => (
+                      <p key={idx}>• {line}</p>
+                    ))}
                   </div>
                 </TabsContent>
                 <TabsContent value="shipping" className="pt-6">
