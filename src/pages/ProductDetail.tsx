@@ -6,7 +6,7 @@ import { useCartStore } from '@/stores/cartStore';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowLeft, Loader2, Truck, RotateCcw, Shield, Heart, Share2, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Loader2, Truck, Shield, Heart, Share2, ChevronDown } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -205,28 +205,41 @@ const ProductDetail = () => {
             <p className="text-xs text-muted-foreground mb-8">Tax included. Shipping calculated at checkout.</p>
 
             {/* Variant selectors */}
-            {options.map(option => (
-              <div key={option.name} className="mb-6">
-                <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground mb-3">
-                  {option.name}: <span className="text-foreground">{selectedOptions[option.name]}</span>
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {option.values.map(value => (
-                    <button
-                      key={value}
-                      onClick={() => setSelectedOptions(prev => ({ ...prev, [option.name]: value }))}
-                      className={`px-5 py-2.5 text-xs tracking-wider uppercase border transition-all duration-200 hover:scale-[1.02] ${
-                        selectedOptions[option.name] === value
-                          ? 'bg-primary text-primary-foreground border-primary'
-                          : 'border-border text-foreground hover:border-foreground'
-                      }`}
-                    >
-                      {value}
-                    </button>
-                  ))}
+            {options.map(option => {
+              const isSizeOption = option.name.toLowerCase() === 'size';
+              return (
+                <div key={option.name} className="mb-6">
+                  <div className="flex items-baseline justify-between mb-3">
+                    <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground">
+                      {option.name}: <span className="text-foreground">{selectedOptions[option.name]}</span>
+                    </p>
+                    {isSizeOption && (
+                      <Link
+                        to="/size-guide"
+                        className="text-[10px] tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors"
+                      >
+                        Size Chart
+                      </Link>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {option.values.map(value => (
+                      <button
+                        key={value}
+                        onClick={() => setSelectedOptions(prev => ({ ...prev, [option.name]: value }))}
+                        className={`px-5 py-2.5 text-xs tracking-wider uppercase border transition-all duration-200 hover:scale-[1.02] ${
+                          selectedOptions[option.name] === value
+                            ? 'bg-primary text-primary-foreground border-primary'
+                            : 'border-border text-foreground hover:border-foreground'
+                        }`}
+                      >
+                        {value}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
 
             {/* Quantity selector */}
             <div className="mb-6">
