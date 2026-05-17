@@ -15,6 +15,61 @@ import type { ShopifyProduct } from '@/lib/shopify';
 import { toast } from 'sonner';
 import SEO from '@/components/SEO';
 
+const GARMENT_COVER_LINE = 'When not in use, keep inside the DORI garment cover to protect from dust and maintain longevity.';
+
+const DETAILS_BY_HANDLE: Record<string, string[]> = {
+  'espresso-command': [
+    'Made to order piece',
+    'Premium leather',
+    'Soft structured feel',
+    'Functional front pocket design',
+    'Versatile day to night styling',
+    'Durable craftsmanship with 3 years guarantee for any cracks in the leather',
+    'Easy-care finish',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+  'the-muse': [
+    'Premium organic cotton',
+    'Structured, breathable fabric',
+    'Soft, all-day wear feel',
+    'Reversible construction',
+    'Contrast panel detailing',
+    'Hand-washable with cold water',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+  'scarlet-authority': [
+    'Premium linen-cotton blend',
+    'Structured, breathable fabric',
+    'Soft, all-day wear feel',
+    'Contrast panel detailing',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+  'azure-presence': [
+    'Premium linen-cotton blend',
+    'Structured, breathable fabric',
+    'Soft, all-day wear feel',
+    'Contrast panel detailing',
+    'Made in India',
+    GARMENT_COVER_LINE,
+  ],
+};
+
+const DEFAULT_DETAILS: string[] = [
+  'Premium linen-cotton blend',
+  'Structured, breathable fabric',
+  'Soft, all-day wear feel',
+  'Made in India',
+  GARMENT_COVER_LINE,
+];
+
+const getDetailsForProduct = (handle: string | undefined): string[] => {
+  if (!handle) return DEFAULT_DETAILS;
+  return DETAILS_BY_HANDLE[handle] ?? DEFAULT_DETAILS;
+};
+
 const ProductDetail = () => {
   const { handle } = useParams<{ handle: string }>();
   const { data: product, isLoading, error } = useProductByHandle(handle || '');
