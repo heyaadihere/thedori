@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Menu, X } from 'lucide-react';
-import doriLogo from '@/assets/dori-logo.png';
+import doriLogo from '@/assets/dori-logo-mocha.svg';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import CartDrawer from '@/components/CartDrawer';

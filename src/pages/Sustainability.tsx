@@ -64,7 +64,7 @@ const Sustainability = () => {
               </h1>
               <div className="luxury-divider w-20 mx-auto my-7" />
               <p className="text-base md:text-lg text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
-                DORI is built around fewer pieces, longer lives and the people who make them. Sustainability here is not a campaign. It is the quiet logic of how the studio works.
+                DORI is a brand built around fewer pieces, longer lives and the people who make them. Sustainability here is not a campaign. It is the quiet logic of how we work.
               </p>
             </motion.div>
           </div>
@@ -103,7 +103,7 @@ const Sustainability = () => {
             >
               <p className="text-xs tracking-[0.5em] uppercase text-primary-foreground/50 mb-5">A working promise</p>
               <p className="text-2xl md:text-3xl lg:text-4xl font-serif font-light leading-snug">
-                We will keep the studio small, the runs short and the makers paid well. The rest is detail we are still refining, season after season.
+                We will keep the brand small, the runs short and the makers paid well. The rest is detail we are still refining, season after season.
               </p>
             </motion.div>
           </div>
