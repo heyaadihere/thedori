@@ -51,7 +51,7 @@ const Index = () => {
         <BehindTheWeave />
         <CraftsmanshipSection />
         <CollectionBanner />
-        <CuratedPicks />
+        
         
         <ScrollRevealText />
         <ProcessSection />
