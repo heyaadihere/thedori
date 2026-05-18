@@ -113,6 +113,7 @@ const Footer = () => {
             <p className="text-xs tracking-[0.3em] uppercase text-primary-foreground/40 mb-4 md:mb-5">Help</p>
             <nav className="space-y-2.5 md:space-y-3">
               <Link to="/faq" className="block text-sm md:text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">FAQ</Link>
+              <Link to="/track-order" className="block text-sm md:text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Track Order</Link>
               <Link to="/shipping-returns" className="block text-sm md:text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Shipping & Returns</Link>
               <Link to="/size-guide" className="block text-sm md:text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Size Guide</Link>
               <Link to="/care-instructions" className="block text-sm md:text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors font-light">Care Instructions</Link>

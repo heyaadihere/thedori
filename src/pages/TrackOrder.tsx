@@ -35,7 +35,7 @@ const TrackOrder = () => {
       <SEO
         title="Track Your Order | DORI"
         description="Track your DORI order status, shipment and delivery. Enter your order number and email to view live updates."
-        canonical="https://thedori.in/track-order"
+        path="/track-order"
       />
       <Header />
 
