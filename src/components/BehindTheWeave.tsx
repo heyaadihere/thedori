@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import textureKhadi from '@/assets/texture-khadi-weave.jpg';
 import detailFloralFabric from '@/assets/detail-floral-fabric.jpg';
-import detailBerryBuckle from '@/assets/product-detail-tailoring.jpg';
+import detailBerryBuckle from '@/assets/detail-scarlet-belt.jpg';
 import detailGoldButtons from '@/assets/detail-gold-buttons.jpg';
 
 const weavePanels = [
