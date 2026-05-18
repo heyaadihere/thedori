@@ -2,13 +2,13 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import textureKhadi from '@/assets/texture-khadi-weave.jpg';
 import detailFloralFabric from '@/assets/detail-floral-fabric.jpg';
-import detailBerryBuckle from '@/assets/detail-berry-buckle.jpg';
+import detailBerryBuckle from '@/assets/product-detail-tailoring.jpg';
 import detailGoldButtons from '@/assets/detail-gold-buttons.jpg';
 
 const weavePanels = [
   { image: textureKhadi, title: 'Khadi Weave', desc: 'Hand-spun, hand-woven cotton from artisan clusters in Gujarat and West Bengal.' },
   { image: detailFloralFabric, title: 'Block Prints', desc: 'Centuries-old ajrakh printing techniques passed through generations of master craftspeople.' },
-  { image: detailBerryBuckle, title: 'Artisan Details', desc: 'Hand-stitched fabric buckles, contrast piping, and signature finishing touches.' },
+  { image: detailBerryBuckle, title: 'Artisan Details', desc: 'Hand-stitched seams, contrast piping, and signature finishing touches.' },
   { image: detailGoldButtons, title: 'Heritage Hardware', desc: 'Custom-cast buttons inspired by traditional Indian motifs and temple architecture.' },
 ];
 
