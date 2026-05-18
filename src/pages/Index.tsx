@@ -32,8 +32,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Dori — Premium Activewear Made to Move With You"
-        description="Premium, sustainable activewear designed in Mumbai for women — handcrafted pieces made to move with you, in comfort and quiet confidence."
+        title="Dori - Designed for women to hold presence from morning to evening"
+        description="Dori designs premium, sustainable activewear in Mumbai for women, made to hold presence from morning to evening."
         path="/"
       />
       <AnnouncementBar />
