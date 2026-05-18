@@ -19,6 +19,7 @@ import ShippingReturns from "./pages/ShippingReturns";
 import CareInstructions from "./pages/CareInstructions";
 import Sustainability from "./pages/Sustainability";
 import FAQ from "./pages/FAQ";
+import TrackOrder from "./pages/TrackOrder";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const AnimatedRoutes = () => {
         <Route path="/care-instructions" element={<PageTransition><CareInstructions /></PageTransition>} />
         <Route path="/sustainability" element={<PageTransition><Sustainability /></PageTransition>} />
         <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
+        <Route path="/track-order" element={<PageTransition><TrackOrder /></PageTransition>} />
         <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
       </Routes>
     </AnimatePresence>
