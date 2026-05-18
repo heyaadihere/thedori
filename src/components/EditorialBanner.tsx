@@ -29,7 +29,7 @@ const EditorialBanner = () => {
             <div className="luxury-divider w-10 mb-4 md:mb-6" />
             <p className="text-xs md:text-sm tracking-[0.4em] md:tracking-[0.5em] uppercase text-white/50 mb-3 md:mb-4">Boardrooms to Cocktail Evenings</p>
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-white leading-[1.2] mb-5 md:mb-6 font-serif">
-              One piece,<br />multiple stays
+              One piece,<br />multiple slays
             </h2>
             <Link to="/collections">
               <Button
