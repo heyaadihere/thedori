@@ -237,6 +237,11 @@ const CART_LINES_REMOVE_MUTATION = `
 function formatCheckoutUrl(checkoutUrl: string): string {
   try {
     const url = new URL(checkoutUrl);
+    // Force the Shopify-hosted domain. The store's primary custom domain
+    // (thedori.in) is pointed at this Lovable site, so checkout URLs on
+    // that host would 404. Always route checkout through the .myshopify.com host.
+    url.host = SHOPIFY_STORE_PERMANENT_DOMAIN;
+    url.protocol = 'https:';
     url.searchParams.set('channel', 'online_store');
     return url.toString();
   } catch {
