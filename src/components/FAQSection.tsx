@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     question: 'What is your return policy?',
-    answer: 'We accept returns within 14 days on unworn items with tags attached. Returns within India are on us. International returns are at the customer\'s cost.',
+    answer: 'We accept returns within 7 days on unworn items with tags attached. Returns within India are on us. International returns are at the customer\'s cost.',
   },
   {
     question: 'Do you offer custom sizing?',
-    answer: 'We offer made-to-measure for select styles. Write to us at hello@dori.com with your measurements and preferred piece.',
+    answer: 'We offer made-to-measure for select styles. Write to us at connect@thedori.in with your measurements and preferred piece.',
   },
   {
     question: 'Do you ship internationally?',

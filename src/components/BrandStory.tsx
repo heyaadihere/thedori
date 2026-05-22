@@ -16,7 +16,7 @@ const BrandStory = () => {
             <div className="aspect-[4/5] overflow-hidden">
               <img
                 src={bannerFounder}
-                alt="DORI founder in signature jacket"
+                alt="DORI co-founders in signature jacket"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
