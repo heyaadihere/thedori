@@ -234,7 +234,7 @@ const CART_LINES_REMOVE_MUTATION = `
   }
 `;
 
-function formatCheckoutUrl(checkoutUrl: string): string {
+export function formatCheckoutUrl(checkoutUrl: string): string {
   try {
     const url = new URL(checkoutUrl);
     // Force the Shopify-hosted domain. The store's primary custom domain
