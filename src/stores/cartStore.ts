@@ -8,6 +8,7 @@ import {
   updateShopifyCartLine,
   removeLineFromShopifyCart,
   fetchCart,
+  formatCheckoutUrl,
 } from '@/lib/shopify';
 
 export type { CartItemData };
@@ -121,7 +122,10 @@ export const useCartStore = create<CartStore>()(
       },
 
       clearCart: () => set({ items: [], cartId: null, checkoutUrl: null }),
-      getCheckoutUrl: () => get().checkoutUrl,
+      getCheckoutUrl: () => {
+        const checkoutUrl = get().checkoutUrl;
+        return checkoutUrl ? formatCheckoutUrl(checkoutUrl) : null;
+      },
 
       syncCart: async () => {
         const { cartId, isSyncing, clearCart } = get();
