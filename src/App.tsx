@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { useCartSync } from "@/hooks/useCartSync";
@@ -23,6 +24,19 @@ import TrackOrder from "./pages/TrackOrder";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+const SHOPIFY_CHECKOUT_DOMAIN = "nysxt1-k4.myshopify.com";
+
+const CheckoutRedirect = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const checkoutUrl = new URL(`https://${SHOPIFY_CHECKOUT_DOMAIN}${location.pathname}${location.search}`);
+    checkoutUrl.searchParams.set("channel", "online_store");
+    window.location.replace(checkoutUrl.toString());
+  }, [location.pathname, location.search]);
+
+  return null;
+};
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -40,6 +54,7 @@ const AnimatedRoutes = () => {
         <Route path="/sustainability" element={<PageTransition><Sustainability /></PageTransition>} />
         <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
         <Route path="/track-order" element={<PageTransition><TrackOrder /></PageTransition>} />
+        <Route path="/cart/c/:cartToken" element={<CheckoutRedirect />} />
         <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
       </Routes>
     </AnimatePresence>
