@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bannerFounder from '@/assets/banner-founder.jpg';
+import bannerFounder from '@/assets/co-founders.jpg';
 
 const BrandStory = () => {
   return (
