@@ -20,7 +20,7 @@ const groups = [
       },
       {
         q: 'Do you offer custom sizing?',
-        a: 'Yes, made-to-measure is available on select styles. Write to hello@dori.com with your measurements and the piece you have in mind.',
+        a: 'Yes, made-to-measure is available on select styles. Write to connect@thedori.in with your measurements and the piece you have in mind.',
       },
       {
         q: 'Where can I find a size guide?',
@@ -50,11 +50,11 @@ const groups = [
     items: [
       {
         q: 'What is your return policy?',
-        a: 'We accept returns within 14 days on unworn items with tags attached. Returns within India are on us. International returns are at the customer\'s cost.',
+        a: 'We accept returns within 7 days on unworn items with tags attached. Returns within India are on us. International returns are at the customer\'s cost.',
       },
       {
         q: 'How do I start a return?',
-        a: 'Email hello@dori.com with your order number and the reason for return. We will share the next steps within one working day.',
+        a: 'Email connect@thedori.in with your order number and the reason for return. We will share the next steps within one working day.',
       },
       {
         q: 'Are exchanges possible?',
@@ -156,7 +156,7 @@ const FAQ = () => {
               Our team replies within one working day.
             </p>
             <a
-              href="mailto:hello@dori.com"
+              href="mailto:connect@thedori.in"
               className="inline-block text-xs tracking-[0.3em] uppercase border-b border-primary-foreground/40 pb-1 hover:border-primary-foreground transition-colors"
             >
               Write to us

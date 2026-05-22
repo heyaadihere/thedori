@@ -306,7 +306,7 @@ const ShippingReturns = () => {
                 For any assistance, our team is happy to help.
               </p>
               <div className="space-y-2 text-sm font-light">
-                <p><span className="text-muted-foreground">Email:</span> <a href="mailto:dori.styleit@gmail.com" className="text-foreground hover:text-gold transition-colors">dori.styleit@gmail.com</a></p>
+                <p><span className="text-muted-foreground">Email:</span> <a href="mailto:connect@thedori.in" className="text-foreground hover:text-gold transition-colors">connect@thedori.in</a></p>
                 <p><span className="text-muted-foreground">WhatsApp:</span> <a href="https://wa.me/918088272704" className="text-foreground hover:text-gold transition-colors">+91-8088272704</a></p>
                 <p className="text-xs text-muted-foreground mt-3">Support Hours: Monday – Saturday | 10 AM – 7 PM IST</p>
               </div>

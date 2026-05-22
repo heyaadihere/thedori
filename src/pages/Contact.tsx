@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
-import { MapPin, Mail, Clock, Phone, ArrowRight } from 'lucide-react';
+import { Mail, Clock, Phone, ArrowRight } from 'lucide-react';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -20,7 +20,7 @@ const localBusinessJsonLd = {
   image: 'https://thedori.in/og-image.jpg',
   url: 'https://thedori.in/contact',
   telephone: '+91-8088272704',
-  email: 'dori.styleit@gmail.com',
+  email: 'connect@thedori.in',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Mumbai',
@@ -50,8 +50,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contact Dori | Mumbai Studio & Customer Care"
-        description="Get in touch with Dori — visit our Mumbai atelier, message us on WhatsApp at +91-8088272704, or write to dori.styleit@gmail.com."
+        title="Contact Dori | Customer Care"
+        description="Get in touch with Dori. Message us on WhatsApp at +91-8088272704, or write to connect@thedori.in."
         path="/contact"
         jsonLd={localBusinessJsonLd}
       />
@@ -76,11 +76,10 @@ const Contact = () => {
         {/* Quick contact cards */}
         <section className="pb-16 px-6">
           <div className="container mx-auto max-w-5xl">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6">
               {[
-                { icon: MapPin, label: 'Visit Us', value: 'DORI Studio, Mumbai', detail: '123 Fashion District, 400001' },
-                { icon: Mail, label: 'Email', value: 'hello@dori.com', detail: 'We reply within 24hrs' },
-                { icon: Phone, label: 'Call', value: '+91 22 4000 5000', detail: 'Mon-Fri, 10am-6pm IST' },
+                { icon: Mail, label: 'Email', value: 'connect@thedori.in', detail: 'We reply within 24hrs' },
+                { icon: Phone, label: 'Call', value: '+91 8088272704', detail: 'Mon-Fri, 10am-6pm IST' },
                 { icon: Clock, label: 'Hours', value: 'Mon - Fri: 10am - 6pm', detail: 'Sat: 11am - 5pm' },
               ].map((item, i) => (
                 <motion.div
